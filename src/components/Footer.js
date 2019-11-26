@@ -1,115 +1,142 @@
-import React from 'react'
-import { Link } from 'gatsby'
+import React from 'react';
 
-import logo from '../img/logo.svg'
-import facebook from '../img/social/facebook.svg'
-import instagram from '../img/social/instagram.svg'
-import twitter from '../img/social/twitter.svg'
-import vimeo from '../img/social/vimeo.svg'
+import { Columns, Column, Container, Footer, Level, Left, Right, Menu, MenuItem } from '../components/bulma';
 
-const Footer = class extends React.Component {
-  render() {
-    return (
-      <footer className="footer has-background-black has-text-white-ter">
-        <div className="content has-text-centered">
-          <img
-            src={logo}
-            alt="Kaldi"
-            style={{ width: '14em', height: '10em' }}
-          />
-        </div>
-        <div className="content has-text-centered has-background-black has-text-white-ter">
-          <div className="container has-background-black has-text-white-ter">
-            <div className="columns">
-              <div className="column is-4">
-                <section className="menu">
-                  <ul className="menu-list">
-                    <li>
-                      <Link to="/" className="navbar-item">
-                        Home
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="navbar-item" to="/about">
-                        About
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="navbar-item" to="/products">
-                        Products
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="navbar-item" to="/contact/examples">
-                        Form Examples
-                      </Link>
-                    </li>
-                    <li>
-                      <a
-                        className="navbar-item"
-                        href="/admin/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Admin
-                      </a>
-                    </li>
-                  </ul>
-                </section>
-              </div>
-              <div className="column is-4">
-                <section>
-                  <ul className="menu-list">
-                    <li>
-                      <Link className="navbar-item" to="/blog">
-                        Latest Stories
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="navbar-item" to="/contact">
-                        Contact
-                      </Link>
-                    </li>
-                  </ul>
-                </section>
-              </div>
-              <div className="column is-4 social">
-                <a title="facebook" href="https://facebook.com">
-                  <img
-                    src={facebook}
-                    alt="Facebook"
-                    style={{ width: '1em', height: '1em' }}
-                  />
-                </a>
-                <a title="twitter" href="https://twitter.com">
-                  <img
-                    className="fas fa-lg"
-                    src={twitter}
-                    alt="Twitter"
-                    style={{ width: '1em', height: '1em' }}
-                  />
-                </a>
-                <a title="instagram" href="https://instagram.com">
-                  <img
-                    src={instagram}
-                    alt="Instagram"
-                    style={{ width: '1em', height: '1em' }}
-                  />
-                </a>
-                <a title="vimeo" href="https://vimeo.com">
-                  <img
-                    src={vimeo}
-                    alt="Vimeo"
-                    style={{ width: '1em', height: '1em' }}
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-    )
-  }
-}
+import facebook from '../img/social/facebook.svg';
+import instagram from '../img/social/instagram.svg';
+import twitter from '../img/social/twitter.svg';
+import linkedin from '../img/social/linkedin.svg';
 
-export default Footer
+import appStore from '../img/AppStore.svg';
+import googlePlay from '../img/GooglePlay.svg';
+import finhub from '../img/finhub-logo.svg';
+
+export default () => {
+	return (
+		<Footer>
+			<Container>
+				<Columns>
+					<Column>
+						<Menu label="Why Mark">
+							<MenuItem to="/how-it-works">How it works</MenuItem>
+							<MenuItem to="/benefits">Benefits</MenuItem>
+							<MenuItem to="/cost">Cost</MenuItem>
+							<MenuItem to="/get-started">Getting Started</MenuItem>
+						</Menu>
+					</Column>
+					<Column>
+						<Menu label="Solutions">
+							<MenuItem to="/small-business">Small Business</MenuItem>
+							<MenuItem to="/medium-business">Medium Business</MenuItem>
+							<MenuItem to="/brands">Global Brands</MenuItem>
+							<MenuItem to="/marketing-agencies">Marketing Agencies</MenuItem>
+							<MenuItem to="/white-label">White-label</MenuItem>
+						</Menu>
+					</Column>
+					<Column>
+						<Menu label="Resources">
+							<MenuItem to="/developers">Developers</MenuItem>
+							<MenuItem to="/apps">Download Apps</MenuItem>
+							<MenuItem to="/faq">FAQ</MenuItem>
+							<MenuItem to="/digest">Marketing Digest</MenuItem>
+							<li>
+								<a title="Help" href="https://help.cashmark.app" className="navbar-item">
+									Help
+								</a>
+							</li>
+						</Menu>
+					</Column>
+					<Column>
+						<Menu label="Company">
+							<MenuItem to="/about">About</MenuItem>
+							<MenuItem to="/mission">Mission</MenuItem>
+							<MenuItem to="/blog">Blog</MenuItem>
+							<MenuItem to="/contact">Contact</MenuItem>
+							<li>
+								<a title="Help" href="https://help.cashmark.app" className="navbar-item">
+									Help
+								</a>
+							</li>
+						</Menu>
+					</Column>
+				</Columns>
+				<br />
+				<Level>
+					<Left>
+						<p>
+							<a title="facebook" href="https://www.facebook.com/cashmarkapp">
+								<img
+									src={facebook}
+									alt="Facebook"
+									style={{ width: '2em', height: '2em', marginRight: 15 }}
+								/>
+							</a>
+							<a title="twitter" href="https://twitter.com/cashmark_app">
+								<img
+									src={twitter}
+									alt="Twitter"
+									style={{ width: '2em', height: '2em', marginRight: 15 }}
+								/>
+							</a>
+							<a title="linkedin" href="https://www.linkedin.com/company/cashmark/">
+								<img
+									src={linkedin}
+									alt="Twitter"
+									style={{ width: '2em', height: '2em', marginRight: 15 }}
+								/>
+							</a>
+							<a title="instagram" href="https://www.instagram.com/cashmark_app/">
+								<img src={instagram} alt="Instagram" style={{ width: '2em', height: '2em' }} />
+							</a>
+						</p>
+					</Left>
+					<Right>
+						<p>
+							<a title="App Store" href="https://apps.apple.com/us/app/cashmark/id1459957436">
+								<img src={appStore} alt="App Store" />
+							</a>{' '}
+							<a
+								title="Google Play"
+								href="https://play.google.com/store/apps/details?id=com.cashmark.mark"
+							>
+								<img className="fas fa-lg" src={googlePlay} alt="Google Play" />
+							</a>
+						</p>
+					</Right>
+				</Level>
+				<br />
+				<hr />
+				<br />
+				<Level>
+					<Left>
+						<p className="has-text-left is-size-7">
+							<strong>© 2019 Mark</strong>. A{' '}
+							<a title="FinHub Global Ventures" href="https://finhub.vc/" target="_blanc">
+								FinHub Global Ventures
+							</a>{' '}
+							company. All rights reserved.
+							<br />All product names, trademarks and registered trademarks are property of their
+							respective owners.
+							<br />All company, product and service names used in this website are for identification
+							purposes only.
+							<br />Use of these names, trademarks and brands does not imply endorsement.
+						</p>
+					</Left>
+					<Right>
+						<div
+							style={{
+								width: '120px',
+								display: 'inline-block'
+							}}
+						>
+							<a title="FinHub Global Ventures" href="https://finhub.vc/" target="_blanc">
+								<img src={finhub} alt="FinHub Global Ventures logo" />
+							</a>
+						</div>
+					</Right>
+				</Level>
+				<br />
+			</Container>
+		</Footer>
+	);
+};
