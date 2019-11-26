@@ -20,7 +20,7 @@ export const MissionPageTemplate = ({ title, content, contentComponent }) => {
 				// subtitle="All plans include next day funding and 24/7 payments support as a standard. Cancel free any time."
 				image="image"
 			/>
-			{/* <section className="section section--gradient">
+			<section className="section section--gradient">
 				<div className="container">
 					<div className="columns">
 						<div className="column is-10 is-offset-1">
@@ -31,7 +31,7 @@ export const MissionPageTemplate = ({ title, content, contentComponent }) => {
 						</div>
 					</div>
 				</div>
-      </section> */}
+			</section>
 			<BlogSection />
 			<CTA />
 		</div>

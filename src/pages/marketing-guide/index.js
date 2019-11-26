@@ -10,7 +10,7 @@ import CTA from '../../components/CTA';
 import { Section } from '../../components/bulma';
 
 export default function BlogIndexPage() {
-	const data = useStaticQuery(BLOG_ROLL_QUERY);
+	const data = useStaticQuery(MARKETING_GUIDE_QUERY);
 	const { edges: posts } = data.allMarkdownRemark;
 
 	const { node: { frontmatter: { title, featuredImage }, excerpt, fields: { slug } } } = posts[0];
@@ -26,11 +26,11 @@ export default function BlogIndexPage() {
 	);
 }
 
-const BLOG_ROLL_QUERY = graphql`
-	query BlogHeadlines {
+const MARKETING_GUIDE_QUERY = graphql`
+	query MarketingGuide {
 		allMarkdownRemark(
 			sort: { order: DESC, fields: [frontmatter___date] }
-			filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
+			filter: { frontmatter: { templateKey: { eq: "digest" } } }
 		) {
 			edges {
 				node {
