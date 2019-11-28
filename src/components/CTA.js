@@ -8,7 +8,7 @@ const CTA = () => (
 					<h1 className="title">Start your Instagram promo in just 5 minutes</h1>
 					<h2 className="subtitle">It's easy with our step by step guide</h2>
 					<br />
-					<a href="https://app.mark.camera/" className="button is-light is-large">
+					<a href="https://business.cashmark.app/" className="button is-light is-large">
 						<strong>Start now & get $10 free</strong>
 					</a>
 				</div>

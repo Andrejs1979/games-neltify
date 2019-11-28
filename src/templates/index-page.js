@@ -20,15 +20,23 @@ import FinalSection from '../components/FinalSection';
 import BlogSection from '../components/BlogSection';
 import CTA from '../components/CTA';
 
-export default function IndexPageTemplate() {
+export default function IndexPage() {
 	const data = useStaticQuery(INDEX_PAGE_QUERY);
 
 	const { markdownRemark: page } = data;
-	const { image, heading, subheading, sections, blurbs, final } = page.frontmatter;
+	const { frontmatter } = page;
+	// const { image, heading, subheading, sections, blurbs, final } = page.frontmatter;
 
 	return (
 		<Layout>
-			{/* <Sky
+			<IndexPageTemplate {...frontmatter} />
+		</Layout>
+	);
+}
+
+export const IndexPageTemplate = ({ image, heading, subheading, sections, blurbs, final }) => (
+	<div>
+		{/* <Sky
 				images={{
 					0: facebook,
 					1: instagram,
@@ -44,16 +52,15 @@ export default function IndexPageTemplate() {
 				time={500}
 				size={'20px'}
 			/> */}
-			<Hero size="medium" title={heading} subtitle={subheading} image={image} signup />
+		<Hero size="medium" title={heading} subtitle={subheading} image={image} signup />
 
-			<Blurbs box gridItems={blurbs} />
-			<ContentSection sections={sections} box />
-			<FinalSection content={final} />
-			<BlogSection />
-			<CTA />
-		</Layout>
-	);
-}
+		<Blurbs box gridItems={blurbs} />
+		<ContentSection sections={sections} box />
+		<FinalSection content={final} />
+		<BlogSection />
+		<CTA />
+	</div>
+);
 
 const INDEX_PAGE_QUERY = graphql`
 	query IndexPage {

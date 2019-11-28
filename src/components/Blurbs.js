@@ -13,7 +13,7 @@ export default function Blurbs({ box, gridItems }) {
 					<div key={item.title} className="column">
 						<Column>
 							<Box>
-								{/* <FontAwesomeIcon icon="shop" size="10x" className="has-text-light" /> */}
+								{/* <FontAwesomeIcon icon="store" size="10x" className="has-text-light" /> */}
 								{/* <div className="has-text-centered">
 									<div
 										style={{

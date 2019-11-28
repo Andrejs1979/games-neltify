@@ -1,6 +1,6 @@
 import React from 'react';
-
-import { Columns, Column, Container, Footer, Level, Left, Right, Menu, MenuItem } from '../components/bulma';
+import { Link } from 'gatsby';
+import { Columns, Column, Container, Footer, Level, Left, Item, Right, Menu, MenuItem } from '../components/bulma';
 
 import facebook from '../img/social/facebook.svg';
 import instagram from '../img/social/instagram.svg';
@@ -48,19 +48,15 @@ export default () => {
 					</Column>
 					<Column>
 						<Menu label="Company">
+							<MenuItem to="/news">News</MenuItem>
 							<MenuItem to="/about">About</MenuItem>
 							<MenuItem to="/mission">Mission</MenuItem>
 							<MenuItem to="/blog">Blog</MenuItem>
-							<MenuItem to="/contact">Contact</MenuItem>
-							<li>
-								<a title="Help" href="https://help.cashmark.app" className="navbar-item">
-									Help
-								</a>
-							</li>
 						</Menu>
 					</Column>
 				</Columns>
 				<br />
+
 				<Level>
 					<Left>
 						<p>
@@ -90,6 +86,32 @@ export default () => {
 							</a>
 						</p>
 					</Left>
+					<Item>
+						<div id="navMenu" className={`navbar-menu`}>
+							<div className="navbar-end has-text-centered has-text-weight-semibold">
+								<Link className="navbar-item" to="/how-it-works">
+									Terms of service
+								</Link>
+								<Link className="navbar-item" to="/benefits">
+									Privacy
+								</Link>
+
+								<Link className="navbar-item" to="/cost">
+									Contact
+								</Link>
+								<Link className="navbar-item" to="/faq">
+									FAQ
+								</Link>
+							</div>
+						</div>
+					</Item>
+					{/* <Link to="/privacy">Privacy</Link>
+							<Link to="/contact">Contact</Link>
+						</div>
+					</Item> */}
+					<Item />
+					<Item />
+
 					<Right>
 						<p>
 							<a title="App Store" href="https://apps.apple.com/us/app/cashmark/id1459957436">
@@ -107,6 +129,7 @@ export default () => {
 				<br />
 				<hr />
 				<br />
+
 				<Level>
 					<Left>
 						<p className="has-text-left is-size-7">
@@ -137,6 +160,8 @@ export default () => {
 				</Level>
 				<br />
 			</Container>
+			<br />
+			<br />
 		</Footer>
 	);
 };

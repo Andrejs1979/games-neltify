@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'gatsby';
-// import { Box } from '../components/bulma';
 import logo from '../img/mark-logo.svg';
 
 const Navbar = class extends React.Component {
@@ -32,13 +31,13 @@ const Navbar = class extends React.Component {
 	render() {
 		return (
 			<div>
-				<nav className="navbar is-fixed-top" role="navigation" aria-label="main-navigation">
+				<nav className="navbar is-fixed-top has-shadow" role="navigation" aria-label="main-navigation">
 					<div className="container">
 						<div className="navbar-brand">
 							<Link to="/" className="navbar-item" title="Logo">
 								<img src={logo} alt="Mark" style={{ width: '150px' }} />
 							</Link>
-							{/* Hamburger menu */}
+
 							<div
 								className={`navbar-burger burger ${this.state.navBarActiveClass}`}
 								data-target="navMenu"
@@ -83,38 +82,60 @@ const Navbar = class extends React.Component {
 						</div>
 					</div>
 				</nav>
-				<nav
-					className="navbar is-black is-fixed-bottom is-hidden-desktop"
-					role="navigation"
-					aria-label="main-navigation"
-				>
+
+				{/* BOTTOM NAVBAR */}
+
+				<nav className="navbar is-black is-fixed-bottom" role="navigation" aria-label="main-navigation">
 					<div className="container">
 						<div className="navbar-brand">
-							<span className="navbar-item">
-								<a href="https://business.cashmark.app/" className="button is-primary">
-									<strong>GET STARTED</strong>
-								</a>
+							<span className="navbar-item is-hidden-mobile">
+								<div className="field is-grouped">
+									<p className="control">
+										<a
+											href="https://business.cashmark.app/"
+											className="button is-white is-outlined"
+										>
+											<strong>GET $10 IN ADS FREE</strong>
+										</a>
+										{/* <p>No credit card required</p> */}
+									</p>
+									<p className="control">
+										<a
+											href="https://calendly.com/mark-camera/demo"
+											className="button is-white is-inverted is-text has-text-weight-semibold"
+										>
+											Schedule a free, no-obligation demo
+										</a>
+									</p>
+								</div>
 							</span>
-							<div className="navbar-item">
-								<p>
-									Instant $10 sign up bonus!<br />No credit card required.
-								</p>
-							</div>
-							{/* <Link className="navbar-item has-text-weight-semibold" to="/how-it-works">
-								How it works
+							<span className="navbar-item is-hidden-desktop">
+								<div className="field is-grouped">
+									<p className="control">
+										<a
+											href="https://business.cashmark.app/"
+											className="button is-medium is-white is-outlined"
+										>
+											<strong>GET STARTED</strong>
+										</a>
+										{/* <p>No credit card required</p> */}
+									</p>
+									<p className="control">
+										<a
+											href="https://calendly.com/mark-camera/demo"
+											className="button is-white is-inverted is-text has-text-weight-semibold"
+										>
+											Schedule free demo
+										</a>
+									</p>
+								</div>
+							</span>
+						</div>
+
+						<div className="navbar-end is-hidden-mobile">
+							<Link className="navbar-item has-text-weight-semibold" to="/news">
+								New! Try our Campaign Wizard and get started in munutes
 							</Link>
-							<Link className="navbar-item" to="/benefits">
-								Benefits
-							</Link>
-							<Link className="navbar-item has-text-weight-semibold" to="/cost">
-								Cost
-							</Link>
-							<Link className="navbar-item has-text-weight-semibold" to="/faq">
-								FAQ
-							</Link>
-							<Link className="navbar-item" to="/get-started">
-								Getting Started
-							</Link> */}
 						</div>
 					</div>
 				</nav>
