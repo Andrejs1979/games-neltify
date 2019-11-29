@@ -32,9 +32,12 @@ sections:
       empower your customers to promote your brand.
     title: Connect with your customers at scale
 final:
-  image: /img/coffee.png
+  Image:
+    alt: Coffee
+    image: /img/blog-index.jpg
   text: >-
     Mark is a revolutionary way to promote your brand on Instagram and other
     social media platforms.
   title: Join the marketing revolution
 ---
+
