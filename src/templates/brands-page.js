@@ -1,33 +1,44 @@
 import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 
 import Hero from '../components/Hero';
 import Blurbs from '../components/Blurbs';
 import ContentSection from '../components/ContentSection';
 import FinalSection from '../components/FinalSection';
-import BlogSection from '../components/BlogSection';
+// import BlogSection from '../components/BlogSection';
 import CTA from '../components/CTA';
 
-export default function HowItWorksPage() {
-	const data = useStaticQuery(BRANDS_PAGE_QUERY);
-
+export default function BrandsPage({ data }) {
 	const { markdownRemark: page } = data;
 	const { image, heading, subheading, sections, blurbs, final } = page.frontmatter;
 
 	return (
 		<Layout>
-			<Hero size="medium" title={heading} subtitle={subheading} image={image} />
-			<Blurbs box gridItems={blurbs} />
-			<ContentSection sections={sections} box />
-			<FinalSection content={final} />
-			<BlogSection />
-			<CTA />
+			<BrandsPageTemplate
+				image={image}
+				heading={heading}
+				subheading={subheading}
+				blurbs={blurbs}
+				sections={sections}
+				final={final}
+			/>
 		</Layout>
 	);
 }
 
-const BRANDS_PAGE_QUERY = graphql`
+export const BrandsPageTemplate = ({ image, heading, subheading, sections, blurbs, final }) => (
+	<div>
+		<Hero size="medium" title={heading} subtitle={subheading} image={image} signup />
+		<Blurbs box items={blurbs} />
+		<ContentSection items={sections} box />
+		<FinalSection content={final} />
+		{/* <BlogSection /> */}
+		<CTA />
+	</div>
+);
+
+export const brandsPageQuery = graphql`
 	query BrandsPage {
 		markdownRemark(frontmatter: { templateKey: { eq: "brands-page" } }) {
 			frontmatter {

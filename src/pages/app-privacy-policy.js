@@ -1,10 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { graphql } from 'gatsby';
+// import PropTypes from 'prop-types';
+// import { graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
 import Hero from '../components/Hero';
-import Section from '../components/ContentSection';
+// import Section from '../components/ContentSection';
 import CTA from '../components/CTA';
 import BlogSection from '../components/BlogSection';
 
