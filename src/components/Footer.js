@@ -37,7 +37,6 @@ export default () => {
 						<Menu label="Resources">
 							<MenuItem to="/developers">Developers</MenuItem>
 							<MenuItem to="/apps">Download Apps</MenuItem>
-							<MenuItem to="/faq">FAQ</MenuItem>
 							<MenuItem to="/digest">Marketing Digest</MenuItem>
 							<li>
 								<a title="Help" href="https://help.cashmark.app" className="navbar-item">
@@ -89,14 +88,14 @@ export default () => {
 					<Item>
 						<div id="navMenu" className={`navbar-menu`}>
 							<div className="navbar-end has-text-centered has-text-weight-semibold">
-								<Link className="navbar-item" to="/how-it-works">
+								<Link className="navbar-item" to="/terms">
 									Terms of service
 								</Link>
-								<Link className="navbar-item" to="/benefits">
+								<Link className="navbar-item" to="/privacy">
 									Privacy
 								</Link>
 
-								<Link className="navbar-item" to="/cost">
+								<Link className="navbar-item" to="/contact">
 									Contact
 								</Link>
 								<Link className="navbar-item" to="/faq">
