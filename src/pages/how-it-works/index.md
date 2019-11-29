@@ -52,10 +52,10 @@ sections:
       We verify and approve all your customer's posts. If the post is approved,
       the customer gets paid in his Mark account.
 final:
-  image: /img/coffee.png
+  image:
+    alt: A close-up of a paper filter filled with ground coffee
+    image: /img/coffee.png
   title: Simple and rewarding experience for your customers
-  color: white
-  side: left
   text: >-
     Thousands of people already used Mark to promote their favorite brands and
     they love it.

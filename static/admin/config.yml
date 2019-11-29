@@ -16,7 +16,37 @@ collections:
     label: "Blog"
     folder: "src/pages/blog"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Featured Post", name: "featuredpost", widget: "boolean"}
+      - {label: "Featured Image", name: "featuredimage", widget: image}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Tags", name: "tags", widget: "list"}
+
+  - name: "news"
+    label: "News"
+    folder: "src/pages/news"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Featured Post", name: "featuredpost", widget: "boolean"}
+      - {label: "Featured Image", name: "featuredimage", widget: image}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Tags", name: "tags", widget: "list"}
+
+  - name: "digest"
+    label: "Digest"
+    folder: "src/pages/digest"
+    create: true
+    slug: "{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
       - {label: "Title", name: "title", widget: "string"}
@@ -31,7 +61,7 @@ collections:
     label: "Pages"
     files:
       - file: "src/pages/index.md"
-        label: "Landing Page"
+        label: "Index Page"
         name: "index"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
@@ -39,10 +69,527 @@ collections:
           - {label: Image, name: image, widget: image}
           - {label: Heading, name: heading, widget: string}
           - {label: Subheading, name: subheading, widget: string}
-          - {label: Mainpitch, name: mainpitch, widget: object, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}]}
           - {label: Description, name: description, widget: string}
-          - {label: Intro, name: intro, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
-          - {label: Main, name: main, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Image1, name: image1, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image2, name: image2, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image3, name: image3, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}]}
+          - label: Blurbs
+            name: blurbs
+            widget: list
+            fields:
+              [
+                {label: Image, name: image, widget: image},
+                {label: Title, name: title, widget: string},
+                {label: Text, name: text, widget: text}
+              ]
+          - label: Sections
+            name: sections
+            widget: list
+            fields:
+              [
+                {label: Color, name: color, widget: string},
+                {label: Side, name: side, widget: string},
+                {label: Title, name: title, widget: string},
+                {label: Text, name: text, widget: text},
+                {label: Image, name: image, widget: image}
+              ]
+          - label: Testimonials
+            name: testimonials
+            widget: list
+            fields:
+              [
+                {label: Quote, name: quote, widget: string},
+                {label: Author, name: author, widget: string}
+              ]
+          - label: Final
+            name: final
+            widget: object
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Text, name: text, widget: text}
+              - label: Image
+                name: Image
+                widget: object
+                fields:
+                  [
+                    {label: Image, name: image, widget: image},
+                    {label: Alt, name: alt, widget: string}
+                  ]
+
+      - file: "src/pages/benefits/index.md"
+        label: "Benefits Page"
+        name: "benefits"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "benefits-page"}
+          - {label: Title, name: title, widget: string}
+          - {label: Image, name: image, widget: image}
+          - {label: Heading, name: heading, widget: string}
+          - {label: Subheading, name: subheading, widget: string}
+          - {label: Description, name: description, widget: string}
+          - label: Blurbs
+            name: blurbs
+            widget: list
+            fields:
+              [
+                {label: Image, name: image, widget: image},
+                {label: Title, name: title, widget: string},
+                {label: Text, name: text, widget: text}
+              ]
+          - label: Sections
+            name: sections
+            widget: list
+            fields:
+              [
+                {label: Color, name: color, widget: string},
+                {label: Side, name: side, widget: string},
+                {label: Title, name: title, widget: string},
+                {label: Text, name: text, widget: text},
+                {label: Image, name: image, widget: image}
+              ]
+          - label: Testimonials
+            name: testimonials
+            widget: list
+            fields:
+              [
+                {label: Quote, name: quote, widget: string},
+                {label: Author, name: author, widget: string}
+              ]
+          - label: Final
+            name: final
+            widget: object
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Text, name: text, widget: text}
+              - label: Image
+                name: Image
+                widget: object
+                fields:
+                  [
+                    {label: Image, name: image, widget: image},
+                    {label: Alt, name: alt, widget: string}
+                  ]
+
+      - file: "src/pages/brands/index.md"
+        label: "Brands Page"
+        name: "brands"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "brands-page"}
+          - {label: Title, name: title, widget: string}
+          - {label: Image, name: image, widget: image}
+          - {label: Heading, name: heading, widget: string}
+          - {label: Subheading, name: subheading, widget: string}
+          - {label: Description, name: description, widget: string}
+          - label: Blurbs
+            name: blurbs
+            widget: list
+            fields:
+              [
+                {label: Image, name: image, widget: image},
+                {label: Title, name: title, widget: string},
+                {label: Text, name: text, widget: text}
+              ]
+          - label: Sections
+            name: sections
+            widget: list
+            fields:
+              [
+                {label: Color, name: color, widget: string},
+                {label: Side, name: side, widget: string},
+                {label: Title, name: title, widget: string},
+                {label: Text, name: text, widget: text},
+                {label: Image, name: image, widget: image}
+              ]
+          - label: Testimonials
+            name: testimonials
+            widget: list
+            fields:
+              [
+                {label: Quote, name: quote, widget: string},
+                {label: Author, name: author, widget: string}
+              ]
+          - label: Final
+            name: final
+            widget: object
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Text, name: text, widget: text}
+              - label: Image
+                name: Image
+                widget: object
+                fields:
+                  [
+                    {label: Image, name: image, widget: image},
+                    {label: Alt, name: alt, widget: string}
+                  ]
+
+      - file: "src/pages/cost/index.md"
+        label: "Cost Page"
+        name: "cost"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "cost-page"}
+          - {label: Title, name: title, widget: string}
+          - {label: Image, name: image, widget: image}
+          - {label: Heading, name: heading, widget: string}
+          - {label: Subheading, name: subheading, widget: string}
+          - {label: Description, name: description, widget: string}
+          - label: Blurbs
+            name: blurbs
+            widget: list
+            fields:
+              [
+                {label: Image, name: image, widget: image},
+                {label: Title, name: title, widget: string},
+                {label: Text, name: text, widget: text}
+              ]
+          - label: Sections
+            name: sections
+            widget: list
+            fields:
+              [
+                {label: Color, name: color, widget: string},
+                {label: Side, name: side, widget: string},
+                {label: Title, name: title, widget: string},
+                {label: Text, name: text, widget: text},
+                {label: Image, name: image, widget: image}
+              ]
+          - label: Testimonials
+            name: testimonials
+            widget: list
+            fields:
+              [
+                {label: Quote, name: quote, widget: string},
+                {label: Author, name: author, widget: string}
+              ]
+          - label: Final
+            name: final
+            widget: object
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Text, name: text, widget: text}
+              - label: Image
+                name: Image
+                widget: object
+                fields:
+                  [
+                    {label: Image, name: image, widget: image},
+                    {label: Alt, name: alt, widget: string}
+                  ]
+
+      - file: "src/pages/get-started/index.md"
+        label: "Get Started Page"
+        name: "get-started"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "get-started-page"}
+          - {label: Title, name: title, widget: string}
+          - {label: Image, name: image, widget: image}
+          - {label: Heading, name: heading, widget: string}
+          - {label: Subheading, name: subheading, widget: string}
+          - {label: Description, name: description, widget: string}
+          - label: Blurbs
+            name: blurbs
+            widget: list
+            fields:
+              [
+                {label: Image, name: image, widget: image},
+                {label: Title, name: title, widget: string},
+                {label: Text, name: text, widget: text}
+              ]
+          - label: Sections
+            name: sections
+            widget: list
+            fields:
+              [
+                {label: Color, name: color, widget: string},
+                {label: Side, name: side, widget: string},
+                {label: Title, name: title, widget: string},
+                {label: Text, name: text, widget: text},
+                {label: Image, name: image, widget: image}
+              ]
+          - label: Testimonials
+            name: testimonials
+            widget: list
+            fields:
+              [
+                {label: Quote, name: quote, widget: string},
+                {label: Author, name: author, widget: string}
+              ]
+          - label: Final
+            name: final
+            widget: object
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Text, name: text, widget: text}
+              - label: Image
+                name: Image
+                widget: object
+                fields:
+                  [
+                    {label: Image, name: image, widget: image},
+                    {label: Alt, name: alt, widget: string}
+                  ]
+
+      - file: "src/pages/how-it-works/index.md"
+        label: "How It Works Page"
+        name: "how-it-works"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "how-it-works-page"}
+          - {label: Title, name: title, widget: string}
+          - {label: Image, name: image, widget: image}
+          - {label: Heading, name: heading, widget: string}
+          - {label: Subheading, name: subheading, widget: string}
+          - {label: Description, name: description, widget: string}
+          - label: Blurbs
+            name: blurbs
+            widget: list
+            fields:
+              [
+                {label: Image, name: image, widget: image},
+                {label: Title, name: title, widget: string},
+                {label: Text, name: text, widget: text}
+              ]
+          - label: Sections
+            name: sections
+            widget: list
+            fields:
+              [
+                {label: Color, name: color, widget: string},
+                {label: Side, name: side, widget: string},
+                {label: Title, name: title, widget: string},
+                {label: Text, name: text, widget: text},
+                {label: Image, name: image, widget: image}
+              ]
+          - label: Testimonials
+            name: testimonials
+            widget: list
+            fields:
+              [
+                {label: Quote, name: quote, widget: string},
+                {label: Author, name: author, widget: string}
+              ]
+          - label: Final
+            name: final
+            widget: object
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Text, name: text, widget: text}
+              - label: Image
+                name: Image
+                widget: object
+                fields:
+                  [
+                    {label: Image, name: image, widget: image},
+                    {label: Alt, name: alt, widget: string}
+                  ]
+
+      - file: "src/pages/marketing-agencies/index.md"
+        label: "Marketing Agencies Page"
+        name: "marketing-agencies"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "marketing-agencies-page"}
+          - {label: Title, name: title, widget: string}
+          - {label: Image, name: image, widget: image}
+          - {label: Heading, name: heading, widget: string}
+          - {label: Subheading, name: subheading, widget: string}
+          - {label: Description, name: description, widget: string}
+          - label: Blurbs
+            name: blurbs
+            widget: list
+            fields:
+              [
+                {label: Image, name: image, widget: image},
+                {label: Title, name: title, widget: string},
+                {label: Text, name: text, widget: text}
+              ]
+          - label: Sections
+            name: sections
+            widget: list
+            fields:
+              [
+                {label: Color, name: color, widget: string},
+                {label: Side, name: side, widget: string},
+                {label: Title, name: title, widget: string},
+                {label: Text, name: text, widget: text},
+                {label: Image, name: image, widget: image}
+              ]
+          - label: Testimonials
+            name: testimonials
+            widget: list
+            fields:
+              [
+                {label: Quote, name: quote, widget: string},
+                {label: Author, name: author, widget: string}
+              ]
+          - label: Final
+            name: final
+            widget: object
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Text, name: text, widget: text}
+              - label: Image
+                name: Image
+                widget: object
+                fields:
+                  [
+                    {label: Image, name: image, widget: image},
+                    {label: Alt, name: alt, widget: string}
+                  ]
+
+      - file: "src/pages/medium-business/index.md"
+        label: "Medium Business Page"
+        name: "medium-business"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "medium-business-page"}
+          - {label: Title, name: title, widget: string}
+          - {label: Image, name: image, widget: image}
+          - {label: Heading, name: heading, widget: string}
+          - {label: Subheading, name: subheading, widget: string}
+          - {label: Description, name: description, widget: string}
+          - label: Blurbs
+            name: blurbs
+            widget: list
+            fields:
+              [
+                {label: Image, name: image, widget: image},
+                {label: Title, name: title, widget: string},
+                {label: Text, name: text, widget: text}
+              ]
+          - label: Sections
+            name: sections
+            widget: list
+            fields:
+              [
+                {label: Color, name: color, widget: string},
+                {label: Side, name: side, widget: string},
+                {label: Title, name: title, widget: string},
+                {label: Text, name: text, widget: text},
+                {label: Image, name: image, widget: image}
+              ]
+          - label: Testimonials
+            name: testimonials
+            widget: list
+            fields:
+              [
+                {label: Quote, name: quote, widget: string},
+                {label: Author, name: author, widget: string}
+              ]
+          - label: Final
+            name: final
+            widget: object
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Text, name: text, widget: text}
+              - label: Image
+                name: Image
+                widget: object
+                fields:
+                  [
+                    {label: Image, name: image, widget: image},
+                    {label: Alt, name: alt, widget: string}
+                  ]
+
+      - file: "src/pages/small-business/index.md"
+        label: "Small Business Page"
+        name: "small-business"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "small-business-page"}
+          - {label: Title, name: title, widget: string}
+          - {label: Image, name: image, widget: image}
+          - {label: Heading, name: heading, widget: string}
+          - {label: Subheading, name: subheading, widget: string}
+          - {label: Description, name: description, widget: string}
+          - label: Blurbs
+            name: blurbs
+            widget: list
+            fields:
+              [
+                {label: Image, name: image, widget: image},
+                {label: Title, name: title, widget: string},
+                {label: Text, name: text, widget: text}
+              ]
+          - label: Sections
+            name: sections
+            widget: list
+            fields:
+              [
+                {label: Color, name: color, widget: string},
+                {label: Side, name: side, widget: string},
+                {label: Title, name: title, widget: string},
+                {label: Text, name: text, widget: text},
+                {label: Image, name: image, widget: image}
+              ]
+          - label: Testimonials
+            name: testimonials
+            widget: list
+            fields:
+              [
+                {label: Quote, name: quote, widget: string},
+                {label: Author, name: author, widget: string}
+              ]
+          - label: Final
+            name: final
+            widget: object
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Text, name: text, widget: text}
+              - label: Image
+                name: Image
+                widget: object
+                fields:
+                  [
+                    {label: Image, name: image, widget: image},
+                    {label: Alt, name: alt, widget: string}
+                  ]
+
+      - file: "src/pages/white-label/index.md"
+        label: "White-Label Page"
+        name: "white-label"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "white-label-page"}
+          - {label: Title, name: title, widget: string}
+          - {label: Image, name: image, widget: image}
+          - {label: Heading, name: heading, widget: string}
+          - {label: Subheading, name: subheading, widget: string}
+          - {label: Description, name: description, widget: string}
+          - label: Blurbs
+            name: blurbs
+            widget: list
+            fields:
+              [
+                {label: Image, name: image, widget: image},
+                {label: Title, name: title, widget: string},
+                {label: Text, name: text, widget: text}
+              ]
+          - label: Sections
+            name: sections
+            widget: list
+            fields:
+              [
+                {label: Color, name: color, widget: string},
+                {label: Side, name: side, widget: string},
+                {label: Title, name: title, widget: string},
+                {label: Text, name: text, widget: text},
+                {label: Image, name: image, widget: image}
+              ]
+          - label: Testimonials
+            name: testimonials
+            widget: list
+            fields:
+              [
+                {label: Quote, name: quote, widget: string},
+                {label: Author, name: author, widget: string}
+              ]
+          - label: Final
+            name: final
+            widget: object
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Text, name: text, widget: text}
+              - label: Image
+                name: Image
+                widget: object
+                fields:
+                  [
+                    {label: Image, name: image, widget: image},
+                    {label: Alt, name: alt, widget: string}
+                  ]
+
       - file: "src/pages/about/index.md"
         label: "About"
         name: "about"
@@ -50,6 +597,29 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
+
+      - file: "src/pages/mission/index.md"
+        label: "Mission"
+        name: "mission"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "mission-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/terms/index.md"
+        label: "Terms"
+        name: "terms"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "terms-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/privacy/index.md"
+        label: "Privacy"
+        name: "privacy"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "privacy-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+
       - file: "src/pages/products/index.md"
         label: "Products Page"
         name: "products"
@@ -64,3 +634,28 @@ collections:
           - {label: Testimonials, name: testimonials, widget: list, fields: [{label: Quote, name: quote, widget: string}, {label: Author, name: author, widget: string}]}
           - {label: Full_image, name: full_image, widget: image}
           - {label: Pricing, name: pricing, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: string}, {label: Plans, name: plans, widget: list, fields: [{label: Plan, name: plan, widget: string}, {label: Price, name: price, widget: string}, {label: Description, name: description, widget: string}, {label: Items, name: items, widget: list}]}]}
+
+      - file: "src/pages/faq/index.md"
+        label: "FAQ"
+        name: "faq"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "faq-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: Heading, name: heading, widget: string}
+          - {label: Description, name: description, widget: string}
+          - {label: Image, name: image, widget: image}
+          - {label: FAQ, name: faq, widget: list, fields: [{label: Question, name: question, widget: string}, {label: Answer, name: answer, widget: text}]}
+          - label: Final
+            name: final
+            widget: object
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Text, name: text, widget: text}
+              - label: Image
+                name: Image
+                widget: object
+                fields:
+                  [
+                    {label: Image, name: image, widget: image},
+                    {label: Alt, name: alt, widget: string}
+                  ]

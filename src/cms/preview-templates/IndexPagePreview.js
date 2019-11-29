@@ -6,15 +6,26 @@ const IndexPagePreview = ({ entry, getAsset }) => {
 	const data = entry.getIn([ 'data' ]).toJS();
 
 	if (data) {
+		const { image, heading, subheading, blurbs, sections, final } = data;
 		return (
+			// <IndexPageTemplate
+			// 	title={data.title}
+			// 	image={data.image}
+			// 	heading={data.heading}
+			// 	subheading={data.subheading}
+			// 	description={data.description}
+			// 	blurbs={data.blurbs}
+			// 	sections={data.sections}
+			// 	final={data.final}
+			// />
+
 			<IndexPageTemplate
-				image={data.image}
-				title={data.title}
-				heading={data.heading}
-				subheading={data.subheading}
-				description={data.description}
-				intro={data.intro || { blurbs: [] }}
-				mainpitch={data.mainpitch || {}}
+				image={image}
+				heading={heading}
+				subheading={subheading}
+				blurbs={blurbs}
+				sections={sections}
+				final={final}
 			/>
 		);
 	} else {

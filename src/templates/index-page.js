@@ -1,5 +1,5 @@
 import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
 
 // import Sky from 'react-sky';
 // import facebook from '../img/social/facebook.svg';
@@ -17,19 +17,23 @@ import Hero from '../components/Hero';
 import Blurbs from '../components/Blurbs';
 import ContentSection from '../components/ContentSection';
 import FinalSection from '../components/FinalSection';
-import BlogSection from '../components/BlogSection';
+// import BlogSection from '../components/BlogSection';
 import CTA from '../components/CTA';
 
-export default function IndexPage() {
-	const data = useStaticQuery(INDEX_PAGE_QUERY);
-
+export default function IndexPage({ data }) {
 	const { markdownRemark: page } = data;
-	const { frontmatter } = page;
-	// const { image, heading, subheading, sections, blurbs, final } = page.frontmatter;
+	const { image, heading, subheading, sections, blurbs, final } = page.frontmatter;
 
 	return (
 		<Layout>
-			<IndexPageTemplate {...frontmatter} />
+			<IndexPageTemplate
+				image={image}
+				heading={heading}
+				subheading={subheading}
+				blurbs={blurbs}
+				sections={sections}
+				final={final}
+			/>
 		</Layout>
 	);
 }
@@ -53,16 +57,15 @@ export const IndexPageTemplate = ({ image, heading, subheading, sections, blurbs
 				size={'20px'}
 			/> */}
 		<Hero size="medium" title={heading} subtitle={subheading} image={image} signup />
-
-		<Blurbs box gridItems={blurbs} />
-		<ContentSection sections={sections} box />
+		<Blurbs box items={blurbs} />
+		<ContentSection items={sections} box />
 		<FinalSection content={final} />
-		<BlogSection />
+		{/* <BlogSection /> */}
 		<CTA />
 	</div>
 );
 
-const INDEX_PAGE_QUERY = graphql`
+export const indexPageQuery = graphql`
 	query IndexPage {
 		markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
 			frontmatter {
@@ -103,6 +106,13 @@ const INDEX_PAGE_QUERY = graphql`
 				final {
 					title
 					text
+					# image {
+					# 	childImageSharp {
+					# 		fluid(maxWidth: 240, quality: 64) {
+					# 			...GatsbyImageSharpFluid
+					# 		}
+					# 	}
+					# }
 				}
 			}
 		}

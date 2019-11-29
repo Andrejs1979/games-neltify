@@ -25,7 +25,9 @@ sections:
     color: white
     side: left
 final:
-    image: /img/example.jpg
+    image:
+      alt: A close-up of a paper filter filled with ground coffee
+      image: /img/coffee.png
     title: Join the marketing revolution
     text: >-
       Mark is a revolutionary way to promote your brand on Instagram and other

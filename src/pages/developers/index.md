@@ -1,6 +1,6 @@
 ---
-templateKey: white-label-page
-title: White-Label Solutions
+templateKey: developers-page
+title: Developers
 image: /img/example.jpg
 heading: You are in total control of your Mark spending
 description: 'Never pay more than your monthly budget cap, and you can stop any time.'
