@@ -1,11 +1,9 @@
 ---
 templateKey: index-page
-title: Your customers take selfies all the time
+title: Become your own merchant provider. Sell payment processing.
 image: /img/coffee.png
-heading: Your customers take selfies all the time
-subheading: >-
-  Empower them to promote your brand on Instagram, Facebook, Twitter, Pinterest,
-  Snapchat or YouTube, from just $1 per post.
+heading: Become your own merchant provider. Sell payment processing.
+subheading: White-label payment platform for business.
 description: >-
   Real people posting about your business on social meadia, from just $1 per
   post!
