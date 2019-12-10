@@ -1,9 +1,9 @@
 ---
 templateKey: index-page
-title: Become your own merchant provider. Sell payment processing.
+title: Mark - Promote your brand on Instagram at scale
 image: /img/example.jpg
-heading: Become your own merchant provider. Sell payment processing.
-subheading: White-label payment platform for business.
+heading: You customers take selfies
+subheading: Let them promote your brand
 description: >-
   Real people posting about your business on social meadia, from just $1 per
   post!
@@ -31,10 +31,11 @@ sections:
     title: Connect with your customers at scale
 final:
   Image:
-    alt: Coffee
+    alt: Promoters
     image: /img/collage.jpeg
   text: >-
     Mark is a revolutionary way to promote your brand on Instagram and other
     social media platforms.
   title: Join the marketing revolution
 ---
+
