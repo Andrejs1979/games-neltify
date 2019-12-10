@@ -1,8 +1,8 @@
 module.exports = {
 	siteMetadata: {
-		title: 'Gatsby + Netlify CMS Starter',
-		description:
-			'This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.'
+		siteUrl: 'https://mark.camera',
+		title: 'Promote your business on Instagram at scale',
+		description: 'Promote your business on Instagram at scale'
 	},
 	plugins: [
 		'gatsby-plugin-react-helmet',
@@ -77,6 +77,63 @@ module.exports = {
 				modulePath: `${__dirname}/src/cms/cms.js`
 			}
 		},
+		{
+			resolve: `gatsby-plugin-google-analytics`,
+			options: {
+				trackingId: 'UA-96016389-9',
+				// Defines where to place the tracking script - `true` in the head and `false` in the body
+				head: false,
+				// Setting this parameter is optional
+				anonymize: false,
+				// Setting this parameter is also optional
+				respectDNT: false,
+				// Avoids sending pageview hits from custom paths
+				exclude: [ '/preview/**', '/admin/**' ],
+				// Delays sending pageview hits on route update (in milliseconds)
+				pageTransitionDelay: 0
+			}
+		},
+		{
+			resolve: `gatsby-plugin-segment-js`,
+			options: {
+				// your segment write key for your production environment
+				// when process.env.NODE_ENV === 'production'
+				// required; non-empty string
+				prodKey: `9IfYVK6NS8ZnCmQJCSTutHLheTBtrKZY`,
+
+				// if you have a development env for your segment account, paste that key here
+				// when process.env.NODE_ENV === 'development'
+				// optional; non-empty string
+				devKey: `SEGMENT_DEV_WRITE_KEY`,
+
+				// boolean (defaults to false) on whether you want
+				// to include analytics.page() automatically
+				// if false, see below on how to track pageviews manually
+				trackPage: true
+			}
+		},
+		{
+			resolve: `gatsby-plugin-facebook-pixel`,
+			options: {
+				pixelId: '503703380484900'
+			}
+		},
+		{
+			resolve: `gatsby-plugin-linkedin-insight`,
+			options: {
+				partnerId: '1502962',
+				includeInDevelopment: false
+			}
+		},
+
+		{
+			resolve: `gatsby-plugin-intercom`,
+			options: {
+				appId: 'f1en2chr'
+			}
+		},
+		'gatsby-plugin-robots-txt',
+		'gatsby-plugin-sitemap',
 		{
 			resolve: 'gatsby-plugin-purgecss', // purges all unused/unreferenced css rules
 			options: {

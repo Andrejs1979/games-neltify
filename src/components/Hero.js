@@ -16,10 +16,7 @@ const Hero = ({ size, title, subtitle, image, signup, cta, link }) => (
 								<div className="is-hidden-mobile">
 									<div className="field is-grouped">
 										<p className="control">
-											<a
-												href="https://business.cashmark.app/"
-												className="button is-primary is-large"
-											>
+											<a href="https://app.mark.camera" className="button is-primary is-large">
 												<strong>Sign up & get $10</strong>
 											</a>
 										</p>

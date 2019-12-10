@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: Become your own merchant provider. Sell payment processing.
-image: /img/coffee.png
+image: /img/example.jpg
 heading: Become your own merchant provider. Sell payment processing.
 subheading: White-label payment platform for business.
 description: >-
@@ -23,7 +23,7 @@ blurbs:
     image: /img/pixel.png
 sections:
   - color: white
-    image: /img/coffee.png
+    image: /img/map-screen.jpeg
     side: left
     text: >-
       Mark is a cutting-edge tool to run massive social media campaings and
@@ -32,10 +32,9 @@ sections:
 final:
   Image:
     alt: Coffee
-    image: /img/blog-index.jpg
+    image: /img/collage.jpeg
   text: >-
     Mark is a revolutionary way to promote your brand on Instagram and other
     social media platforms.
   title: Join the marketing revolution
 ---
-

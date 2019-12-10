@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'gatsby';
+// import { Link } from 'gatsby';
 import { Columns, Column, Container, Footer, Level, Left, Item, Right, Menu, MenuItem } from '../components/bulma';
 
 import facebook from '../img/social/facebook.svg';
@@ -86,7 +86,7 @@ export default () => {
 						</p>
 					</Left>
 					<Item>
-						<div id="navMenu" className={`navbar-menu`}>
+						{/* <div id="navMenu" className={`navbar-menu`}>
 							<div className="navbar-end has-text-centered has-text-weight-semibold">
 								<Link className="navbar-item" to="/terms">
 									Terms of service
@@ -102,7 +102,7 @@ export default () => {
 									FAQ
 								</Link>
 							</div>
-						</div>
+						</div> */}
 					</Item>
 					{/* <Link to="/privacy">Privacy</Link>
 							<Link to="/contact">Contact</Link>
