@@ -12250,6 +12250,13 @@ react-side-effect@^1.1.0:
   dependencies:
     shallowequal "^1.0.1"
 
+react-sky@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/react-sky/-/react-sky-1.1.0.tgz#0774428d09b3fd3be9eb909915ff64b8a415d82d"
+  integrity sha512-ySaTRgfz2rnKnYnNOMxigfZVsIjV5QNUI+2ePuAszi07mOlhj3/GHZwOGoNBNCxCjjAjR0TXb78C5nalWTbkiQ==
+  dependencies:
+    webpack-dev-server "^3.1.10"
+
 react-sortable-hoc@^1.0.0:
   version "1.10.1"
   resolved "https://registry.yarnpkg.com/react-sortable-hoc/-/react-sortable-hoc-1.10.1.tgz#c352f26263acbcff9cf266bc755653a56c983a38"
@@ -15433,7 +15440,7 @@ webpack-dev-middleware@^3.7.2:
     range-parser "^1.2.1"
     webpack-log "^2.0.0"
 
-webpack-dev-server@^3.9.0:
+webpack-dev-server@^3.1.10, webpack-dev-server@^3.9.0:
   version "3.9.0"
   resolved "https://registry.yarnpkg.com/webpack-dev-server/-/webpack-dev-server-3.9.0.tgz#27c3b5d0f6b6677c4304465ac817623c8b27b89c"
   integrity sha512-E6uQ4kRrTX9URN9s/lIbqTAztwEPdvzVrcmHE8EQ9YnuT9J8Es5Wrd8n9BKg1a0oZ5EgEke/EQFgUsp18dSTBw==

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import logo from '../img/mark-logo.svg';
+import { Logo } from './brand';
 
 const Navbar = class extends React.Component {
 	state = {
@@ -35,7 +35,15 @@ const Navbar = class extends React.Component {
 					<div className="container">
 						<div className="navbar-brand">
 							<Link to="/" className="navbar-item" title="Logo">
-								<img src={logo} alt="Mark" style={{ width: '150px' }} />
+								<div
+									style={{
+										// height: '250px'
+										width: '100px'
+									}}
+									className="size"
+								>
+									<Logo />
+								</div>
 							</Link>
 
 							<div
@@ -70,10 +78,10 @@ const Navbar = class extends React.Component {
 							<div className="navbar-end">
 								<div className="navbar-item">
 									<div className="buttons is-centered">
-										<a href="https://business.cashmark.app/" className="button is-primary">
+										<a href="https://app.mark.camera" className="button is-primary">
 											<strong>GET STARTED</strong>
 										</a>
-										<a href="https://business.cashmark.app/" className="button is-light">
+										<a href="https://app.mark.camera" className="button is-light">
 											Sign in
 										</a>
 									</div>
