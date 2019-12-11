@@ -1,6 +1,6 @@
 ---
 templateKey: industry-page
-title: Mark - the ideal influencer marketing solution for the hospitality industry
+title: Hospitality
 image: /img/beach-selfie.jpeg
 heading: Promote your hotel with guests selfies
 subheading: >-
