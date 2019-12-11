@@ -121,7 +121,7 @@ const Navbar = class extends React.Component {
 								<div className="field is-grouped">
 									<p className="control">
 										<a
-											href="https://business.cashmark.app/"
+											href="https://app.mark.camera"
 											className="button is-medium is-white is-outlined"
 										>
 											<strong>GET STARTED</strong>

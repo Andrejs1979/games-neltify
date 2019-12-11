@@ -43,8 +43,8 @@ collections:
       - {label: "Tags", name: "tags", widget: "list"}
 
   - name: "digest"
-    label: "Digest"
-    folder: "src/pages/digest"
+    label: "Influencer Marketing"
+    folder: "src/pages/influencer-marketing"
     create: true
     slug: "{{slug}}"
     fields:
@@ -56,6 +56,61 @@ collections:
       - {label: "Featured Image", name: "featuredimage", widget: image}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
+
+  - name: "solutions"
+    label: "Solutions"
+    folder: "src/pages/solutions"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "marketing-agencies-page"}
+      - {label: Title, name: title, widget: string}
+      - {label: Image, name: image, widget: image}
+      - {label: Heading, name: heading, widget: string}
+      - {label: Subheading, name: subheading, widget: string}
+      - {label: Description, name: description, widget: string}
+      - label: Blurbs
+        name: blurbs
+        widget: list
+        fields:
+          [
+            {label: Image, name: image, widget: image},
+            {label: Title, name: title, widget: string},
+            {label: Text, name: text, widget: text}
+          ]
+      - label: Sections
+        name: sections
+        widget: list
+        fields:
+          [
+            {label: Color, name: color, widget: string},
+            {label: Side, name: side, widget: string},
+            {label: Title, name: title, widget: string},
+            {label: Text, name: text, widget: text},
+            {label: Image, name: image, widget: image}
+          ]
+      - label: Testimonials
+        name: testimonials
+        widget: list
+        fields:
+          [
+            {label: Quote, name: quote, widget: string},
+            {label: Author, name: author, widget: string}
+          ]
+      - label: Final
+        name: final
+        widget: object
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Text, name: text, widget: text}
+          - label: Image
+            name: Image
+            widget: object
+            fields:
+              [
+                {label: Image, name: image, widget: image},
+                {label: Alt, name: alt, widget: string}
+              ]
 
   - name: "industry"
     label: "Industry"

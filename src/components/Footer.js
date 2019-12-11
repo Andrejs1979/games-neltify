@@ -17,7 +17,7 @@ export default () => {
 			<Container>
 				<Columns>
 					<Column>
-						<Menu label="Why Mark">
+						<Menu label="Platform">
 							<MenuItem to="/how-it-works">How it works</MenuItem>
 							<MenuItem to="/benefits">Benefits</MenuItem>
 							<MenuItem to="/cost">Cost</MenuItem>
@@ -34,10 +34,23 @@ export default () => {
 						</Menu>
 					</Column>
 					<Column>
+						<Menu label="by Industry">
+							<MenuItem to="/industry/hospitality">Hospitality</MenuItem>
+							<MenuItem to="/industry/retail">Retail</MenuItem>
+							<MenuItem to="/industry/sport">Sport</MenuItem>
+							<MenuItem to="/industry/entertainment">Entertainment</MenuItem>
+							{/* <MenuItem to="/medium-business">Medium Business</MenuItem>
+							<MenuItem to="/brands">Global Brands</MenuItem>
+							<MenuItem to="/marketing-agencies">Marketing Agencies</MenuItem>
+							<MenuItem to="/white-label">White-label</MenuItem> */}
+						</Menu>
+					</Column>
+					<Column>
 						<Menu label="Resources">
-							<MenuItem to="/developers">Developers</MenuItem>
+							<MenuItem to="/blog">Blog</MenuItem>
+							<MenuItem to="/faq">FAQ</MenuItem>
+							<MenuItem to="/influencer-marketing">Influencer Marketing</MenuItem>
 							<MenuItem to="/apps">Download Apps</MenuItem>
-							<MenuItem to="/digest">Marketing Digest</MenuItem>
 							<li>
 								<a title="Help" href="https://help.cashmark.app" className="navbar-item">
 									Help
@@ -47,10 +60,10 @@ export default () => {
 					</Column>
 					<Column>
 						<Menu label="Company">
-							<MenuItem to="/news">News</MenuItem>
 							<MenuItem to="/about">About</MenuItem>
 							<MenuItem to="/mission">Mission</MenuItem>
-							<MenuItem to="/blog">Blog</MenuItem>
+							<MenuItem to="/news">News</MenuItem>
+							<MenuItem to="/contact">Contact</MenuItem>
 						</Menu>
 					</Column>
 				</Columns>
