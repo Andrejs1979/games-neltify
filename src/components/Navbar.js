@@ -99,10 +99,7 @@ const Navbar = class extends React.Component {
 							<span className="navbar-item is-hidden-mobile">
 								<div className="field is-grouped">
 									<p className="control">
-										<a
-											href="https://business.cashmark.app/"
-											className="button is-white is-outlined"
-										>
+										<a href="https://app.mark.camera" className="button is-white is-outlined">
 											<strong>GET $10 IN ADS FREE</strong>
 										</a>
 										{/* <p>No credit card required</p> */}
