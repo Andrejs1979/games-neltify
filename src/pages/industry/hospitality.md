@@ -1,37 +1,45 @@
 ---
 templateKey: industry-page
-title: Hospitality
-image: /img/example.jpg
-heading: Mark is your new and unique income stream
+title: Mark - the ideal influencer marketing solution for the hospitality industry
+image: /img/beach-selfie.jpeg
+heading: Promote your hotel with your guests selfies
+subheading: >-
+  A small hotel owner a Panama tropical island once got an idea: why my guests
+  take selfies and I am not profiting?
 description: >-
   Provide your customers with incredible value with almost zero-effort. Get
   generous commissions.
-subheading: Let them promote your brand on Instagram.
 blurbs:
-  - image: /img/example.jpg
+  - text: >
+      Place your logo and marketing message on thousands of selfies posted by
+      real people.
     title: Promote your brand and key offers
-    text: >
-     Place your logo and marketing message on thousands of selfies posted by real people.
-  - image: /img/example.jpg
+    image: /img/pool-selfie.jpeg
+  - text: >
+      Draw more people to your outlets. Increase loyalty of existing customers
+      and get the new ones.
     title: Increase store traffic and customer loyalty
-    text: >
-      Draw more people to your outlets. Increase loyalty of existing customers and get the new ones.
-  - image: /img/example.jpg
-    title: Amplify your social media footprint
-    text: >
-      Place your dflogo and marketing message on thousands of selfies posted by real people.
-sections:
-  - title: Connect with your customers at scale
-    text: Mark is a cutting-edge tool to run massive social media campaings and empower your customers to promote your brand.
     image: /img/example.jpg
-    color: white
+  - text: >
+      Place your dflogo and marketing message on thousands of selfies posted by
+      real people.
+    title: Amplify your social media footprint
+    image: /img/example.jpg
+sections:
+  - color: white
+    image: /img/example.jpg
     side: left
-final:
-    image:
-      alt: A close-up of a paper filter filled with ground coffee
-      image: /img/coffee.png
-    title: Join the marketing revolution
     text: >-
-      Mark is a revolutionary way to promote your brand on Instagram and other
-      social media platforms.
+      Mark is a cutting-edge tool to run massive social media campaings and
+      empower your customers to promote your brand.
+    title: Connect with your customers at scale
+final:
+  Image:
+    alt: Poolside selfie
+    image: /img/pool-selfie.jpeg
+  text: >-
+    Mark is a revolutionary way to promote your brand on Instagram and other
+    social media platforms.
+  title: Join the marketing revolution
 ---
+
