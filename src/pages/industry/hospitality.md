@@ -27,12 +27,17 @@ blurbs:
     image: /img/example.jpg
 sections:
   - color: white
-    image: /img/example.jpg
+    image: /img/pool-selfie.jpeg
     side: left
     text: >-
       Mark is a cutting-edge tool to run massive social media campaings and
       empower your customers to promote your brand.
     title: Connect with your customers at scale
+  - color: white
+    image: /img/lounge-boy.jpg
+    side: right
+    text: Message happiness back to friends at home
+    title: Message happiness back to friends at home
 final:
   Image:
     alt: Poolside selfie
