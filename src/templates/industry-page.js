@@ -9,7 +9,7 @@ import FinalSection from '../components/FinalSection';
 // import BlogSection from '../components/BlogSection';
 import CTA from '../components/CTA';
 
-export default function MarketingAgenciesPage({ data }) {
+export default function IndustryPage({ data }) {
 	const { markdownRemark: page } = data;
 	const { image, heading, subheading, sections, blurbs, final } = page.frontmatter;
 
@@ -32,7 +32,7 @@ export const IndustryPageTemplate = ({ image, heading, subheading, sections, blu
 		<Hero size="medium" title={heading} subtitle={subheading} image={image} signup />
 		<Blurbs box items={blurbs} />
 		<ContentSection items={sections} box />
-		<FinalSection content={final} />
+		{/* <FinalSection content={final} /> */}
 		{/* <BlogSection /> */}
 		<CTA />
 	</div>
@@ -79,6 +79,16 @@ export const pageQuery = graphql`
 				final {
 					title
 					text
+					Image {
+						alt
+						image {
+							childImageSharp {
+								fluid(maxWidth: 400, quality: 64) {
+									...GatsbyImageSharpFluid
+								}
+							}
+						}
+					}
 				}
 			}
 		}

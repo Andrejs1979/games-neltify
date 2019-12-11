@@ -2,8 +2,7 @@ import React from 'react';
 // import PreviewCompatibleImage from './PreviewCompatibleImage';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import { Box } from '../components/bulma';
-import { Column, Columns, Section } from '../components/bulma';
+import { Box, Column, Columns, Section } from '../components/bulma';
 
 export default function Blurbs({ box, items }) {
 	return (
