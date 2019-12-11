@@ -1,19 +1,31 @@
 ---
-templateKey: 'about-page'
-path: /about
-title: About our values
+templateKey: about-page
+title: About Mark
 ---
-### Shade-grown coffee
-Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.
+A small hotel owner on a tropical island in Panama once came up with an idea. His guests have been taking selfies on the beach and beautiful grounds all the time, but nobody knew it was his hotel. He wanted to change that. So he reached out to his techie friend in San Francisco.
 
-### Single origin
-Single-origin coffee is coffee grown within a single known geographic origin. Sometimes, this is a single farm or a specific collection of beans from a single country. The name of the coffee is then usually the place it was grown to whatever degree available.
+That's how Mark was born.
 
-### Sustainable farming
-Sustainable agriculture is farming in sustainable ways based on an understanding of ecosystem services, the study of relationships between organisms and their environment. What grows where and how it is grown are a matter of choice and careful consideration for nature and communities.
+### Partner with real people, your customers
 
-### Direct sourcing
-Direct trade is a form of sourcing practiced by some coffee roasters. Advocates of direct trade practices promote direct communication and price negotiation between buyer and farmer, along with systems that encourage and incentivize quality.
+With Mark, you promote your business via your own real customers. It's a great way to get to know your customers better, build trust and loyalty and integrate into communities.
 
-### Reinvest profits
-We want to truly empower the communities that bring amazing coffee to you. That’s why we reinvest 20% of our profits into farms, local businesses and schools everywhere our coffee is grown. You can see the communities grow and learn more about coffee farming on our blog.
+### Business-friendly
+
+Mark is extremely easy to use. You just chose your desired locations, upload your logo and launch your first promo campaign. After that, it just works by itself and doesn't occupy any of your time.
+
+### Cost-effective
+
+You don't need to have a huge marketing budget to take advantage of the latest marketing trends and technology. Each promo post will cost you just a few cents and it's up to you to decide how much you want to pay.
+
+### Ethical
+
+People choose to promote your brand because they feel connected with it and care about it. The won't be posing on the photos for something they don't like, in front of all their friends. On the other hand, we don't force our ads on anybody and we don't exploit people data for commercial gain. It's  a mutually beneficial partnership between Mark platform, brands and consumers.
+
+### Safe
+
+No fake Instagram followers or posts. It's all real people and your marketing investment is well protected.
+
+### Looking forward
+
+We recognize that Mark is just at the start of a long road and we as a team work hard to deliver the best experience for business-owners and their customers. Talk to us and tell us what your think!
