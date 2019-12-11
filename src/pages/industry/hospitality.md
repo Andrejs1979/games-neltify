@@ -2,10 +2,10 @@
 templateKey: industry-page
 title: Mark - the ideal influencer marketing solution for the hospitality industry
 image: /img/beach-selfie.jpeg
-heading: Promote your hotel with your guests selfies
+heading: Promote your hotel with guests selfies
 subheading: >-
-  A small hotel owner a Panama tropical island once got an idea: why my guests
-  take selfies and I am not profiting?
+  A small hotel owner on a Panama tropical island once got an idea: why my
+  guests take selfies and I am not profiting?
 description: >-
   Provide your customers with incredible value with almost zero-effort. Get
   generous commissions.
