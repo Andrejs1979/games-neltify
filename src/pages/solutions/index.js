@@ -30,7 +30,7 @@ const SOLUTIONS_QUERY = graphql`
 	query Solutions {
 		allMarkdownRemark(
 			sort: { order: DESC, fields: [frontmatter___date] }
-			filter: { frontmatter: { templateKey: { eq: "solutions" } } }
+			filter: { frontmatter: { templateKey: { eq: "solutions-page" } } }
 		) {
 			edges {
 				node {
