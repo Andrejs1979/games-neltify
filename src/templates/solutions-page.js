@@ -9,13 +9,13 @@ import FinalSection from '../components/FinalSection';
 // import BlogSection from '../components/BlogSection';
 import CTA from '../components/CTA';
 
-export default function SolutionPage({ data }) {
+export default function SolutionsPage({ data }) {
 	const { markdownRemark: page } = data;
 	const { image, heading, subheading, sections, blurbs, final } = page.frontmatter;
 
 	return (
 		<Layout>
-			<SolutionPageTemplate
+			<SolutionsPageTemplate
 				image={image}
 				heading={heading}
 				subheading={subheading}
@@ -27,7 +27,7 @@ export default function SolutionPage({ data }) {
 	);
 }
 
-export const SolutionPageTemplate = ({ image, heading, subheading, sections, blurbs, final }) => (
+export const SolutionsPageTemplate = ({ image, heading, subheading, sections, blurbs, final }) => (
 	<div>
 		<Hero size="medium" title={heading} subtitle={subheading} image={image} signup />
 		<Blurbs box items={blurbs} />
@@ -40,7 +40,7 @@ export const SolutionPageTemplate = ({ image, heading, subheading, sections, blu
 
 export const pageQuery = graphql`
 	query SolutionPageByID {
-		markdownRemark(frontmatter: { templateKey: { eq: "solution-page" } }) {
+		markdownRemark(frontmatter: { templateKey: { eq: "solutions-page" } }) {
 			frontmatter {
 				title
 				heading
