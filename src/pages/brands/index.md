@@ -22,7 +22,7 @@ blurbs:
       Place your dflogo and marketing message on thousands of selfies posted by real people.
 sections:
   - title: Connect with your customers at scale
-    text: Mark is a cutting-edge tool to run massive social media campaings and empower your customers to promote your brand.
+    text: Unmerchant is a cutting-edge tool to run massive social media campaings and empower your customers to promote your brand.
     image: /img/example.jpg
     color: white
     side: left
@@ -32,6 +32,6 @@ final:
       image: /img/coffee.png
     title: Join the marketing revolution
     text: >-
-      Mark is a revolutionary way to promote your brand on Instagram and other
+      Unmerchant is a revolutionary way to promote your brand on Instagram and other
       social media platforms.
 ---

@@ -2,13 +2,13 @@ import React from 'react';
 // import { Link } from 'gatsby';
 import { Columns, Column, Container, Footer, Level, Left, Item, Right, Menu, MenuItem } from '../components/bulma';
 
-import facebook from '../img/social/facebook.svg';
-import instagram from '../img/social/instagram.svg';
-import twitter from '../img/social/twitter.svg';
-import linkedin from '../img/social/linkedin.svg';
+// import facebook from '../img/social/facebook.svg';
+// import instagram from '../img/social/instagram.svg';
+// import twitter from '../img/social/twitter.svg';
+// import linkedin from '../img/social/linkedin.svg';
 
-import appStore from '../img/AppStore.svg';
-import googlePlay from '../img/GooglePlay.svg';
+// import appStore from '../img/AppStore.svg';
+// import googlePlay from '../img/GooglePlay.svg';
 import finhub from '../img/finhub-logo.svg';
 
 export default () => {
@@ -33,18 +33,7 @@ export default () => {
 							<MenuItem to="/white-label">White-label</MenuItem>
 						</Menu>
 					</Column>
-					<Column>
-						<Menu label="by Industry">
-							<MenuItem to="/industry/hospitality">Hospitality</MenuItem>
-							<MenuItem to="/industry/retail">Retail</MenuItem>
-							<MenuItem to="/industry/sport">Sport</MenuItem>
-							<MenuItem to="/industry/entertainment">Entertainment</MenuItem>
-							{/* <MenuItem to="/medium-business">Medium Business</MenuItem>
-							<MenuItem to="/brands">Global Brands</MenuItem>
-							<MenuItem to="/marketing-agencies">Marketing Agencies</MenuItem>
-							<MenuItem to="/white-label">White-label</MenuItem> */}
-						</Menu>
-					</Column>
+
 					<Column>
 						<Menu label="Resources">
 							<MenuItem to="/blog">Blog</MenuItem>
@@ -69,7 +58,7 @@ export default () => {
 				</Columns>
 				<br />
 
-				<Level>
+				{/* <Level>
 					<Left>
 						<p>
 							<a title="facebook" href="https://www.facebook.com/cashmarkapp">
@@ -99,7 +88,7 @@ export default () => {
 						</p>
 					</Left>
 					<Item>
-						{/* <div id="navMenu" className={`navbar-menu`}>
+						<div id="navMenu" className={`navbar-menu`}>
 							<div className="navbar-end has-text-centered has-text-weight-semibold">
 								<Link className="navbar-item" to="/terms">
 									Terms of service
@@ -115,12 +104,12 @@ export default () => {
 									FAQ
 								</Link>
 							</div>
-						</div> */}
+						</div>
 					</Item>
-					{/* <Link to="/privacy">Privacy</Link>
+					<Link to="/privacy">Privacy</Link>
 							<Link to="/contact">Contact</Link>
 						</div>
-					</Item> */}
+					</Item>
 					<Item />
 					<Item />
 
@@ -137,7 +126,7 @@ export default () => {
 							</a>
 						</p>
 					</Right>
-				</Level>
+				</Level> */}
 				<br />
 				<hr />
 				<br />
@@ -145,7 +134,7 @@ export default () => {
 				<Level>
 					<Left>
 						<p className="has-text-left is-size-7">
-							<strong>© 2019 Mark</strong>. A{' '}
+							<strong>© 2019 Unmerchant</strong>. A{' '}
 							<a title="FinHub Global Ventures" href="https://finhub.vc/" target="_blanc">
 								FinHub Global Ventures
 							</a>{' '}

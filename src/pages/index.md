@@ -1,6 +1,6 @@
 ---
 templateKey: index-page
-title: Mark - Promote your brand on Instagram at scale
+title: Unmerchant - Promote your brand on Instagram at scale
 image: /img/example.jpg
 heading: You customers take selfies
 subheading: Let them promote your brand
@@ -26,7 +26,7 @@ sections:
     image: /img/map-screen.jpeg
     side: left
     text: >-
-      Mark is a cutting-edge tool to run massive social media campaings and
+      Unmerchant is a cutting-edge tool to run massive social media campaings and
       empower your customers to promote your brand.
     title: Connect with your customers at scale
 final:
@@ -34,8 +34,7 @@ final:
     alt: Promoters
     image: /img/collage.jpeg
   text: >-
-    Mark is a revolutionary way to promote your brand on Instagram and other
+    Unmerchant is a revolutionary way to promote your brand on Instagram and other
     social media platforms.
   title: Join the marketing revolution
 ---
-

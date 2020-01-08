@@ -2,7 +2,7 @@
 templateKey: benefits-page
 title: Benefits for brands
 image: /img/example.jpg
-heading: You are in total control of your Mark spending
+heading: You are in total control of your Unmerchant spending
 description: 'Never pay more than your monthly budget cap, and you can stop any time.'
 subheading: Let them promote your brand on Instagram.
 blurbs:
@@ -20,7 +20,7 @@ blurbs:
       Place your dflogo and marketing message on thousands of selfies posted by real people.
 sections:
   - title: Connect with your customers at scale
-    text: Mark is a cutting-edge tool to run massive social media campaings and empower your customers to promote your brand.
+    text: Unmerchant is a cutting-edge tool to run massive social media campaings and empower your customers to promote your brand.
     image: /img/example.jpg
     color: white
     side: left
@@ -30,6 +30,6 @@ final:
       image: /img/coffee.png
     title: Join the marketing revolution
     text: >-
-      Mark is a revolutionary way to promote your brand on Instagram and other
+      Unmerchant is a revolutionary way to promote your brand on Instagram and other
       social media platforms.
 ---

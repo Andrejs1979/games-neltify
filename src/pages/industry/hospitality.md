@@ -30,7 +30,7 @@ sections:
     image: /img/pool-selfie.jpeg
     side: left
     text: >-
-      Mark is a cutting-edge tool to run massive social media campaings and
+      Unmerchant is a cutting-edge tool to run massive social media campaings and
       empower your customers to promote your brand.
     title: Connect with your customers at scale
   - color: white
@@ -43,8 +43,7 @@ final:
     alt: Poolside selfie
     image: /img/pool-selfie.jpeg
   text: >-
-    Mark is a revolutionary way to promote your brand on Instagram and other
+    Unmerchant is a revolutionary way to promote your brand on Instagram and other
     social media platforms.
   title: Join the marketing revolution
 ---
-

@@ -16,20 +16,16 @@ const Hero = ({ size, title, subtitle, image, signup, cta, link }) => (
 								<div className="is-hidden-mobile">
 									<div className="field is-grouped">
 										<p className="control">
-											<a href="https://app.mark.camera" className="button is-primary is-large">
-												<strong>Sign up & get $10</strong>
+											<a href="#" className="button is-primary is-large">
+												<strong>GET STARTED</strong>
 											</a>
 										</p>
 										<p className="control">
-											<a
-												href="https://calendly.com/mark-camera/demo"
-												className="button is-text is-large"
-											>
+											<a href="#" className="button is-text is-large">
 												Schedule a demo
 											</a>
 										</p>
 									</div>
-									<p>Get $10 instant bonus. No credit card required</p>
 								</div>
 							)}
 							{cta && (

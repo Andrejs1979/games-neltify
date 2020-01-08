@@ -14,17 +14,17 @@ const OnlinePaymentsPage = () => (
 			size="medium"
 			title="Privacy Policy"
 			subtitle="Our policies regarding the collection, use, and disclosure of
-				Personal Information when using the Mark App."
+				Personal Information when using the Unmerchant App."
 			image="image"
 		/>
 		<div className="container">
 			<div className="content is-medium">
 				<div className="notification">
-					The Mark app as a Free app. This SERVICE is provided by at no cost and is intended for use as is.
+					The Unmerchant app as a Free app. This SERVICE is provided by at no cost and is intended for use as is.
 				</div>
 				<p>
 					The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which
-					is accessible at Mark unless otherwise defined in this Privacy Policy.
+					is accessible at Unmerchant unless otherwise defined in this Privacy Policy.
 				</p>
 				<p>
 					If you choose to use our Service, then you agree to the collection and use of information in

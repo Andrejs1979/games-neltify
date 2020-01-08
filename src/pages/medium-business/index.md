@@ -2,7 +2,7 @@
 templateKey: medium-business-page
 title: Medium Business
 image: /img/example.jpg
-heading: Mark is great tool for a fledging business empire
+heading: Unmerchant is great tool for a fledging business empire
 description: >-
   Got a small chain of shops? Increase your Instagram footprint with evert new
   location
@@ -22,7 +22,7 @@ blurbs:
       Place your dflogo and marketing message on thousands of selfies posted by real people.
 sections:
   - title: Connect with your customers at scale
-    text: Mark is a cutting-edge tool to run massive social media campaings and empower your customers to promote your brand.
+    text: Unmerchant is a cutting-edge tool to run massive social media campaings and empower your customers to promote your brand.
     image: /img/example.jpg
     color: white
     side: left
@@ -32,6 +32,6 @@ final:
       image: /img/coffee.png
     title: Join the marketing revolution
     text: >-
-      Mark is a revolutionary way to promote your brand on Instagram and other
+      Unmerchant is a revolutionary way to promote your brand on Instagram and other
       social media platforms.
 ---

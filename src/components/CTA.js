@@ -9,7 +9,7 @@ const CTA = () => (
 					<h2 className="subtitle">It's easy with our step by step guide</h2>
 					<br />
 					<a href="https://app.mark.camera" className="button is-light is-large">
-						<strong>Start now & get $10 free</strong>
+						<strong>GET STARTED</strong>
 					</a>
 				</div>
 			</div>

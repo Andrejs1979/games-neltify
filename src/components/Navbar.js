@@ -59,20 +59,17 @@ const Navbar = class extends React.Component {
 						<div id="navMenu" className={`navbar-menu ${this.state.navBarActiveClass}`}>
 							<div className="navbar-end has-text-centered has-text-weight-semibold">
 								<Link className="navbar-item" to="/how-it-works">
-									How it works
+									Platform
 								</Link>
 								<Link className="navbar-item" to="/benefits">
-									Benefits
+									Solutions
 								</Link>
 
 								<Link className="navbar-item" to="/cost">
-									Cost
+									Resources
 								</Link>
-								<Link className="navbar-item" to="/faq">
-									FAQ
-								</Link>
-								<Link className="navbar-item" to="/get-started">
-									Getting Started
+								<Link className="navbar-item" to="/developers">
+									Developers
 								</Link>
 							</div>
 							<div className="navbar-end">
@@ -99,17 +96,16 @@ const Navbar = class extends React.Component {
 							<span className="navbar-item is-hidden-mobile">
 								<div className="field is-grouped">
 									<p className="control">
-										<a href="https://app.mark.camera" className="button is-white is-outlined">
-											<strong>GET $10 IN ADS FREE</strong>
+										<a href="#" className="button is-white is-outlined">
+											<strong>GET STARTED</strong>
 										</a>
-										{/* <p>No credit card required</p> */}
 									</p>
 									<p className="control">
 										<a
-											href="https://calendly.com/mark-camera/demo"
+											href="#"
 											className="button is-white is-inverted is-text has-text-weight-semibold"
 										>
-											Schedule a free, no-obligation demo
+											Schedule a demo
 										</a>
 									</p>
 								</div>
@@ -137,11 +133,11 @@ const Navbar = class extends React.Component {
 							</span>
 						</div>
 
-						<div className="navbar-end is-hidden-mobile">
+						{/* <div className="navbar-end is-hidden-mobile">
 							<Link className="navbar-item has-text-weight-semibold" to="/news">
 								New! Try our Campaign Wizard and get started in munutes
 							</Link>
-						</div>
+						</div> */}
 					</div>
 				</nav>
 			</div>
