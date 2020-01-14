@@ -58,16 +58,20 @@ const Navbar = class extends React.Component {
 						</div>
 						<div id="navMenu" className={`navbar-menu ${this.state.navBarActiveClass}`}>
 							<div className="navbar-end has-text-centered has-text-weight-semibold">
-								<Link className="navbar-item" to="/how-it-works">
+								<Link className="navbar-item" to="/platform/overview">
 									Platform
 								</Link>
-								<Link className="navbar-item" to="/benefits">
+								<Link className="navbar-item" to="/features/overview">
+									Features
+								</Link>
+
+								<Link className="navbar-item" to="/solutions/overview">
 									Solutions
 								</Link>
 
-								<Link className="navbar-item" to="/cost">
-									Resources
-								</Link>
+								{/* <Link className="navbar-item" to="/pricing">
+									Pricing
+								</Link> */}
 								<Link className="navbar-item" to="/developers">
 									Developers
 								</Link>
@@ -75,10 +79,10 @@ const Navbar = class extends React.Component {
 							<div className="navbar-end">
 								<div className="navbar-item">
 									<div className="buttons is-centered">
-										<a href="https://app.mark.camera" className="button is-primary">
+										<a href="#" className="button is-primary">
 											<strong>GET STARTED</strong>
 										</a>
-										<a href="https://app.mark.camera" className="button is-light">
+										<a href="#" className="button is-light">
 											Sign in
 										</a>
 									</div>
@@ -113,10 +117,7 @@ const Navbar = class extends React.Component {
 							<span className="navbar-item is-hidden-desktop">
 								<div className="field is-grouped">
 									<p className="control">
-										<a
-											href="https://app.mark.camera"
-											className="button is-medium is-white is-outlined"
-										>
+										<a href="#" className="button is-medium is-white is-outlined">
 											<strong>GET STARTED</strong>
 										</a>
 										{/* <p>No credit card required</p> */}

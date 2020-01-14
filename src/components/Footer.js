@@ -18,19 +18,32 @@ export default () => {
 				<Columns>
 					<Column>
 						<Menu label="Platform">
-							<MenuItem to="/how-it-works">How it works</MenuItem>
-							<MenuItem to="/benefits">Benefits</MenuItem>
-							<MenuItem to="/cost">Cost</MenuItem>
-							<MenuItem to="/get-started">Getting Started</MenuItem>
+							<MenuItem to="/platform/why">Why Unmerchant</MenuItem>
+							<MenuItem to="/platform/how-it-works">How it works</MenuItem>
+							<MenuItem to="/platform/benefits">Benefits</MenuItem>
+							{/* <MenuItem to="/platform/pricing">Pricing</MenuItem> */}
+							<MenuItem to="/platform/case-studies">Case Studies</MenuItem>
+							<MenuItem to="/platform/get-started">Getting Started</MenuItem>
+						</Menu>
+					</Column>
+					<Column>
+						<Menu label="Features">
+							<MenuItem to="/features/payments">Payments</MenuItem>
+							<MenuItem to="/features/subscriptions">Subscriptions</MenuItem>
+							<MenuItem to="/features/invoicing">Invoicing</MenuItem>
+							<MenuItem to="/features/pos">Point of Sale</MenuItem>
+							<MenuItem to="/features/mobile-payments">Mobile Wallet</MenuItem>
+							<MenuItem to="/features/crm">CRM</MenuItem>
 						</Menu>
 					</Column>
 					<Column>
 						<Menu label="Solutions">
-							<MenuItem to="/small-business">Small Business</MenuItem>
-							<MenuItem to="/medium-business">Medium Business</MenuItem>
-							<MenuItem to="/brands">Global Brands</MenuItem>
-							<MenuItem to="/marketing-agencies">Marketing Agencies</MenuItem>
-							<MenuItem to="/white-label">White-label</MenuItem>
+							<MenuItem to="/solutions/iso">ISOs</MenuItem>
+							<MenuItem to="/solutions/credit-unions">Credit Unions</MenuItem>
+							<MenuItem to="/solutions/banks">Banks</MenuItem>
+							<MenuItem to="/solutions/payment-processors">Payment Processors</MenuItem>
+							<MenuItem to="/solutions/saas">Saas</MenuItem>
+							<MenuItem to="/solutions/marketplaces">Marketplaces</MenuItem>
 						</Menu>
 					</Column>
 
@@ -38,13 +51,8 @@ export default () => {
 						<Menu label="Resources">
 							<MenuItem to="/blog">Blog</MenuItem>
 							<MenuItem to="/faq">FAQ</MenuItem>
-							<MenuItem to="/influencer-marketing">Influencer Marketing</MenuItem>
+							<MenuItem to="/payments-digest">Payments Digest</MenuItem>
 							<MenuItem to="/apps">Download Apps</MenuItem>
-							<li>
-								<a title="Help" href="https://help.cashmark.app" className="navbar-item">
-									Help
-								</a>
-							</li>
 						</Menu>
 					</Column>
 					<Column>

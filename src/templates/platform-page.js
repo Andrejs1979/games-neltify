@@ -9,13 +9,13 @@ import FinalSection from '../components/FinalSection';
 // import BlogSection from '../components/BlogSection';
 import CTA from '../components/CTA';
 
-export default function CostPage({ data }) {
+export default function PlatformPage({ data }) {
 	const { markdownRemark: page } = data;
 	const { image, heading, subheading, sections, blurbs, final } = page.frontmatter;
 
 	return (
 		<Layout>
-			<CostPageTemplate
+			<PlatformPageTemplate
 				image={image}
 				heading={heading}
 				subheading={subheading}
@@ -27,7 +27,7 @@ export default function CostPage({ data }) {
 	);
 }
 
-export const CostPageTemplate = ({ image, heading, subheading, sections, blurbs, final }) => (
+export const PlatformPageTemplate = ({ image, heading, subheading, sections, blurbs, final }) => (
 	<div>
 		<Hero size="medium" title={heading} subtitle={subheading} image={image} signup />
 		<Blurbs box items={blurbs} />
@@ -38,9 +38,9 @@ export const CostPageTemplate = ({ image, heading, subheading, sections, blurbs,
 	</div>
 );
 
-export const costPageQuery = graphql`
-	query CostPage {
-		markdownRemark(frontmatter: { templateKey: { eq: "cost-page" } }) {
+export const pageQuery = graphql`
+	query PlatformPageByID {
+		markdownRemark(frontmatter: { templateKey: { eq: "platform-page" } }) {
 			frontmatter {
 				title
 				heading

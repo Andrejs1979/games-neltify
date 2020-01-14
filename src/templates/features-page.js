@@ -9,13 +9,13 @@ import FinalSection from '../components/FinalSection';
 // import BlogSection from '../components/BlogSection';
 import CTA from '../components/CTA';
 
-export default function WhiteLabelPage({ data }) {
+export default function FeaturesPage({ data }) {
 	const { markdownRemark: page } = data;
 	const { image, heading, subheading, sections, blurbs, final } = page.frontmatter;
 
 	return (
 		<Layout>
-			<WhiteLabelPageTemplate
+			<FeaturesPageTemplate
 				image={image}
 				heading={heading}
 				subheading={subheading}
@@ -27,7 +27,7 @@ export default function WhiteLabelPage({ data }) {
 	);
 }
 
-export const WhiteLabelPageTemplate = ({ image, heading, subheading, sections, blurbs, final }) => (
+export const FeaturesPageTemplate = ({ image, heading, subheading, sections, blurbs, final }) => (
 	<div>
 		<Hero size="medium" title={heading} subtitle={subheading} image={image} signup />
 		<Blurbs box items={blurbs} />
@@ -38,9 +38,9 @@ export const WhiteLabelPageTemplate = ({ image, heading, subheading, sections, b
 	</div>
 );
 
-export const whiteLabelPageQuery = graphql`
-	query WhiteLabelPage {
-		markdownRemark(frontmatter: { templateKey: { eq: "white-label-page" } }) {
+export const pageQuery = graphql`
+	query FeaturesPageByID {
+		markdownRemark(frontmatter: { templateKey: { eq: "features-page" } }) {
 			frontmatter {
 				title
 				heading

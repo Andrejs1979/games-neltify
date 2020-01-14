@@ -80,7 +80,7 @@ module.exports = {
 		{
 			resolve: `gatsby-plugin-google-analytics`,
 			options: {
-				trackingId: 'UA-96016389-9',
+				trackingId: 'UA-96016389-11',
 				// Defines where to place the tracking script - `true` in the head and `false` in the body
 				head: false,
 				// Setting this parameter is optional
@@ -93,45 +93,45 @@ module.exports = {
 				pageTransitionDelay: 0
 			}
 		},
-		{
-			resolve: `gatsby-plugin-segment-js`,
-			options: {
-				// your segment write key for your production environment
-				// when process.env.NODE_ENV === 'production'
-				// required; non-empty string
-				prodKey: `9IfYVK6NS8ZnCmQJCSTutHLheTBtrKZY`,
+		// {
+		// 	resolve: `gatsby-plugin-segment-js`,
+		// 	options: {
+		// 		// your segment write key for your production environment
+		// 		// when process.env.NODE_ENV === 'production'
+		// 		// required; non-empty string
+		// 		prodKey: `9IfYVK6NS8ZnCmQJCSTutHLheTBtrKZY`,
 
-				// if you have a development env for your segment account, paste that key here
-				// when process.env.NODE_ENV === 'development'
-				// optional; non-empty string
-				devKey: `SEGMENT_DEV_WRITE_KEY`,
+		// 		// if you have a development env for your segment account, paste that key here
+		// 		// when process.env.NODE_ENV === 'development'
+		// 		// optional; non-empty string
+		// 		devKey: `SEGMENT_DEV_WRITE_KEY`,
 
-				// boolean (defaults to false) on whether you want
-				// to include analytics.page() automatically
-				// if false, see below on how to track pageviews manually
-				trackPage: true
-			}
-		},
-		{
-			resolve: `gatsby-plugin-facebook-pixel`,
-			options: {
-				pixelId: '503703380484900'
-			}
-		},
-		{
-			resolve: `gatsby-plugin-linkedin-insight`,
-			options: {
-				partnerId: '1502962',
-				includeInDevelopment: false
-			}
-		},
+		// 		// boolean (defaults to false) on whether you want
+		// 		// to include analytics.page() automatically
+		// 		// if false, see below on how to track pageviews manually
+		// 		trackPage: true
+		// 	}
+		// },
+		// {
+		// 	resolve: `gatsby-plugin-facebook-pixel`,
+		// 	options: {
+		// 		pixelId: '503703380484900'
+		// 	}
+		// },
+		// {
+		// 	resolve: `gatsby-plugin-linkedin-insight`,
+		// 	options: {
+		// 		partnerId: '1502962',
+		// 		includeInDevelopment: false
+		// 	}
+		// },
 
-		{
-			resolve: `gatsby-plugin-intercom`,
-			options: {
-				appId: 'f1en2chr'
-			}
-		},
+		// {
+		// 	resolve: `gatsby-plugin-intercom`,
+		// 	options: {
+		// 		appId: 'f1en2chr'
+		// 	}
+		// },
 		'gatsby-plugin-robots-txt',
 		'gatsby-plugin-sitemap',
 		{
