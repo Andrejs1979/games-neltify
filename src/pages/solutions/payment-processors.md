@@ -1,5 +1,5 @@
 ---
-templateKey: marketing-agencies-page
+templateKey: solutions-page
 title: Small Business
 image: /img/lounge-boy.jpg
 heading: Ideal for Small Business
