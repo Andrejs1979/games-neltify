@@ -11,7 +11,7 @@ export default function BlogHeadlines({ box }) {
 
 	return (
 		<Section>
-			<h1 className="title is-size-2 has-text-centered">More from Unmerchant</h1>
+			<h1 className="title is-size-2 has-text-centered">More from Caragents</h1>
 			<Columns>
 				{posts.map(({ node: post }) => (
 					<div key={post.id} className="column">

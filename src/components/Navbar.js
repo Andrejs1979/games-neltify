@@ -59,21 +59,17 @@ const Navbar = class extends React.Component {
 						<div id="navMenu" className={`navbar-menu ${this.state.navBarActiveClass}`}>
 							<div className="navbar-end has-text-centered has-text-weight-semibold">
 								<Link className="navbar-item" to="/platform/overview">
-									Platform
+									Why Caragents
 								</Link>
 								<Link className="navbar-item" to="/features/overview">
-									Features
+									Services
 								</Link>
-
 								<Link className="navbar-item" to="/solutions/overview">
 									Solutions
 								</Link>
 
-								{/* <Link className="navbar-item" to="/pricing">
+								<Link className="navbar-item" to="/pricing">
 									Pricing
-								</Link> */}
-								<Link className="navbar-item" to="/developers">
-									Developers
 								</Link>
 							</div>
 							<div className="navbar-end">
@@ -134,11 +130,11 @@ const Navbar = class extends React.Component {
 							</span>
 						</div>
 
-						{/* <div className="navbar-end is-hidden-mobile">
+						<div className="navbar-end is-hidden-mobile">
 							<Link className="navbar-item has-text-weight-semibold" to="/news">
-								New! Try our Campaign Wizard and get started in munutes
+								New! Get a free car appraisal
 							</Link>
-						</div> */}
+						</div>
 					</div>
 				</nav>
 			</div>

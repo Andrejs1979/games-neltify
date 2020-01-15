@@ -3,7 +3,7 @@ templateKey: solutions-page
 title: Small Business
 image: /img/lounge-boy.jpg
 heading: Ideal for Small Business
-subheading: 'Don''t have a huge budget? You don''t need to, with Unmerchant'
+subheading: 'Don''t have a huge budget? You don''t need to, with Caragents'
 description: Promote your business on Instagram for just a few cents per post.
 blurbs:
   - text: Get found
@@ -25,6 +25,6 @@ final:
   Image:
     alt: small biz
     image: /img/tutorials.png
-  text: 'Once you create your campaign on Unmerchant, it just works automatically for you.'
+  text: 'Once you create your campaign on Caragents, it just works automatically for you.'
   title: 'It''s cost-effective, easy and works by itself.'
 ---

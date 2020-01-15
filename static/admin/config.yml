@@ -44,7 +44,7 @@ collections:
 
   - name: "digest"
     label: "Payments Digest"
-    folder: "src/pages/payments-digest"
+    folder: "src/pages/auto-digest"
     create: true
     slug: "{{slug}}"
     fields:

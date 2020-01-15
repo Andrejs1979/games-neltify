@@ -30,7 +30,7 @@ sections:
     image: /img/pool-selfie.jpeg
     side: left
     text: >-
-      Unmerchant is a cutting-edge tool to run massive social media campaings and
+      Caragents is a cutting-edge tool to run massive social media campaings and
       empower your customers to promote your brand.
     title: Connect with your customers at scale
   - color: white
@@ -43,7 +43,7 @@ final:
     alt: Poolside selfie
     image: /img/pool-selfie.jpeg
   text: >-
-    Unmerchant is a revolutionary way to promote your brand on Instagram and other
+    Caragents is a revolutionary way to promote your brand on Instagram and other
     social media platforms.
   title: Join the marketing revolution
 ---
