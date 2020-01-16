@@ -9,13 +9,13 @@ import FinalSection from '../components/FinalSection';
 // import BlogSection from '../components/BlogSection';
 import CTA from '../components/CTA';
 
-export default function FeaturesPage({ data }) {
+export default function ServicesPage({ data }) {
 	const { markdownRemark: page } = data;
 	const { image, heading, subheading, sections, blurbs, final } = page.frontmatter;
 
 	return (
 		<Layout>
-			<FeaturesPageTemplate
+			<ServicesPageTemplate
 				image={image}
 				heading={heading}
 				subheading={subheading}
@@ -27,7 +27,7 @@ export default function FeaturesPage({ data }) {
 	);
 }
 
-export const FeaturesPageTemplate = ({ image, heading, subheading, sections, blurbs, final }) => (
+export const ServicesPageTemplate = ({ image, heading, subheading, sections, blurbs, final }) => (
 	<div>
 		<Hero size="medium" title={heading} subtitle={subheading} image={image} signup />
 		<Blurbs box items={blurbs} />
@@ -39,8 +39,8 @@ export const FeaturesPageTemplate = ({ image, heading, subheading, sections, blu
 );
 
 export const pageQuery = graphql`
-	query FeaturesPageByID {
-		markdownRemark(frontmatter: { templateKey: { eq: "features-page" } }) {
+	query ServicesPageByID {
+		markdownRemark(frontmatter: { templateKey: { eq: "services-page" } }) {
 			frontmatter {
 				title
 				heading
