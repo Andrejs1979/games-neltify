@@ -22,7 +22,7 @@ const Hero = ({ size, title, subtitle, image, signup, cta, link }) => (
 										</p>
 										<p className="control">
 											<a href="#" className="button is-text is-large">
-												Schedule a demo
+												Schedule a free consultation
 											</a>
 										</p>
 									</div>

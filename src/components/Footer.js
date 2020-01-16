@@ -10,6 +10,8 @@ import linkedin from '../img/social/linkedin.svg';
 import appStore from '../img/AppStore.svg';
 import googlePlay from '../img/GooglePlay.svg';
 
+import { Icon } from './brand';
+
 export default () => {
 	return (
 		<Footer>
@@ -62,44 +64,23 @@ export default () => {
 						</Menu>
 					</Column>
 				</Columns>
-				<br />
 
-				<Level>
-					<Item>
-						<p>
-							<a title="facebook" href="https://www.facebook.com/cashmarkapp">
-								<img
-									src={facebook}
-									alt="Facebook"
-									style={{ width: '1.5em', height: '1.5em', marginRight: 15 }}
-								/>
-							</a>
-							<a title="twitter" href="https://twitter.com/cashmark_app">
-								<img
-									src={twitter}
-									alt="Twitter"
-									style={{ width: '1.5em', height: '1.5em', marginRight: 15 }}
-								/>
-							</a>
-							<a title="linkedin" href="https://www.linkedin.com/company/cashmark/">
-								<img
-									src={linkedin}
-									alt="Twitter"
-									style={{ width: '1.5em', height: '1.5em', marginRight: 15 }}
-								/>
-							</a>
-							<a title="instagram" href="https://www.instagram.com/cashmark_app/">
-								<img src={instagram} alt="Instagram" style={{ width: '1.5em', height: '1.5em' }} />
-							</a>
-						</p>
-					</Item>
-				</Level>
-				<br />
 				<hr />
 				<br />
-
 				<Level>
 					<Left>
+						<Link to="/" title="Caragents Icon">
+							<div
+								style={{
+									// height: '250px'
+									width: '40px',
+									marginRight: 20
+								}}
+								className="size"
+							>
+								<Icon />
+							</div>
+						</Link>
 						<p className="has-text-left is-size-7">
 							<strong>© 2020 Caragents</strong>. All rights reserved.
 						</p>
@@ -118,14 +99,40 @@ export default () => {
 					</Item>
 					<Item />
 					<Right>
-						<p>
-							<a title="App Store" href="#">
-								<img src={appStore} alt="App Store" />
-							</a>{' '}
-							<a title="Google Play" href="#">
-								<img className="fas fa-lg" src={googlePlay} alt="Google Play" />
-							</a>
-						</p>
+						<Level>
+							<Item>
+								<p>
+									<a title="facebook" href="#">
+										<img
+											src={facebook}
+											alt="Facebook"
+											style={{ width: '1.5em', height: '1.5em', marginRight: 15 }}
+										/>
+									</a>
+									<a title="twitter" href="#">
+										<img
+											src={twitter}
+											alt="Twitter"
+											style={{ width: '1.5em', height: '1.5em', marginRight: 15 }}
+										/>
+									</a>
+									<a title="linkedin" href="#">
+										<img
+											src={linkedin}
+											alt="Twitter"
+											style={{ width: '1.5em', height: '1.5em', marginRight: 15 }}
+										/>
+									</a>
+									<a title="instagram" href="#">
+										<img
+											src={instagram}
+											alt="Instagram"
+											style={{ width: '1.5em', height: '1.5em' }}
+										/>
+									</a>
+								</p>
+							</Item>
+						</Level>
 					</Right>
 					{/* <Right>
 						<div

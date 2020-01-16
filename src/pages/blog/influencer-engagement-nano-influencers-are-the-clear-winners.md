@@ -1,5 +1,5 @@
 ---
-templateKey: digest-article
+templateKey: blog-post
 title: 'Influencer engagement: Nano-influencers are the clear winners'
 date: 2019-07-19T01:58:02.868Z
 description: >-

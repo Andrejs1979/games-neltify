@@ -67,22 +67,12 @@ const Navbar = class extends React.Component {
 								<Link className="navbar-item" to="/solutions/overview">
 									Solutions
 								</Link>
-
 								<Link className="navbar-item" to="/pricing">
 									Pricing
 								</Link>
-							</div>
-							<div className="navbar-end">
-								<div className="navbar-item">
-									<div className="buttons is-centered">
-										<a href="#" className="button is-primary">
-											<strong>GET STARTED</strong>
-										</a>
-										<a href="#" className="button is-light">
-											Sign in
-										</a>
-									</div>
-								</div>
+								<Link className="navbar-item" to="/contact">
+									Contact
+								</Link>
 							</div>
 						</div>
 					</div>
@@ -105,7 +95,7 @@ const Navbar = class extends React.Component {
 											href="#"
 											className="button is-white is-inverted is-text has-text-weight-semibold"
 										>
-											Schedule a demo
+											Schedule a free consultation
 										</a>
 									</p>
 								</div>

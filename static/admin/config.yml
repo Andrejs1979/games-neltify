@@ -33,7 +33,7 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "news-article"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "text"}
@@ -57,68 +57,13 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
 
-  - name: "platform"
-    label: "Platform"
-    folder: "src/pages/platform"
+  - name: "services"
+    label: "Services"
+    folder: "src/pages/services"
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "platform-page"}
-      - {label: Title, name: title, widget: string}
-      - {label: Image, name: image, widget: image}
-      - {label: Heading, name: heading, widget: string}
-      - {label: Subheading, name: subheading, widget: string}
-      - {label: Description, name: description, widget: string}
-      - label: Blurbs
-        name: blurbs
-        widget: list
-        fields:
-          [
-            {label: Image, name: image, widget: image},
-            {label: Title, name: title, widget: string},
-            {label: Text, name: text, widget: text}
-          ]
-      - label: Sections
-        name: sections
-        widget: list
-        fields:
-          [
-            {label: Color, name: color, widget: string},
-            {label: Side, name: side, widget: string},
-            {label: Title, name: title, widget: string},
-            {label: Text, name: text, widget: text},
-            {label: Image, name: image, widget: image}
-          ]
-      - label: Testimonials
-        name: testimonials
-        widget: list
-        fields:
-          [
-            {label: Quote, name: quote, widget: string},
-            {label: Author, name: author, widget: string}
-          ]
-      - label: Final
-        name: final
-        widget: object
-        fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Text, name: text, widget: text}
-          - label: Image
-            name: Image
-            widget: object
-            fields:
-              [
-                {label: Image, name: image, widget: image},
-                {label: Alt, name: alt, widget: string}
-              ]
-
-  - name: "features"
-    label: "Features"
-    folder: "src/pages/features"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "features-page"}
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "services-page"}
       - {label: Title, name: title, widget: string}
       - {label: Image, name: image, widget: image}
       - {label: Heading, name: heading, widget: string}
@@ -170,61 +115,6 @@ collections:
   - name: "solutions"
     label: "Solutions"
     folder: "src/pages/solutions"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "marketing-agencies-page"}
-      - {label: Title, name: title, widget: string}
-      - {label: Image, name: image, widget: image}
-      - {label: Heading, name: heading, widget: string}
-      - {label: Subheading, name: subheading, widget: string}
-      - {label: Description, name: description, widget: string}
-      - label: Blurbs
-        name: blurbs
-        widget: list
-        fields:
-          [
-            {label: Image, name: image, widget: image},
-            {label: Title, name: title, widget: string},
-            {label: Text, name: text, widget: text}
-          ]
-      - label: Sections
-        name: sections
-        widget: list
-        fields:
-          [
-            {label: Color, name: color, widget: string},
-            {label: Side, name: side, widget: string},
-            {label: Title, name: title, widget: string},
-            {label: Text, name: text, widget: text},
-            {label: Image, name: image, widget: image}
-          ]
-      - label: Testimonials
-        name: testimonials
-        widget: list
-        fields:
-          [
-            {label: Quote, name: quote, widget: string},
-            {label: Author, name: author, widget: string}
-          ]
-      - label: Final
-        name: final
-        widget: object
-        fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Text, name: text, widget: text}
-          - label: Image
-            name: Image
-            widget: object
-            fields:
-              [
-                {label: Image, name: image, widget: image},
-                {label: Alt, name: alt, widget: string}
-              ]
-
-  - name: "industry"
-    label: "Industry"
-    folder: "src/pages/industry"
     create: true
     slug: "{{slug}}"
     fields:
@@ -444,59 +334,6 @@ collections:
         name: "how-it-works"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "how-it-works-page"}
-          - {label: Title, name: title, widget: string}
-          - {label: Image, name: image, widget: image}
-          - {label: Heading, name: heading, widget: string}
-          - {label: Subheading, name: subheading, widget: string}
-          - {label: Description, name: description, widget: string}
-          - label: Blurbs
-            name: blurbs
-            widget: list
-            fields:
-              [
-                {label: Image, name: image, widget: image},
-                {label: Title, name: title, widget: string},
-                {label: Text, name: text, widget: text}
-              ]
-          - label: Sections
-            name: sections
-            widget: list
-            fields:
-              [
-                {label: Color, name: color, widget: string},
-                {label: Side, name: side, widget: string},
-                {label: Title, name: title, widget: string},
-                {label: Text, name: text, widget: text},
-                {label: Image, name: image, widget: image}
-              ]
-          - label: Testimonials
-            name: testimonials
-            widget: list
-            fields:
-              [
-                {label: Quote, name: quote, widget: string},
-                {label: Author, name: author, widget: string}
-              ]
-          - label: Final
-            name: final
-            widget: object
-            fields:
-              - {label: Title, name: title, widget: string}
-              - {label: Text, name: text, widget: text}
-              - label: Image
-                name: Image
-                widget: object
-                fields:
-                  [
-                    {label: Image, name: image, widget: image},
-                    {label: Alt, name: alt, widget: string}
-                  ]
-
-      - file: "src/pages/developers/index.md"
-        label: "Developers Page"
-        name: "developers"
-        fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "developers-page"}
           - {label: Title, name: title, widget: string}
           - {label: Image, name: image, widget: image}
           - {label: Heading, name: heading, widget: string}

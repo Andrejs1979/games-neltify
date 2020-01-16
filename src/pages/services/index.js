@@ -9,8 +9,8 @@ import CTA from '../../components/CTA';
 
 import { Section } from '../../components/bulma';
 
-export default function SolutionsIndexPage() {
-	const data = useStaticQuery(FEATURES_QUERY);
+export default function ServicesIndexPage() {
+	const data = useStaticQuery(SERVICES_QUERY);
 	const { edges: posts } = data.allMarkdownRemark;
 
 	const { node: { frontmatter: { title, featuredImage }, excerpt, fields: { slug } } } = posts[0];
@@ -26,11 +26,11 @@ export default function SolutionsIndexPage() {
 	);
 }
 
-const FEATURES_QUERY = graphql`
-	query Features {
+const SERVICES_QUERY = graphql`
+	query Services {
 		allMarkdownRemark(
 			sort: { order: DESC, fields: [frontmatter___date] }
-			filter: { frontmatter: { templateKey: { eq: "features-page" } } }
+			filter: { frontmatter: { templateKey: { eq: "services-page" } } }
 		) {
 			edges {
 				node {

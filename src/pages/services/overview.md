@@ -1,8 +1,8 @@
 ---
-templateKey: platform-page
-title: Invoicing
+templateKey: services-page
+title: Payments
 image: /img/lounge-boy.jpg
-heading: Invoicing
+heading: Payments
 subheading: 'Don''t have a huge budget? You don''t need to, with Caragents'
 description: Promote your business on Instagram for just a few cents per post.
 blurbs:
