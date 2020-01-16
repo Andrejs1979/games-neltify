@@ -12,7 +12,7 @@ import { graphql } from 'gatsby';
 // import vimeo from '../img/social/vimeo.svg';
 
 import Layout from '../components/Layout';
-import Hero from '../components/Hero';
+import Hero from '../components/HeroPicture';
 // import Slideshow from '../components/Slideshow';
 import Blurbs from '../components/Blurbs';
 import ContentSection from '../components/ContentSection';
