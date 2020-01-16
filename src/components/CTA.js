@@ -8,7 +8,7 @@ const CTA = () => (
 					<h1 className="title">All you car-related needs covered</h1>
 					<h2 className="subtitle">Let's talk today</h2>
 					<br />
-					<a href="#" className="button is-light is-large">
+					<a href="#" className="button is-light is-large is-rounded">
 						<strong>GET STARTED</strong>
 					</a>
 				</div>

@@ -40,23 +40,7 @@ export default function IndexPage({ data }) {
 
 export const IndexPageTemplate = ({ image, heading, subheading, sections, blurbs, final }) => (
 	<div>
-		{/* <Sky
-			images={{
-				0: facebook,
-				1: instagram,
-				2: linkedin,
-				3: twitter,
-				4: pinterest,
-				5: youtube,
-				6: vimeo,
-				7: snapchat,
-				8: instagram
-			}}
-			how={15}
-			time={500}
-			size={'20px'}
-		/> */}
-		<Hero size="medium" title={heading} subtitle={subheading} image={image} signup />
+		<Hero size="large" title={heading} subtitle={subheading} image={image} signup />
 		<Blurbs box items={blurbs} />
 		<ContentSection items={sections} box />
 		<FinalSection content={final} />

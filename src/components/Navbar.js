@@ -80,21 +80,18 @@ const Navbar = class extends React.Component {
 
 				{/* BOTTOM NAVBAR */}
 
-				<nav className="navbar is-black is-fixed-bottom" role="navigation" aria-label="main-navigation">
+				<nav className="navbar is-light is-fixed-bottom" role="navigation" aria-label="main-navigation">
 					<div className="container">
 						<div className="navbar-brand">
 							<span className="navbar-item is-hidden-mobile">
 								<div className="field is-grouped">
 									<p className="control">
-										<a href="#" className="button is-white is-outlined">
+										<a href="#" className="button is-black is-outlined is-rounded">
 											<strong>GET STARTED</strong>
 										</a>
 									</p>
 									<p className="control">
-										<a
-											href="#"
-											className="button is-white is-inverted is-text has-text-weight-semibold"
-										>
+										<a href="#" className="button is-text has-text-weight-semibold">
 											Schedule a free consultation
 										</a>
 									</p>
@@ -103,18 +100,16 @@ const Navbar = class extends React.Component {
 							<span className="navbar-item is-hidden-desktop">
 								<div className="field is-grouped">
 									<p className="control">
-										<a href="#" className="button is-medium is-white is-outlined">
+										<a href="#" className="button is-black is-outlined is-rounded">
 											<strong>GET STARTED</strong>
 										</a>
-										{/* <p>No credit card required</p> */}
 									</p>
 									<p className="control">
-										<a
-											href="https://calendly.com/mark-camera/demo"
-											className="button is-white is-inverted is-text has-text-weight-semibold"
-										>
-											Schedule free demo
-										</a>
+										<p className="control">
+											<a href="#" className="button is-text has-text-weight-semibold">
+												Schedule consultation
+											</a>
+										</p>
 									</p>
 								</div>
 							</span>
@@ -122,7 +117,7 @@ const Navbar = class extends React.Component {
 
 						<div className="navbar-end is-hidden-mobile">
 							<Link className="navbar-item has-text-weight-semibold" to="/news">
-								New! Get a free car appraisal
+								New! Free car appraisal
 							</Link>
 						</div>
 					</div>
