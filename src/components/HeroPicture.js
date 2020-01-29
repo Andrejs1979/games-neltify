@@ -2,6 +2,8 @@ import React from 'react';
 import PreviewCompatibleImage from './PreviewCompatibleImage';
 // import Img from 'gatsby-image';
 import { Link } from 'gatsby';
+import { Button } from './bulma';
+
 const Hero = ({ size, title, subtitle, image, signup, cta, link }) => (
 	<section className={`hero is-${size}`}>
 		<div
@@ -35,20 +37,14 @@ const Hero = ({ size, title, subtitle, image, signup, cta, link }) => (
 						<div className="is-hidden-mobile">
 							<div className="field is-grouped">
 								<p className="control">
-									<a href="#" className="button is-rounded is-outlined is-large">
-										<strong>GET STARTED</strong>
-									</a>
+									<Button icon="car-alt" size="large" color="danger" rounded>
+										Shop cars
+									</Button>
 								</p>
 								<p className="control">
-									<a
-										href="#"
-										className="button is-text is-rounded is-large"
-										style={{
-											color: '#999'
-										}}
-									>
-										Schedule a free consultation
-									</a>
+									<Button icon="phone-alt" size="large" color="text" rounded>
+										Free consultation
+									</Button>
 								</p>
 							</div>
 						</div>

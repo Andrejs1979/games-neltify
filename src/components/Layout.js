@@ -2,14 +2,22 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { library } from '@fortawesome/fontawesome-svg-core';
 // import { fab } from '@fortawesome/free-brands-svg-icons';
-import { faSquare, faStore, faPortrait, faShareSquare, faSearch } from '@fortawesome/free-solid-svg-icons';
+import {
+	faSquare,
+	faStore,
+	faPortrait,
+	faShareSquare,
+	faSearch,
+	faCarAlt,
+	faPhoneAlt
+} from '@fortawesome/free-solid-svg-icons';
 import Footer from '../components/Footer';
 
 import Navbar from '../components/Navbar';
 import './all.sass';
 import useSiteMetadata from './SiteMetadata';
 
-library.add(faSquare, faStore, faPortrait, faShareSquare, faSearch);
+library.add(faSquare, faStore, faPortrait, faShareSquare, faSearch, faCarAlt, faPhoneAlt);
 
 const TemplateWrapper = ({ children }) => {
 	const { title, description } = useSiteMetadata();

@@ -1,11 +1,25 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'gatsby';
 
 export function Box({ children }) {
 	return <div className="box">{children}</div>;
 }
 
-export function Button({ type, action, children, icon, color, size, vertical, block, loading, disabled }) {
+export function Button({
+	type,
+	action,
+	children,
+	icon,
+	iconColor,
+	color,
+	size,
+	vertical,
+	block,
+	rounded,
+	loading,
+	disabled
+}) {
 	// const onClick = link ? () => navigate(`/${link}/${itemID}`) : () => action(itemID);
 	return (
 		<div className="control">
@@ -14,11 +28,11 @@ export function Button({ type, action, children, icon, color, size, vertical, bl
 				onClick={action}
 				disabled={disabled}
 				className={`button is-${color || 'primary'} is-${size || 'normal'} ${!block ||
-					'is-fullwidth'} ${!loading || 'is-loading'}`}
+					'is-fullwidth'} ${!rounded || 'is-rounded'} ${!loading || 'is-loading'}`}
 			>
 				{icon && (
 					<span className="icon">
-						<i className={`fas fa-${icon} is-${size}`} />
+						<FontAwesomeIcon icon={icon} size={size} color={iconColor} />
 					</span>
 				)}
 				<span>

@@ -1,23 +1,13 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 
-// import Sky from 'react-sky';
-// import facebook from '../img/social/facebook.svg';
-// import instagram from '../img/social/instagram.svg';
-// import linkedin from '../img/social/linkedin.svg';
-// import twitter from '../img/social/twitter.svg';
-// import pinterest from '../img/social/pinterest.svg';
-// import snapchat from '../img/social/snapchat.svg';
-// import youtube from '../img/social/youtube.svg';
-// import vimeo from '../img/social/vimeo.svg';
-
 import Layout from '../components/Layout';
 import Hero from '../components/HeroPicture';
 // import Slideshow from '../components/Slideshow';
 import Blurbs from '../components/Blurbs';
 import ContentSection from '../components/ContentSection';
 import FinalSection from '../components/FinalSection';
-// import BlogSection from '../components/BlogSection';
+import BlogSection from '../components/BlogSection';
 import CTA from '../components/CTA';
 
 export default function IndexPage({ data }) {
@@ -44,8 +34,8 @@ export const IndexPageTemplate = ({ image, heading, subheading, sections, blurbs
 		<Blurbs box items={blurbs} />
 		<ContentSection items={sections} box />
 		<FinalSection content={final} />
-		{/* <BlogSection /> */}
-		<CTA />
+		<BlogSection />
+		<CTA color="dark" />
 	</div>
 );
 

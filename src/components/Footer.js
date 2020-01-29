@@ -1,6 +1,18 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { Columns, Column, Container, Footer, Level, Left, Item, Right, Menu, MenuItem } from '../components/bulma';
+import {
+	Columns,
+	Column,
+	Container,
+	Footer,
+	Level,
+	Left,
+	Item,
+	Right,
+	Menu,
+	MenuItem,
+	Section
+} from '../components/bulma';
 
 import facebook from '../img/social/facebook.svg';
 import instagram from '../img/social/instagram.svg';
@@ -20,31 +32,16 @@ export default () => {
 					<Column>
 						<Menu label="Caragents">
 							<MenuItem to="/why">Why Caragents</MenuItem>
-							<MenuItem to="/how-it-works">How it works</MenuItem>
-							<MenuItem to="/benefits">Benefits</MenuItem>
+							{/* <MenuItem to="/how-it-works">How it works</MenuItem> */}
 							<MenuItem to="/pricing">Pricing</MenuItem>
-							<MenuItem to="/case-studies">Reviews</MenuItem>
-							<MenuItem to="/get-started">Getting Started</MenuItem>
+							<MenuItem to="/case-studies">Testimonials</MenuItem>
 						</Menu>
 					</Column>
 					<Column>
-						<Menu label="services">
-							<MenuItem to="/services/auto-concierge">Auto Concierge</MenuItem>
-							<MenuItem to="/services/buy">Buy a Car</MenuItem>
-							<MenuItem to="/services/sell">Sell a Car</MenuItem>
-							<MenuItem to="/services/storage">Car Storage</MenuItem>
-							<MenuItem to="/services/maintanance">White-glove Maintanace</MenuItem>
-							<MenuItem to="/services/consultancy">Consultancy</MenuItem>
-						</Menu>
-					</Column>
-					<Column>
-						<Menu label="Solutions">
-							<MenuItem to="/solutions/daily-driving">Daily Driving</MenuItem>
-							<MenuItem to="/solutions/fun-cars">Fun Cars</MenuItem>
-							<MenuItem to="/solutions/collectors">Collectors</MenuItem>
-							<MenuItem to="/solutions/fleet-management">Fleet Management</MenuItem>
-							<MenuItem to="/solutions/marketplaces">Marketplaces</MenuItem>
-							<MenuItem to="/solutions/whitelabel">White-label</MenuItem>
+						<Menu label="Shop cars">
+							{/* <MenuItem to="/services/auto-concierge"></MenuItem> */}
+							<MenuItem to="/services/buy">Inventory</MenuItem>
+							<MenuItem to="/services/sell">Trade or Sell</MenuItem>
 						</Menu>
 					</Column>
 
@@ -59,82 +56,83 @@ export default () => {
 						<Menu label="Company">
 							<MenuItem to="/about">About</MenuItem>
 							<MenuItem to="/mission">Mission</MenuItem>
-							<MenuItem to="/news">News</MenuItem>
 							<MenuItem to="/contact">Contact</MenuItem>
 						</Menu>
 					</Column>
 				</Columns>
 
-				<hr />
-				<br />
-				<Level>
-					<Left>
-						<Link to="/" title="Caragents Icon">
-							<div
-								style={{
-									// height: '250px'
-									width: '40px',
-									marginRight: 20
-								}}
-								className="size"
-							>
-								<Icon />
-							</div>
-						</Link>
-						<p className="has-text-left is-size-7">
-							<strong>© 2020 Caragents</strong>. All rights reserved.
-						</p>
-					</Left>
-					<Item>
-						<div id="navMenu" className={`navbar-menu`}>
-							<div className="navbar-end has-text-centered is-size-7">
-								<Link className="navbar-item" to="/terms">
+				<Section>
+					<hr />
+
+					<Level>
+						<Left>
+							<Link to="/" title="Caragents Icon">
+								<div
+									style={{
+										// height: '250px'
+										width: '40px',
+										marginRight: 20
+									}}
+									className="size"
+								>
+									<Icon />
+								</div>
+							</Link>
+							<p className="has-text-left is-size-7">
+								<strong>© 2020 Caragents</strong>. All rights reserved.<br />
+								{/* <Link className="is-size-7" to="/terms">
 									Terms of service
-								</Link>
-								<Link className="navbar-item" to="/privacy">
-									Privacy
-								</Link>
-							</div>
-						</div>
-					</Item>
-					<Item />
-					<Right>
-						<Level>
+								</Link>{' '}
+								<Link className="is-size-7" to="/privacy">
+									Privacy Policy
+								</Link> */}
+								{/* <br /> */}
+								<a href="https://fastlabs.co/">Software by Fastlabs</a>.
+							</p>
+						</Left>
+						<Item>
 							<Item>
 								<p>
 									<a title="facebook" href="#">
 										<img
 											src={facebook}
 											alt="Facebook"
-											style={{ width: '1.5em', height: '1.5em', marginRight: 15 }}
+											style={{ width: '2em', height: '2em', marginRight: 15 }}
 										/>
 									</a>
 									<a title="twitter" href="#">
 										<img
 											src={twitter}
 											alt="Twitter"
-											style={{ width: '1.5em', height: '1.5em', marginRight: 15 }}
+											style={{ width: '2em', height: '2em', marginRight: 15 }}
 										/>
 									</a>
 									<a title="linkedin" href="#">
 										<img
 											src={linkedin}
 											alt="Twitter"
-											style={{ width: '1.5em', height: '1.5em', marginRight: 15 }}
+											style={{ width: '2em', height: '2em', marginRight: 15 }}
 										/>
 									</a>
 									<a title="instagram" href="#">
-										<img
-											src={instagram}
-											alt="Instagram"
-											style={{ width: '1.5em', height: '1.5em' }}
-										/>
+										<img src={instagram} alt="Instagram" style={{ width: '2em', height: '2em' }} />
 									</a>
 								</p>
 							</Item>
-						</Level>
-					</Right>
-					{/* <Right>
+						</Item>
+						<Right>
+							<Item>
+								<p>
+									<a title="facebook" href="#">
+										<img src={appStore} alt="Facebook" />
+									</a>{' '}
+									<a title="twitter" href="#">
+										<img src={googlePlay} alt="Twitter" />
+									</a>
+								</p>
+							</Item>
+						</Right>
+						{/* <Right>
 						<div
 							style={{
 								width: '120px',
@@ -146,8 +144,8 @@ export default () => {
 							</a>
 						</div>
 					</Right> */}
-				</Level>
-				<br />
+					</Level>
+				</Section>
 			</Container>
 			<br />
 			<br />

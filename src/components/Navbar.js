@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { Logo } from './brand';
 
+import { Button } from './bulma';
+
 const Navbar = class extends React.Component {
 	state = {
 		active: false,
@@ -31,16 +33,15 @@ const Navbar = class extends React.Component {
 	render() {
 		return (
 			<div>
-				<nav className="navbar is-fixed-top has-shadow" role="navigation" aria-label="main-navigation">
+				<nav className="navbar is-light is-fixed-top has-shadow" role="navigation" aria-label="main-navigation">
 					<div className="container">
 						<div className="navbar-brand">
 							<Link to="/" className="navbar-item" title="Logo">
 								<div
 									style={{
-										// height: '250px'
-										width: '100px'
+										width: 180,
+										height: 28
 									}}
-									className="size"
 								>
 									<Logo />
 								</div>
@@ -58,20 +59,23 @@ const Navbar = class extends React.Component {
 						</div>
 						<div id="navMenu" className={`navbar-menu ${this.state.navBarActiveClass}`}>
 							<div className="navbar-end has-text-centered has-text-weight-semibold">
-								<Link className="navbar-item" to="/platform/overview">
+								<Link className="navbar-item" to="/pricing">
 									Why Caragents
 								</Link>
-								<Link className="navbar-item" to="/features/overview">
-									Services
-								</Link>
+
 								<Link className="navbar-item" to="/solutions/overview">
-									Solutions
+									Testimonials
 								</Link>
 								<Link className="navbar-item" to="/pricing">
 									Pricing
 								</Link>
-								<Link className="navbar-item" to="/contact">
-									Contact
+								<Link className="navbar-item" to="/features/overview">
+									Trade or Sell
+								</Link>
+								<Link className="navbar-item" to="/pricing">
+									<Button icon="car-alt" color="danger" iconColor="#FFF" rounded>
+										Shop cars
+									</Button>
 								</Link>
 							</div>
 						</div>
@@ -86,9 +90,9 @@ const Navbar = class extends React.Component {
 							<span className="navbar-item is-hidden-mobile">
 								<div className="field is-grouped">
 									<p className="control">
-										<a href="#" className="button is-black is-outlined is-rounded">
-											<strong>GET STARTED</strong>
-										</a>
+										<Button icon="car-alt" color="danger" iconColor="#FFF" rounded>
+											Shop cars
+										</Button>
 									</p>
 									<p className="control">
 										<a href="#" className="button is-text has-text-weight-semibold">
@@ -115,11 +119,11 @@ const Navbar = class extends React.Component {
 							</span>
 						</div>
 
-						<div className="navbar-end is-hidden-mobile">
+						{/* <div className="navbar-end is-hidden-mobile">
 							<Link className="navbar-item has-text-weight-semibold" to="/news">
 								New! Free car appraisal
 							</Link>
-						</div>
+						</div> */}
 					</div>
 				</nav>
 			</div>
