@@ -1,19 +1,17 @@
 ---
-templateKey: 'privacy-page'
-path: /privacy
+templateKey: privacy-page
 title: Privacy Policy
 ---
-### Shade-grown coffee
-Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.
+### Privacy Policy
 
-### Single origin
-Single-origin coffee is coffee grown within a single known geographic origin. Sometimes, this is a single farm or a specific collection of beans from a single country. The name of the coffee is then usually the place it was grown to whatever degree available.
-
-### Sustainable farming
-Sustainable agriculture is farming in sustainable ways based on an understanding of ecosystem services, the study of relationships between organisms and their environment. What grows where and how it is grown are a matter of choice and careful consideration for nature and communities.
-
-### Direct sourcing
-Direct trade is a form of sourcing practiced by some coffee roasters. Advocates of direct trade practices promote direct communication and price negotiation between buyer and farmer, along with systems that encourage and incentivize quality.
-
-### Reinvest profits
-We want to truly empower the communities that bring amazing coffee to you. That’s why we reinvest 20% of our profits into farms, local businesses and schools everywhere our coffee is grown. You can see the communities grow and learn more about coffee farming on our blog.
+This document contains the official policy of CARAGENTS regarding information gathered from standard website usage, as well as the information you provide when utilizing our website. The amount and type of information collected will depend on how the site is used.\
+\
+**Standard Website Usage**\
+\
+When performing standard usage of our website, personal information such as name, mailing address, email address, phone number, or social security number is not collect or stored. The only information collected and stored during standard website usage is the name of your Internet service provider, the website you visited last, the pages you request, and the time and date of said requests. This information is gathered to generate analytics and statistics. We monitor our website activity to improve the efficiency and effectiveness for our users. You may visit the official CARAGENTS website to read company and product information. Any information collected is only shared within the company of CARAGENTS.\
+\
+**Personal Information**\
+\
+There are instances where CARAGENTS may ask you to provide specific personal information when completing and online form. An instance like this may occur when using one of our online services such as buying a new car, buying a used car, or submitting an online credit application. It is entirely optional for any individual to complete one of these forms. If you choose to utilize one of these online services, CARAGENTS may require you to provide such personal identification information. If you choose to submit personal information to CARAGENTS, you agree and understand that CARAGENTS may store, access, and utilize your customer profile information. CARAGENTS may share said personal information with reputable credit agencies as authorized by federal and state laws, only as lawfully permitted and/or required. This information is gathered for various reasons, including but not limited to informing you of products and services of CARAGENTS, and any special offers.\
+\
+The privacy practices of CARAGENTS are designed to provide you with the highest level of protection for any personal information and our computer systems.
