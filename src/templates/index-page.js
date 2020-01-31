@@ -30,7 +30,21 @@ export default function IndexPage({ data }) {
 
 export const IndexPageTemplate = ({ image, heading, subheading, sections, blurbs, final }) => (
 	<div>
-		<Hero size="large" title={heading} subtitle={subheading} image={image} signup />
+		<Hero
+			size="large"
+			title={heading}
+			subtitle={subheading}
+			image={image}
+			cta={{
+				label: 'Shop cars',
+				icon: 'car-alt',
+				link: '/inventory'
+			}}
+			calendar={{
+				label: 'Free consultation',
+				icon: 'phone-alt'
+			}}
+		/>
 		<Blurbs box items={blurbs} />
 		<ContentSection items={sections} box />
 		<FinalSection content={final} />

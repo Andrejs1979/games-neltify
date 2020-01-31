@@ -4,7 +4,7 @@ import PreviewCompatibleImage from './PreviewCompatibleImage';
 import { Link } from 'gatsby';
 import { Button } from './bulma';
 
-const Hero = ({ size, title, subtitle, image, signup, cta, link }) => (
+const Hero = ({ size, title, subtitle, image, signup, cta, calendar }) => (
 	<section className={`hero is-${size}`}>
 		<div
 			className="hero-body full-width-image margin-top-0"
@@ -50,9 +50,24 @@ const Hero = ({ size, title, subtitle, image, signup, cta, link }) => (
 						</div>
 					)}
 					{cta && (
-						<Link className="button is-primary is-medium" to={link}>
-							<strong>{cta} →</strong>
-						</Link>
+						<div className="is-hidden-mobile">
+							<div className="field is-grouped">
+								<p className="control">
+									<Link to={cta.link}>
+										<Button icon={cta.icon} size="large" color="danger" rounded>
+											<strong>{cta.label}</strong>
+										</Button>
+									</Link>
+								</p>
+								{calendar && (
+									<p className="control">
+										<Button icon={calendar.icon} size="large" color="text" rounded>
+											{calendar.label}
+										</Button>
+									</p>
+								)}
+							</div>
+						</div>
 					)}
 				</div>
 			</div>

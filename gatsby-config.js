@@ -1,8 +1,8 @@
 module.exports = {
 	siteMetadata: {
-		siteUrl: 'https://mark.camera',
-		title: 'Promote your business on Instagram at scale',
-		description: 'Promote your business on Instagram at scale'
+		siteUrl: 'https://caragents.app',
+		title: 'Caragents',
+		description: 'Buy a car of your dreams stress-free'
 	},
 	plugins: [
 		'gatsby-plugin-react-helmet',
@@ -31,18 +31,43 @@ module.exports = {
 		},
 		'gatsby-plugin-sharp',
 		'gatsby-transformer-sharp',
-		// {
-		//   resolve: "gatsby-plugin-tags",
-		//   options: {
-		//     templatePath: `${__dirname}/src/templates/tag.js`,
-		//   },
-		// },
+		{
+			resolve: `gatsby-source-mongodb`,
+			options: {
+				connectionString: 'mongodb+srv://gatsby:M7XFgmlQHo3dc1DR@fastlabs-9ib4r.mongodb.net',
+				dbName: `caragents`,
+				collection: [ `inventory` ]
+			}
+		},
+		{
+			resolve: 'gatsby-plugin-tags',
+			options: {
+				templatePath: `${__dirname}/src/templates/tags.js`
+			}
+		},
 		// {
 		// 	resolve: 'gatsby-plugin-categories',
 		// 	options: {
 		// 		templatePath: `${__dirname}/src/templates/category.js`
 		// 	}
 		// },
+		{
+			resolve: `gatsby-plugin-manifest`,
+			options: {
+				name: `GatsbyJS`,
+				short_name: `GatsbyJS`,
+				start_url: `/`,
+				background_color: `#f7f0eb`,
+				theme_color: `#a2466c`,
+				display: `standalone`
+			}
+		},
+		{
+			resolve: `gatsby-plugin-offline`,
+			options: {
+				precachePages: [ `/about/`, `/inventory/*` ]
+			}
+		},
 		{
 			resolve: 'gatsby-transformer-remark',
 			options: {
@@ -78,21 +103,32 @@ module.exports = {
 			}
 		},
 		{
-			resolve: `gatsby-plugin-google-analytics`,
+			resolve: `gatsby-source-cloudinary`,
 			options: {
-				trackingId: 'UA-96016389-11',
-				// Defines where to place the tracking script - `true` in the head and `false` in the body
-				head: false,
-				// Setting this parameter is optional
-				anonymize: false,
-				// Setting this parameter is also optional
-				respectDNT: false,
-				// Avoids sending pageview hits from custom paths
-				exclude: [ '/preview/**', '/admin/**' ],
-				// Delays sending pageview hits on route update (in milliseconds)
-				pageTransitionDelay: 0
+				cloudName: 'fastlabs',
+				apiKey: '422643182559222',
+				apiSecret: 'zPhz5wUJ2aOsFVEikLddFREUwrk',
+				resourceType: `image`,
+				tags: `true`,
+				prefix: `caragents/`
 			}
 		},
+		// {
+		// 	resolve: `gatsby-plugin-google-analytics`,
+		// 	options: {
+		// 		trackingId: 'UA-96016389-11',
+		// 		// Defines where to place the tracking script - `true` in the head and `false` in the body
+		// 		head: false,
+		// 		// Setting this parameter is optional
+		// 		anonymize: false,
+		// 		// Setting this parameter is also optional
+		// 		respectDNT: false,
+		// 		// Avoids sending pageview hits from custom paths
+		// 		exclude: [ '/preview/**', '/admin/**' ],
+		// 		// Delays sending pageview hits on route update (in milliseconds)
+		// 		pageTransitionDelay: 0
+		// 	}
+		// },
 		// {
 		// 	resolve: `gatsby-plugin-segment-js`,
 		// 	options: {

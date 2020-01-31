@@ -62,7 +62,6 @@ const Navbar = class extends React.Component {
 								<Link className="navbar-item" to="/pricing">
 									Why Caragents
 								</Link>
-
 								<Link className="navbar-item" to="/solutions/overview">
 									Testimonials
 								</Link>
@@ -72,7 +71,7 @@ const Navbar = class extends React.Component {
 								<Link className="navbar-item" to="/features/overview">
 									Trade or Sell
 								</Link>
-								<Link className="navbar-item" to="/pricing">
+								<Link className="navbar-item" to="/inventory">
 									<Button icon="car-alt" color="danger" iconColor="#FFF" rounded>
 										Shop cars
 									</Button>
@@ -90,15 +89,17 @@ const Navbar = class extends React.Component {
 							<span className="navbar-item is-hidden-mobile">
 								<div className="field is-grouped">
 									<p className="control">
-										<Button icon="car-alt" color="danger" iconColor="#FFF" rounded>
-											Shop cars
-										</Button>
+										<Link to="/inventory">
+											<Button icon="car-alt" color="danger" iconColor="#FFF" rounded>
+												Shop cars
+											</Button>
+										</Link>
 									</p>
-									<p className="control">
+									{/* <p className="control">
 										<a href="#" className="button is-text has-text-weight-semibold">
 											Schedule a free consultation
 										</a>
-									</p>
+									</p> */}
 								</div>
 							</span>
 							<span className="navbar-item is-hidden-desktop">
@@ -119,11 +120,19 @@ const Navbar = class extends React.Component {
 							</span>
 						</div>
 
-						{/* <div className="navbar-end is-hidden-mobile">
-							<Link className="navbar-item has-text-weight-semibold" to="/news">
-								New! Free car appraisal
-							</Link>
-						</div> */}
+						<div className="navbar-end">
+							<span className="navbar-item">
+								<p className="control">
+									<p className="control">
+										<a href="tel:415-699-2647" className="has-text-weight-semibold">
+											<Button icon="phone-alt" color="black" iconColor="#FFF" rounded>
+												415-699-2647
+											</Button>
+										</a>
+									</p>
+								</p>
+							</span>
+						</div>
 					</div>
 				</nav>
 			</div>

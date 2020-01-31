@@ -40,8 +40,9 @@ export default () => {
 					<Column>
 						<Menu label="Shop cars">
 							{/* <MenuItem to="/services/auto-concierge"></MenuItem> */}
-							<MenuItem to="/services/buy">Inventory</MenuItem>
-							<MenuItem to="/services/sell">Trade or Sell</MenuItem>
+							<MenuItem to="/inventory">Inventory</MenuItem>
+							<MenuItem to="/sell">Trade or Sell</MenuItem>
+							<MenuItem to="/showroom">Showroom</MenuItem>
 						</Menu>
 					</Column>
 
@@ -62,35 +63,8 @@ export default () => {
 				</Columns>
 
 				<Section>
-					<hr />
-
 					<Level>
 						<Left>
-							<Link to="/" title="Caragents Icon">
-								<div
-									style={{
-										// height: '250px'
-										width: '40px',
-										marginRight: 20
-									}}
-									className="size"
-								>
-									<Icon />
-								</div>
-							</Link>
-							<p className="has-text-left is-size-7">
-								<strong>© 2020 Caragents</strong>. All rights reserved.<br />
-								{/* <Link className="is-size-7" to="/terms">
-									Terms of service
-								</Link>{' '}
-								<Link className="is-size-7" to="/privacy">
-									Privacy Policy
-								</Link> */}
-								{/* <br /> */}
-								<a href="https://fastlabs.co/">Software by Fastlabs</a>.
-							</p>
-						</Left>
-						<Item>
 							<Item>
 								<p>
 									<a title="facebook" href="#">
@@ -119,7 +93,8 @@ export default () => {
 									</a>
 								</p>
 							</Item>
-						</Item>
+						</Left>
+
 						<Right>
 							<Item>
 								<p>
@@ -132,8 +107,42 @@ export default () => {
 								</p>
 							</Item>
 						</Right>
-						{/* <Right>
-						<div
+					</Level>
+					<hr />
+
+					<Level>
+						<Left>
+							<Item>
+								<Link to="/" title="Caragents Icon">
+									<div
+										style={{
+											// height: '250px'
+											width: '40px',
+											marginRight: 20
+										}}
+										className="size"
+									>
+										<Icon />
+									</div>
+								</Link>
+								<p className="has-text-left is-size-7">
+									<strong>© 2020 Caragents</strong>. All rights reserved.<br />
+									<Link className="is-size-7" to="/terms">
+										Terms of service
+									</Link>{' '}
+									<Link className="is-size-7" to="/privacy">
+										Privacy Policy
+									</Link>
+								</p>
+							</Item>
+						</Left>
+
+						<Right>
+							<Item>
+								<a className="is-size-7" href="https://fastlabs.co/">
+									Software by Fastlabs
+								</a>
+								{/* <div
 							style={{
 								width: '120px',
 								display: 'inline-block'
@@ -142,8 +151,9 @@ export default () => {
 							<a title="FinHub Global Ventures" href="https://finhub.vc/" target="_blanc">
 								<img src={finhub} alt="FinHub Global Ventures logo" />
 							</a>
-						</div>
-					</Right> */}
+						</div> */}
+							</Item>
+						</Right>
 					</Level>
 				</Section>
 			</Container>

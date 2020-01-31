@@ -1,7 +1,7 @@
 import React from 'react';
 
 const CTA = () => (
-	<section className="hero is-small is-black is-bold">
+	<section className="hero is-medium is-light is-bold">
 		<div className="hero-body">
 			<div className="container">
 				<div className="content has-text-centered">
