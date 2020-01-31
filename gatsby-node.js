@@ -32,7 +32,8 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         mileage
         model
         mongodb_id
-        price
+		price
+		vin
         pictures {
           uri
           featured
@@ -67,9 +68,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 		const inventory = result.data.allMongodbCaragentsInventory.edges;
 
 		inventory.forEach((edge) => {
-			const { id, body, make, model, year, mileage } = edge.node;
+			const { id, body, make, model, year, mileage, vin } = edge.node;
 			createPage({
-				path: `${make}-${model}-${year}-${mileage}`,
+				path: `${make}-${model}-${year}-${vin}`,
 				tags: [ make, model, year, body ],
 				component: path.resolve('src/templates/inventory-page.js'),
 				// additional data can be passed via context

@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { useStaticQuery, graphql } from 'gatsby';
-import PreviewCompatibleImage from './PreviewCompatibleImage';
+import Img from 'react-cloudinary-lazy-image';
 
+import PreviewCompatibleImage from './PreviewCompatibleImage';
 import { Columns } from './bulma';
 
 export default function InventoryRoll() {
@@ -22,10 +23,16 @@ export default function InventoryRoll() {
 							<header>
 								{item.pictures ? (
 									<div className="featured-thumbnail">
-										<PreviewCompatibleImage
-											imageInfo={{
-												image: item.pictures[0],
-												alt: `featured image thumbnail for post ${item.title}`
+										<Img
+											cloudName={'fastlabs'}
+											imageName={`caragents/${item.pictures[0].uri}`}
+											fluid={{
+												maxWidth: 300,
+												height: 300
+											}}
+											style={{
+												width: '40vw',
+												height: '20vh'
 											}}
 										/>
 									</div>
@@ -42,8 +49,8 @@ export default function InventoryRoll() {
 								{item.model}
 								<br />
 								<br />
-								<Link className="button" to={item.id}>
-									Take a look →
+								<Link className="button" to={`${item.make}-${item.model}-${item.year}-${item.vin}`}>
+									Learn more →
 								</Link>
 							</p>
 						</article>

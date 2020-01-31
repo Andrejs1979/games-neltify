@@ -52,9 +52,9 @@ export default function InventoryPage({ data }) {
 export const InventoryPageTemplate = ({ image, heading, subheading, sections, blurbs, final }) => (
 	<div>
 		<Hero size="medium" title={heading} subtitle={subheading} signup />
-		<Blurbs box items={blurbs} />
+		{/* <Blurbs box items={blurbs} />
 		<ContentSection items={sections} box />
-		<FinalSection content={final} />
+		<FinalSection content={final} /> */}
 		{/* <BlogSection /> */}
 		<CTA />
 	</div>
