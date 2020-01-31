@@ -4,11 +4,40 @@ import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'react-cloudinary-lazy-image';
 
 import PreviewCompatibleImage from './PreviewCompatibleImage';
-import { Columns } from './bulma';
+import { Columns, Tiles } from './bulma';
 
 export default function InventoryRoll() {
 	const data = useStaticQuery(INVENTORY_ROLL_QUERY);
 	const { edges: items } = data.allMongodbCaragentsInventory;
+
+	return (
+		<Tiles>
+			<div class="tile">
+				<div class="tile is-parent is-vertical">
+					{items.map(({ node: item }) => (
+						<article class="tile is-child box">
+							<p class="title">
+								{item.make} {item.model}
+							</p>
+							<p class="subtitle">{item.year}</p>
+							<Img
+								cloudName={'fastlabs'}
+								imageName={`caragents/${item.pictures[0].uri}`}
+								fluid={{
+									maxWidth: 300,
+									height: 300
+								}}
+								style={{
+									width: '40vw',
+									height: '20vh'
+								}}
+							/>
+						</article>
+					))}
+				</div>
+			</div>
+		</Tiles>
+	);
 
 	return (
 		<Columns multiline>
