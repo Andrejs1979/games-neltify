@@ -4,52 +4,27 @@ import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'react-cloudinary-lazy-image';
 
 import PreviewCompatibleImage from './PreviewCompatibleImage';
-import { Columns, Tiles } from './bulma';
+import { Columns, Button, ButtonGroup, Tiles, Tile, Parent, Level, Left, Right } from './bulma';
 
 export default function InventoryRoll() {
 	const data = useStaticQuery(INVENTORY_ROLL_QUERY);
 	const { edges: items } = data.allMongodbCaragentsInventory;
 
 	return (
-		<Tiles>
-			<div class="tile">
-				<div class="tile is-parent is-vertical">
-					{items.map(({ node: item }) => (
-						<article class="tile is-child box">
-							<p class="title">
-								{item.make} {item.model}
-							</p>
-							<p class="subtitle">{item.year}</p>
-							<Img
-								cloudName={'fastlabs'}
-								imageName={`caragents/${item.pictures[0].uri}`}
-								fluid={{
-									maxWidth: 300,
-									height: 300
-								}}
-								style={{
-									width: '40vw',
-									height: '20vh'
-								}}
-							/>
-						</article>
-					))}
-				</div>
-			</div>
-		</Tiles>
-	);
-
-	return (
 		<Columns multiline>
 			{items &&
 				items.map(({ node: item }) => (
-					<div className="is-parent column is-6" key={item.id}>
-						<article
-							className={`blog-list-item tile is-child box notification ${item.featured
-								? 'is-featured'
-								: ''}`}
-						>
+					<div className="is-parent column is-4" key={item.id}>
+						<Tile box>
 							<header>
+								<Link className="title is-size-4" to={item.id}>
+									{item.make} {item.model}
+								</Link>
+								<br />
+								<span className="subtitle is-size-5 is-block">
+									{item.year} &bull; {item.mileage} miles
+								</span>
+
 								{item.pictures ? (
 									<div className="featured-thumbnail">
 										<Img
@@ -59,30 +34,30 @@ export default function InventoryRoll() {
 												maxWidth: 300,
 												height: 300
 											}}
-											style={{
-												width: '40vw',
-												height: '20vh'
-											}}
 										/>
 									</div>
 								) : null}
-								<p className="post-meta">
-									<Link className="title has-text-primary is-size-4" to={item.id}>
-										{item.model}
-									</Link>
-									<span> &bull; </span>
-									<span className="subtitle is-size-5 is-block">{item.createdAt}</span>
-								</p>
 							</header>
 							<p>
-								{item.model}
 								<br />
-								<br />
-								<Link className="button" to={`${item.make}-${item.model}-${item.year}-${item.vin}`}>
-									Learn more →
-								</Link>
+								<Level>
+									<Left>
+										<Link to={`${item.make}-${item.model}-${item.year}-${item.vin}`}>
+											<Button icon="search" color="danger" rounded>
+												Learn more
+											</Button>
+										</Link>
+									</Left>
+									<Right>
+										<Link to={`${item.make}-${item.model}-${item.year}-${item.vin}`}>
+											<Button icon="calendar-alt" color="black" rounded>
+												Test-drive
+											</Button>
+										</Link>
+									</Right>
+								</Level>
 							</p>
-						</article>
+						</Tile>
 					</div>
 				))}
 		</Columns>

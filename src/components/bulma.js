@@ -210,6 +210,16 @@ export function Tiles({ children }) {
 	return <div className="tile is-ancestor">{children}</div>;
 }
 
+export function Parent({ children, vertical }) {
+	return <div class={`tile is-parent ${!vertical || 'is-vertical'}`}>{children}</div>;
+}
+
+export function Tile({ children, color, box }) {
+	return (
+		<article class={`tile is-child ${!color || 'notification'} is-${color} ${!box || 'box'}`}>{children}</article>
+	);
+}
+
 export function Vertical({ children, size }) {
 	return <div className={`tile is-vertical is-${size}`}>{children}</div>;
 }
