@@ -1,62 +1,110 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import Layout from '../components/Layout';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Img from 'react-cloudinary-lazy-image';
+import { Box, Column, Columns, Section, Level, Item, Tile } from '../components/bulma';
 
-import Hero from '../components/Hero';
-import Blurbs from '../components/Blurbs';
-import ContentSection from '../components/ContentSection';
-import FinalSection from '../components/FinalSection';
-// import BlogSection from '../components/BlogSection';
+import Layout from '../components/Layout';
+import Hero from '../components/HeroInventory';
+import Suggestions from '../components/Suggestions';
 import CTA from '../components/CTA';
 
 export default function InventoryPage({ data }) {
-	const { mongodbCaragentsInventory: page } = data;
-	const {
-		make,
-		model,
-		mileage,
-		pictures,
-		price,
-		transmission,
-		trim,
-		vin,
-		year,
-		exterior,
-		fuel,
-		interior,
-		drive,
-		doors,
-		body,
-		id,
-		mpg_city,
-		mpg_highway
-	} = page;
-
-	const heading = make;
-	const subheading = model;
+	const { mongodbCaragentsInventory: item } = data;
 
 	return (
 		<Layout>
-			<InventoryPageTemplate
-				// image={image}
-				heading={heading}
-				subheading={subheading}
-				// blurbs={blurbs}
-				// sections={sections}
-				// final={final}
-			/>
+			<InventoryPageTemplate item={item} />
 		</Layout>
 	);
 }
 
-export const InventoryPageTemplate = ({ image, heading, subheading, sections, blurbs, final }) => (
+export const InventoryPageTemplate = ({ item }) => (
 	<div>
-		<Hero size="medium" title={heading} subtitle={subheading} signup />
-		{/* <Blurbs box items={blurbs} />
-		<ContentSection items={sections} box />
-		<FinalSection content={final} /> */}
-		{/* <BlogSection /> */}
-		<CTA />
+		<Hero
+			item={item}
+			calendar={{
+				label: 'Schedule a test-drive',
+				icon: 'calendar-alt'
+			}}
+		/>
+		<Section>
+			<Columns>
+				<Column>
+					<Box>
+						<Level>
+							<Item>
+								<FontAwesomeIcon icon="car-side" size="4x" />
+							</Item>
+							<Item>
+								<div>
+									<p className="title">{item.body}</p>
+									{/* <p className="subtitle">{item.doors} Doors</p> */}
+								</div>
+							</Item>
+						</Level>
+					</Box>
+				</Column>
+				<Column>
+					<Box>
+						<Level>
+							<Item>
+								<FontAwesomeIcon icon="tachometer-alt" size="4x" />
+							</Item>
+							<Item>
+								<div>
+									<p className="title">{item.transmission}</p>
+									{/* <p className="subtitle">{item.drive}</p> */}
+								</div>
+							</Item>
+						</Level>
+					</Box>
+				</Column>
+
+				<Column>
+					<Box>
+						<Level>
+							<Item>
+								<FontAwesomeIcon icon="leaf" size="4x" />
+							</Item>
+							<Item>
+								<div>
+									<p className="title">
+										{item.mpg_city}/{item.mpg_highway} mpg
+									</p>
+									{/* <p className="subtitle">{item.mpg_highway} mpg</p> */}
+								</div>
+							</Item>
+						</Level>
+					</Box>
+				</Column>
+			</Columns>
+		</Section>
+		<Section>
+			<Columns multiline>
+				{item.pictures.map((picture) => (
+					<div className="is-parent column is-4" key={picture.uri}>
+						<Tile box>
+							<Img
+								cloudName={'fastlabs'}
+								imageName={`caragents/${picture.uri}`}
+								fluid={{
+									maxWidth: 300,
+									height: 300
+								}}
+							/>
+						</Tile>
+					</div>
+				))}
+			</Columns>
+		</Section>
+
+		<CTA
+			title="Like this car?"
+			subtitle="We can bring it to you to try, no-obligation"
+			cta={{ label: 'Book your test-drive', icon: 'calendar-alt', link: '/' }}
+		/>
+		<Suggestions />
 	</div>
 );
 

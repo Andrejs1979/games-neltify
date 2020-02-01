@@ -4,13 +4,13 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 // import { fab } from '@fortawesome/free-brands-svg-icons';
 import {
 	faSquare,
-	faStore,
-	faPortrait,
-	faShareSquare,
 	faSearch,
 	faCarAlt,
 	faPhoneAlt,
-	faCalendarAlt
+	faCalendarAlt,
+	faLeaf,
+	faCarSide,
+	faTachometerAlt
 } from '@fortawesome/free-solid-svg-icons';
 import Footer from '../components/Footer';
 
@@ -18,7 +18,7 @@ import Navbar from '../components/Navbar';
 import './all.sass';
 import useSiteMetadata from './SiteMetadata';
 
-library.add(faSquare, faSearch, faCarAlt, faPhoneAlt, faCalendarAlt);
+library.add(faSquare, faSearch, faCarAlt, faPhoneAlt, faCalendarAlt, faLeaf, faCarSide, faTachometerAlt);
 
 const TemplateWrapper = ({ children }) => {
 	const { title, description } = useSiteMetadata();

@@ -19,18 +19,21 @@ const Hero = ({ item, size, cta, calendar }) => (
 						<h2 className="subtitle is-size-3">
 							{item.year} &bull; {item.mileage} miles
 						</h2>
+						<h2 className="subtitle is-size-3">Just ${item.price}</h2>
 						<br />
 
-						{cta && (
+						{(cta || calendar) && (
 							<div className="is-hidden-mobile">
 								<div className="field is-grouped">
-									<p className="control">
-										<Link to={`/${item.make}-${item.model}-${item.year}-${item.vin}`}>
-											<Button icon={cta.icon} size="large" color="danger" rounded>
-												<strong>{cta.label}</strong>
-											</Button>
-										</Link>
-									</p>
+									{cta && (
+										<p className="control">
+											<Link to={`/${item.make}-${item.model}-${item.year}-${item.vin}`}>
+												<Button icon={cta.icon} size="large" color="danger" rounded>
+													<strong>{cta.label}</strong>
+												</Button>
+											</Link>
+										</p>
+									)}
 									{calendar && (
 										<p className="control">
 											<Button icon={calendar.icon} size="large" color="black" rounded>

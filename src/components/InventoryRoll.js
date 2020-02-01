@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'react-cloudinary-lazy-image';
 
 import PreviewCompatibleImage from './PreviewCompatibleImage';
-import { Columns, Button, ButtonGroup, Tiles, Tile, Parent, Level, Left, Right } from './bulma';
+import { Columns, Button, Tile, Level, Left, Right } from './bulma';
 
 export default function InventoryRoll() {
 	const data = useStaticQuery(INVENTORY_ROLL_QUERY);
@@ -29,16 +29,14 @@ export default function InventoryRoll() {
 								</span>
 
 								{item.pictures ? (
-									<div className="featured-thumbnail">
-										<Img
-											cloudName={'fastlabs'}
-											imageName={`caragents/${item.pictures[0].uri}`}
-											fluid={{
-												maxWidth: 300,
-												height: 300
-											}}
-										/>
-									</div>
+									<Img
+										cloudName={'fastlabs'}
+										imageName={`caragents/${item.pictures[0].uri}`}
+										fluid={{
+											maxWidth: 300,
+											height: 300
+										}}
+									/>
 								) : null}
 							</header>
 							<p>
