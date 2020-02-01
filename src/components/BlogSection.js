@@ -7,7 +7,6 @@ import { Box, Column, Columns, Section } from '../components/bulma';
 export default function BlogHeadlines({ box }) {
 	const data = useStaticQuery(BLOG_HEADLINES_QUERY);
 	const { edges: posts } = data.allMarkdownRemark;
-	console.log(data);
 
 	return (
 		<Section>

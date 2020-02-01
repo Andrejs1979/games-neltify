@@ -54,11 +54,11 @@ export function ButtonGroup({ children, attached, centered, right }) {
 export function Container({ children }) {
 	return <div className="container">{children}</div>;
 }
-export function Columns({ children, centered, mobile, multiline }) {
+export function Columns({ children, centered, mobile, multiline, vertical }) {
 	return (
 		<div
-			className={`columns ${!centered || 'is-centered'} ${!mobile || 'is-mobile'} ${!multiline ||
-				'is-multiline'}`}
+			className={`columns ${!centered || 'is-centered'} ${!vertical || 'is-vcentered'} ${!mobile ||
+				'is-mobile'} ${!multiline || 'is-multiline'}`}
 		>
 			{children}
 		</div>
@@ -211,12 +211,14 @@ export function Tiles({ children }) {
 }
 
 export function Parent({ children, vertical }) {
-	return <div class={`tile is-parent ${!vertical || 'is-vertical'}`}>{children}</div>;
+	return <div className={`tile is-parent ${!vertical || 'is-vertical'}`}>{children}</div>;
 }
 
 export function Tile({ children, color, box }) {
 	return (
-		<article class={`tile is-child ${!color || 'notification'} is-${color} ${!box || 'box'}`}>{children}</article>
+		<article className={`tile is-child ${!color || 'notification'} is-${color} ${!box || 'box'}`}>
+			{children}
+		</article>
 	);
 }
 

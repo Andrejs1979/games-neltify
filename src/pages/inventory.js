@@ -13,22 +13,19 @@ export default function InventoryPage() {
 	const data = useStaticQuery(INVENTORY_QUERY);
 	const { edges: items } = data.allMongodbCaragentsInventory;
 
-	const { node: { make, model, year, price, vin, pictures } } = items[0];
+	const { node, node: { make, model, year, price, vin, pictures } } = items[0];
 
 	return (
 		<Layout>
 			<Hero
-				size="large"
-				title={`Just in: ${make} ${model}`}
-				subtitle={price}
-				pictures={pictures}
+				item={node}
 				cta={{
 					label: 'Learn more',
 					icon: 'search',
 					link: `${make}-${model}-${year}-${vin}`
 				}}
 				calendar={{
-					label: 'Schedule test-drive',
+					label: 'Schedule a test-drive',
 					icon: 'calendar-alt'
 				}}
 			/>
@@ -36,14 +33,18 @@ export default function InventoryPage() {
 			<Section>
 				<InventoryRoll />
 			</Section>
-			<CTA />
+			<CTA
+				title="Need help choosing?"
+				subtitle="We are here to help"
+				cta={{ label: 'Schedule a free call', icon: 'calendar-alt', link: '/' }}
+			/>
 		</Layout>
 	);
 }
 
 const INVENTORY_QUERY = graphql`
-	query MyQuery {
-		allMongodbCaragentsInventory {
+	query JustIn {
+		allMongodbCaragentsInventory(limit: 1, sort: { fields: createdAt, order: DESC }) {
 			edges {
 				node {
 					id

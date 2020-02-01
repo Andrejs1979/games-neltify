@@ -1,73 +1,60 @@
 import React from 'react';
-import PreviewCompatibleImage from './PreviewCompatibleImage';
+// import PreviewCompatibleImage from './PreviewCompatibleImage';
 // import Img from 'gatsby-image';
+// import { numeral } from 'numeral';
 import Img from 'react-cloudinary-lazy-image';
 import { Link } from 'gatsby';
-import { Button } from './bulma';
+import { Button, Box, Columns, Column } from './bulma';
 
-const Hero = ({ size, title, subtitle, pictures, cta, calendar }) => (
-	<section className={`hero is-${size}`}>
-		<div
-			className="hero-body full-width-image margin-top-0"
-			style={{
-				backgroundImage: `caragents/${pictures[0].uri}`,
-				backgroundPosition: `top left`,
-				backgroundAttachment: `fixed`
-			}}
-		>
+const Hero = ({ item, size, cta, calendar }) => (
+	<section className={`hero is-light is-${size}`}>
+		<div className="hero-body">
 			<div className="container">
-				<Img
-					cloudName={'fastlabs'}
-					imageName={`caragents/${pictures[0].uri}`}
-					fluid={{
-						maxWidth: 300,
-						height: 300
-					}}
-					style={{
-						width: '40vw',
-						height: '20vh'
-					}}
-				/>
-				<div className="content has-text-left">
-					<h1
-						className="title is-size-1 has-text-weight-bold"
-						style={{
-							color: 'white'
-						}}
-					>
-						{title}
-					</h1>
-					<h2
-						className="subtitle"
-						style={{
-							color: '#999'
-						}}
-					>
-						{subtitle}
-					</h2>
-					<br />
+				<br />
+				<Columns vertical>
+					<Column size="three-quarters">
+						<h1 className="title is-size-1 has-text-weight-bold">
+							{item.make} {item.model}
+						</h1>
+						<h2 className="subtitle is-size-3">
+							{item.year} &bull; {item.mileage} miles
+						</h2>
+						<br />
 
-					{cta && (
-						<div className="is-hidden-mobile">
-							<div className="field is-grouped">
-								<p className="control">
-									<Link to={cta.link}>
-										<Button icon={cta.icon} size="large" color="danger" rounded>
-											<strong>{cta.label}</strong>
-										</Button>
-									</Link>
-								</p>
-								{calendar && (
+						{cta && (
+							<div className="is-hidden-mobile">
+								<div className="field is-grouped">
 									<p className="control">
-										<Button icon={calendar.icon} size="large" color="text" rounded>
-											{calendar.label}
-										</Button>
+										<Link to={`/${item.make}-${item.model}-${item.year}-${item.vin}`}>
+											<Button icon={cta.icon} size="large" color="danger" rounded>
+												<strong>{cta.label}</strong>
+											</Button>
+										</Link>
 									</p>
-								)}
+									{calendar && (
+										<p className="control">
+											<Button icon={calendar.icon} size="large" color="black" rounded>
+												{calendar.label}
+											</Button>
+										</p>
+									)}
+								</div>
 							</div>
-						</div>
-					)}
-				</div>
+						)}
+					</Column>
+					<Column>
+						<Box>
+							<Img
+								cloudName={'fastlabs'}
+								imageName={`caragents/${item.pictures[0].uri}`}
+								fluid={{
+									maxWidth: 500,
+									height: 500
+								}}
+							/>
+						</Box>
+					</Column>
+				</Columns>
 			</div>
 		</div>
 	</section>

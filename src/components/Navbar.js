@@ -88,13 +88,13 @@ const Navbar = class extends React.Component {
 						<div className="navbar-brand">
 							<span className="navbar-item is-hidden-mobile">
 								<div className="field is-grouped">
-									<p className="control">
+									<div className="control">
 										<Link to="/inventory">
 											<Button icon="car-alt" color="danger" iconColor="#FFF" rounded>
 												Shop cars
 											</Button>
 										</Link>
-									</p>
+									</div>
 									{/* <p className="control">
 										<a href="#" className="button is-text has-text-weight-semibold">
 											Schedule a free consultation
@@ -109,12 +109,11 @@ const Navbar = class extends React.Component {
 											<strong>GET STARTED</strong>
 										</a>
 									</p>
+
 									<p className="control">
-										<p className="control">
-											<a href="#" className="button is-text has-text-weight-semibold">
-												Schedule consultation
-											</a>
-										</p>
+										<a href="#" className="button is-text has-text-weight-semibold">
+											Schedule consultation
+										</a>
 									</p>
 								</div>
 							</span>

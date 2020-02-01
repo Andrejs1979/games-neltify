@@ -17,7 +17,10 @@ export default function InventoryRoll() {
 					<div className="is-parent column is-4" key={item.id}>
 						<Tile box>
 							<header>
-								<Link className="title is-size-4" to={item.id}>
+								<Link
+									className="title is-size-4"
+									to={`/${item.make}-${item.model}-${item.year}-${item.vin}`}
+								>
 									{item.make} {item.model}
 								</Link>
 								<br />
@@ -42,14 +45,14 @@ export default function InventoryRoll() {
 								<br />
 								<Level>
 									<Left>
-										<Link to={`${item.make}-${item.model}-${item.year}-${item.vin}`}>
+										<Link to={`/${item.make}-${item.model}-${item.year}-${item.vin}`}>
 											<Button icon="search" color="danger" rounded>
 												Learn more
 											</Button>
 										</Link>
 									</Left>
 									<Right>
-										<Link to={`${item.make}-${item.model}-${item.year}-${item.vin}`}>
+										<Link to={`/${item.make}-${item.model}-${item.year}-${item.vin}`}>
 											<Button icon="calendar-alt" color="black" rounded>
 												Test-drive
 											</Button>

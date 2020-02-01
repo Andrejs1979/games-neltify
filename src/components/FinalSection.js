@@ -4,8 +4,6 @@ import PreviewCompatibleImage from './PreviewCompatibleImage';
 import { Box, Column, Columns, Section } from '../components/bulma';
 
 export default function FinalSection({ content }) {
-	console.log(content);
-
 	return (
 		<Section>
 			<Columns centered>

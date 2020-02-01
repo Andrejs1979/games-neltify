@@ -42,7 +42,7 @@ const Hero = ({ size, title, subtitle, image, signup, cta, calendar }) => (
 									</Button>
 								</p>
 								<p className="control">
-									<Button icon="phone-alt" size="large" color="text" rounded>
+									<Button icon="phone-alt" size="large" color="white" rounded>
 										Free consultation
 									</Button>
 								</p>
@@ -61,7 +61,7 @@ const Hero = ({ size, title, subtitle, image, signup, cta, calendar }) => (
 								</p>
 								{calendar && (
 									<p className="control">
-										<Button icon={calendar.icon} size="large" color="text" rounded>
+										<Button icon={calendar.icon} size="large" color="white" rounded>
 											{calendar.label}
 										</Button>
 									</p>
