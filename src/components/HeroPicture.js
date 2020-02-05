@@ -5,7 +5,7 @@ import { Link } from 'gatsby';
 import { Button } from './bulma';
 
 const Hero = ({ size, title, subtitle, image, signup, cta, calendar }) => (
-	<section className={`hero is-${size}`}>
+	<section className={`hero is-large`}>
 		<div
 			className="hero-body full-width-image margin-top-0"
 			style={{
@@ -37,7 +37,7 @@ const Hero = ({ size, title, subtitle, image, signup, cta, calendar }) => (
 						<div className="is-hidden-mobile">
 							<div className="field is-grouped">
 								<p className="control">
-									<Button icon="car-alt" size="large" color="danger" rounded>
+									<Button icon="car-alt" size="large" color="black" rounded>
 										Shop cars
 									</Button>
 								</p>
@@ -54,7 +54,7 @@ const Hero = ({ size, title, subtitle, image, signup, cta, calendar }) => (
 							<div className="field is-grouped">
 								<p className="control">
 									<Link to={cta.link}>
-										<Button icon={cta.icon} size="large" color="danger" rounded>
+										<Button icon={cta.icon} size="large" color="primary" rounded>
 											<strong>{cta.label}</strong>
 										</Button>
 									</Link>

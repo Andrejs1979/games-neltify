@@ -12,7 +12,7 @@ const CTA = ({ title, subtitle, cta }) => (
 				{cta && (
 					<ButtonGroup centered>
 						<Link to={cta.link}>
-							<Button size="large" icon={cta.icon} color="danger" rounded>
+							<Button size="large" icon={cta.icon} color="primary" rounded>
 								<strong>{cta.label}</strong>
 							</Button>
 						</Link>

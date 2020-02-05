@@ -28,7 +28,7 @@ const Hero = ({ item, size, cta, calendar }) => (
 									{cta && (
 										<p className="control">
 											<Link to={`/${item.make}-${item.model}-${item.year}-${item.vin}`}>
-												<Button icon={cta.icon} size="large" color="danger" rounded>
+												<Button icon={cta.icon} size="large" color="primary" rounded>
 													<strong>{cta.label}</strong>
 												</Button>
 											</Link>

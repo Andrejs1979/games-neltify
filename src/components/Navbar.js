@@ -72,7 +72,7 @@ const Navbar = class extends React.Component {
 									Trade or Sell
 								</Link>
 								<Link className="navbar-item" to="/inventory">
-									<Button icon="car-alt" color="danger" iconColor="#FFF" rounded>
+									<Button icon="car-alt" color="primary" iconColor="#FFF" rounded>
 										Shop cars
 									</Button>
 								</Link>
@@ -90,7 +90,7 @@ const Navbar = class extends React.Component {
 								<div className="field is-grouped">
 									<div className="control">
 										<Link to="/inventory">
-											<Button icon="car-alt" color="danger" iconColor="#FFF" rounded>
+											<Button icon="car-alt" color="primary" iconColor="#FFF" rounded>
 												Shop cars
 											</Button>
 										</Link>

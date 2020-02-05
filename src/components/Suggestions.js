@@ -43,7 +43,7 @@ export default function Suggestions({ box }) {
 								<Level>
 									<Left>
 										<Link to={`/${item.make}-${item.model}-${item.year}-${item.vin}`}>
-											<Button size="small" icon="search" color="danger" rounded>
+											<Button size="small" icon="search" color="primary" rounded>
 												Learn more
 											</Button>
 										</Link>

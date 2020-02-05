@@ -44,7 +44,7 @@ export default function InventoryRoll() {
 								<Level>
 									<Left>
 										<Link to={`/${item.make}-${item.model}-${item.year}-${item.vin}`}>
-											<Button icon="search" color="danger" rounded>
+											<Button icon="search" color="primary" rounded>
 												Learn more
 											</Button>
 										</Link>
