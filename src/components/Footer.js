@@ -30,8 +30,8 @@ export default () => {
 			<Container>
 				<Columns>
 					<Column>
-						<Menu label="Caragents">
-							<MenuItem to="/why">Why Caragents</MenuItem>
+						<Menu label="CARAGENTS">
+							<MenuItem to="/why">Why CARAGENTS</MenuItem>
 							{/* <MenuItem to="/how-it-works">How it works</MenuItem> */}
 							<MenuItem to="/pricing">Pricing</MenuItem>
 							<MenuItem to="/case-studies">Testimonials</MenuItem>
@@ -113,7 +113,7 @@ export default () => {
 					<Level>
 						<Left>
 							<Item>
-								<Link to="/" title="Caragents Icon">
+								<Link to="/" title="CARAGENTS Icon">
 									<div
 										style={{
 											// height: '250px'
@@ -126,7 +126,7 @@ export default () => {
 									</div>
 								</Link>
 								<p className="has-text-left is-size-7">
-									<strong>© 2020 Caragents</strong>. All rights reserved.<br />
+									<strong>© 2020 CARAGENTS</strong>. All rights reserved.<br />
 									<Link className="is-size-7" to="/terms">
 										Terms of service
 									</Link>{' '}

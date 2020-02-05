@@ -60,7 +60,7 @@ const Navbar = class extends React.Component {
 						<div id="navMenu" className={`navbar-menu ${this.state.navBarActiveClass}`}>
 							<div className="navbar-end has-text-centered has-text-weight-semibold">
 								<Link className="navbar-item" to="/pricing">
-									Why Caragents
+									Why CARAGENTS
 								</Link>
 								<Link className="navbar-item" to="/solutions/overview">
 									Testimonials

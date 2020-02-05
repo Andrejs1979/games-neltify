@@ -1,7 +1,7 @@
 module.exports = {
 	siteMetadata: {
 		siteUrl: 'https://caragents.app',
-		title: 'Caragents',
+		title: 'CARAGENTS',
 		description: 'Buy a car of your dreams stress-free'
 	},
 	plugins: [

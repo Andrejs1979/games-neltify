@@ -1,6 +1,6 @@
 ---
 templateKey: index-page
-title: Caragents - Promote your brand on Instagram at scale
+title: CARAGENTS - Promote your brand on Instagram at scale
 image: /img/samuele-errico-piccarini-FMbWFDiVRPs-unsplash.jpeg
 heading: You customers take selfies
 subheading: Let them promote your brand
@@ -26,7 +26,7 @@ sections:
     image: /img/map-screen.jpeg
     side: left
     text: >-
-      Caragents is a cutting-edge tool to run massive social media campaings and
+      CARAGENTS is a cutting-edge tool to run massive social media campaings and
       empower your customers to promote your brand.
     title: Connect with your customers at scale
 final:
@@ -34,8 +34,7 @@ final:
     alt: Promoters
     image: /img/collage.jpeg
   text: >-
-    Caragents is a revolutionary way to promote your brand on Instagram and
+    CARAGENTS is a revolutionary way to promote your brand on Instagram and
     other social media platforms.
   title: Join the marketing revolution
 ---
-

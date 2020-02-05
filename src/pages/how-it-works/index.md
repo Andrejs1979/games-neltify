@@ -2,7 +2,7 @@
 templateKey: how-it-works-page
 title: How It Works
 image: /img/example.jpg
-heading: You are in total control of your Caragents spending
+heading: You are in total control of your CARAGENTS spending
 description: 'Never pay more than your monthly budget cap, and you can stop any time.'
 subheading: Let them promote your brand on Instagram.
 blurbs:
@@ -50,13 +50,13 @@ sections:
     side: left
     text: >-
       We verify and approve all your customer's posts. If the post is approved,
-      the customer gets paid in his Caragents account.
+      the customer gets paid in his CARAGENTS account.
 final:
   image:
     alt: A close-up of a paper filter filled with ground coffee
     image: /img/example.jpg
   title: Simple and rewarding experience for your customers
   text: >-
-    Thousands of people already used Caragents to promote their favorite brands and
+    Thousands of people already used CARAGENTS to promote their favorite brands and
     they love it.
 ---

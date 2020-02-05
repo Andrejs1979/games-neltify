@@ -4,7 +4,7 @@ title: Getting Started
 image: /img/example.jpg
 heading: Create your first ad in just a few steps
 description: >-
-  Caragents makes it easy to show the world what’s unique about your business, so
+  CARAGENTS makes it easy to show the world what’s unique about your business, so
   you can reach customers searching for what you offer.
 subheading: Let them promote your brand on Instagram.
 blurbs:
@@ -22,7 +22,7 @@ blurbs:
       Place your dflogo and marketing message on thousands of selfies posted by real people.
 sections:
   - title: Connect with your customers at scale
-    text: Caragents is a cutting-edge tool to run massive social media campaings and empower your customers to promote your brand.
+    text: CARAGENTS is a cutting-edge tool to run massive social media campaings and empower your customers to promote your brand.
     image: /img/example.jpg
     color: white
     side: left
@@ -32,6 +32,6 @@ final:
       image: /img/coffee.png
     title: Join the marketing revolution
     text: >-
-      Caragents is a revolutionary way to promote your brand on Instagram and other
+      CARAGENTS is a revolutionary way to promote your brand on Instagram and other
       social media platforms.
 ---
