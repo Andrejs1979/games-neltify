@@ -22,7 +22,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
           }
         }
       }
-      allMongodbCaragentsInventory {
+      allMongodbCaragentsCars {
     edges {
       node {
         id
@@ -36,7 +36,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 		vin
         pictures {
           uri
-          featured
         }
       }
     }
@@ -65,7 +64,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
 		// INVENTORY
 
-		const inventory = result.data.allMongodbCaragentsInventory.edges;
+		const inventory = result.data.allMongodbCaragentsCars.edges;
 
 		inventory.forEach((edge) => {
 			const { id, body, make, model, year, mileage, vin } = edge.node;

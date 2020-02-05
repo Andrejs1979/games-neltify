@@ -8,7 +8,7 @@ import { Columns, Button, Tile, Level, Left, Right } from './bulma';
 
 export default function InventoryRoll() {
 	const data = useStaticQuery(INVENTORY_ROLL_QUERY);
-	const { edges: items } = data.allMongodbCaragentsInventory;
+	const { edges: items } = data.allMongodbCaragentsCars;
 
 	return (
 		<Columns multiline>
@@ -67,7 +67,7 @@ export default function InventoryRoll() {
 
 const INVENTORY_ROLL_QUERY = graphql`
 	query Inventory {
-		allMongodbCaragentsInventory(sort: { fields: createdAt, order: DESC }) {
+		allMongodbCaragentsCars(sort: { fields: createdAt, order: DESC }) {
 			edges {
 				node {
 					id
@@ -80,11 +80,10 @@ const INVENTORY_ROLL_QUERY = graphql`
 					year
 					pictures {
 						uri
-						featured
 					}
 					interior
-					mpg_highway
-					mpg_city
+					mpgHighway
+					mpgCity
 					transmission
 					trim
 					vin
@@ -93,7 +92,6 @@ const INVENTORY_ROLL_QUERY = graphql`
 					engine
 					exterior
 					fuel
-					featured
 					createdAt
 				}
 			}

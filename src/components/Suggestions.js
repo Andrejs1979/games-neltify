@@ -7,7 +7,7 @@ import { Box, Column, Columns, Section, Button, Tile, Level, Left, Right } from 
 
 export default function Suggestions({ box }) {
 	const data = useStaticQuery(SUGGESTIONS_QUERY);
-	const { edges: items } = data.allMongodbCaragentsInventory;
+	const { edges: items } = data.allMongodbCaragentsCars;
 
 	return (
 		<Section>
@@ -67,13 +67,12 @@ export default function Suggestions({ box }) {
 
 const SUGGESTIONS_QUERY = graphql`
 	query SuggestionsQuery {
-		allMongodbCaragentsInventory(limit: 3, sort: { fields: createdAt, order: DESC }) {
+		allMongodbCaragentsCars(limit: 3, sort: { fields: createdAt, order: DESC }) {
 			edges {
 				node {
 					id
 					body
 					pictures {
-						featured
 						uri
 					}
 					price

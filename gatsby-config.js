@@ -36,7 +36,7 @@ module.exports = {
 			options: {
 				connectionString: 'mongodb+srv://gatsby:M7XFgmlQHo3dc1DR@fastlabs-9ib4r.mongodb.net',
 				dbName: `caragents`,
-				collection: [ `inventory` ]
+				collection: [ 'cars' ]
 			}
 		},
 		{

@@ -10,7 +10,7 @@ import Suggestions from '../components/Suggestions';
 import CTA from '../components/CTA';
 
 export default function InventoryPage({ data }) {
-	const { mongodbCaragentsInventory: item } = data;
+	const { mongodbCaragentsCars: item } = data;
 
 	return (
 		<Layout>
@@ -70,9 +70,9 @@ export const InventoryPageTemplate = ({ item }) => (
 							<Item>
 								<div>
 									<p className="title">
-										{item.mpg_city}/{item.mpg_highway} mpg
+										{item.mpgCity}/{item.mpgHighway} mpg
 									</p>
-									{/* <p className="subtitle">{item.mpg_highway} mpg</p> */}
+									{/* <p className="subtitle">{item.mpgHighway} mpg</p> */}
 								</div>
 							</Item>
 						</Level>
@@ -110,12 +110,11 @@ export const InventoryPageTemplate = ({ item }) => (
 
 export const pageQuery = graphql`
 	query InventoryPageByID($id: String!) {
-		mongodbCaragentsInventory(id: { eq: $id }) {
+		mongodbCaragentsCars(id: { eq: $id }) {
 			make
 			model
 			mileage
 			pictures {
-				featured
 				uri
 			}
 			price
@@ -130,8 +129,8 @@ export const pageQuery = graphql`
 			doors
 			body
 			id
-			mpg_city
-			mpg_highway
+			mpgCity
+			mpgHighway
 		}
 	}
 `;

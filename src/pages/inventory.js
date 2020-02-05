@@ -11,7 +11,7 @@ import { Section } from '../components/bulma';
 
 export default function InventoryPage() {
 	const data = useStaticQuery(INVENTORY_QUERY);
-	const { edges: items } = data.allMongodbCaragentsInventory;
+	const { edges: items } = data.allMongodbCaragentsCars;
 
 	const { node, node: { make, model, year, price, vin, pictures } } = items[0];
 
@@ -44,7 +44,7 @@ export default function InventoryPage() {
 
 const INVENTORY_QUERY = graphql`
 	query JustIn {
-		allMongodbCaragentsInventory(limit: 1, sort: { fields: createdAt, order: DESC }) {
+		allMongodbCaragentsCars(limit: 1, sort: { fields: createdAt, order: DESC }) {
 			edges {
 				node {
 					id
@@ -57,11 +57,10 @@ const INVENTORY_QUERY = graphql`
 					year
 					pictures {
 						uri
-						featured
 					}
 					interior
-					mpg_highway
-					mpg_city
+					mpgHighway
+					mpgCity
 					transmission
 					trim
 					vin
