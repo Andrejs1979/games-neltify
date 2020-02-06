@@ -1,5 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import { ModalProvider } from 'react-modal-hook';
 import { library } from '@fortawesome/fontawesome-svg-core';
 // import { fab } from '@fortawesome/free-brands-svg-icons';
 import {
@@ -41,9 +42,11 @@ const TemplateWrapper = ({ children }) => {
 				<meta property="og:url" content="/" />
 				<meta property="og:image" content="/img/og-image.jpg" />
 			</Helmet>
-			<Navbar />
-			<div>{children}</div>
-			<Footer />
+			<ModalProvider>
+				<Navbar />
+				<div>{children}</div>
+				<Footer />
+			</ModalProvider>
 		</div>
 	);
 };

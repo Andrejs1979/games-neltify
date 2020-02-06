@@ -4,20 +4,21 @@ import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Content, { HTMLContent } from '../components/Content';
 
-import Hero from '../components/Hero';
+import { Hero } from '../components/bulma';
 import CTA from '../components/CTA';
 import BlogSection from '../components/BlogSection';
 
 export const MissionPageTemplate = ({ title, content, contentComponent }) => {
 	const PageContent = contentComponent || Content;
-	console.log(PageContent);
 
 	return (
 		<div>
 			<Hero
 				size="medium"
-				title="Payment fees is a hidden form of taxation. We are here to change it."
-				// subtitle="All plans include next day funding and 24/7 payments support as a standard. Cancel free any time."
+				color="black"
+				bold
+				title={title}
+				subtitle="All plans include next day funding and 24/7 payments support as a standard. Cancel free any time."
 				image="image"
 			/>
 			<section className="section section--gradient">

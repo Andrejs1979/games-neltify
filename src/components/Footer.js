@@ -32,16 +32,16 @@ export default () => {
 					<Column>
 						<Menu label="CARAGENTS">
 							<MenuItem to="/why">Why CARAGENTS</MenuItem>
-							{/* <MenuItem to="/how-it-works">How it works</MenuItem> */}
+							<MenuItem to="/how-it-works">How it works</MenuItem>
 							<MenuItem to="/pricing">Pricing</MenuItem>
-							<MenuItem to="/case-studies">Testimonials</MenuItem>
+							<MenuItem to="/testimonials">Testimonials</MenuItem>
 						</Menu>
 					</Column>
 					<Column>
 						<Menu label="Shop cars">
-							{/* <MenuItem to="/services/auto-concierge"></MenuItem> */}
+							<MenuItem to="/auto-concierge">Auto Concierge</MenuItem>
 							<MenuItem to="/inventory">Inventory</MenuItem>
-							<MenuItem to="/sell">Trade or Sell</MenuItem>
+							<MenuItem to="/trade">Trade or Sell</MenuItem>
 							<MenuItem to="/showroom">Showroom</MenuItem>
 						</Menu>
 					</Column>
@@ -67,7 +67,7 @@ export default () => {
 						<Left>
 							<Item>
 								<p>
-									<a title="facebook" href="#">
+									{/* <a title="facebook" href="#">
 										<img
 											src={facebook}
 											alt="Facebook"
@@ -87,8 +87,8 @@ export default () => {
 											alt="Twitter"
 											style={{ width: '2em', height: '2em', marginRight: 15 }}
 										/>
-									</a>
-									<a title="instagram" href="#">
+									</a> */}
+									<a title="instagram" href="https://www.instagram.com/caragents_/">
 										<img src={instagram} alt="Instagram" style={{ width: '2em', height: '2em' }} />
 									</a>
 								</p>

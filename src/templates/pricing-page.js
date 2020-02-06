@@ -1,22 +1,21 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-
 import Layout from '../components/Layout';
-import Hero from '../components/HeroPicture';
-// import Slideshow from '../components/Slideshow';
+
+import Hero from '../components/Hero';
 import Blurbs from '../components/Blurbs';
 import ContentSection from '../components/ContentSection';
 import FinalSection from '../components/FinalSection';
-import BlogSection from '../components/BlogSection';
+// import BlogSection from '../components/BlogSection';
 import CTA from '../components/CTA';
 
-export default function IndexPage({ data }) {
+export default function PricingPage({ data }) {
 	const { markdownRemark: page } = data;
 	const { image, heading, subheading, sections, blurbs, final } = page.frontmatter;
 
 	return (
 		<Layout>
-			<IndexPageTemplate
+			<PricingPageTemplate
 				image={image}
 				heading={heading}
 				subheading={subheading}
@@ -28,40 +27,20 @@ export default function IndexPage({ data }) {
 	);
 }
 
-export const IndexPageTemplate = ({ image, heading, subheading, sections, blurbs, final }) => (
+export const PricingPageTemplate = ({ image, heading, subheading, sections, blurbs, final }) => (
 	<div>
-		<Hero
-			size="large"
-			title={heading}
-			subtitle={subheading}
-			image={image}
-			cta={{
-				label: 'Shop cars',
-				icon: 'car-alt',
-				link: '/inventory'
-			}}
-			calendar={{
-				label: 'Free consultation',
-				icon: 'phone-alt',
-				link: 'https://calendly.com/caragents/free-consultation'
-			}}
-		/>
+		<Hero size="medium" title={heading} subtitle={subheading} image={image} signup />
 		<Blurbs box items={blurbs} />
 		<ContentSection items={sections} box />
 		<FinalSection content={final} />
-		<CTA
-			color="dark"
-			title="Shop your next car stress-free"
-			subtitle="CARAGENTS Concierge will take care of all the details"
-			cta={{ icon: 'car-alt', label: 'Shop cars', link: '/inventory' }}
-		/>
-		<BlogSection />
+		{/* <BlogSection /> */}
+		<CTA />
 	</div>
 );
 
-export const indexPageQuery = graphql`
-	query IndexPage {
-		markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
+export const pricingPageQuery = graphql`
+	query PricingPage {
+		markdownRemark(frontmatter: { templateKey: { eq: "pricing-page" } }) {
 			frontmatter {
 				title
 				heading
@@ -100,13 +79,6 @@ export const indexPageQuery = graphql`
 				final {
 					title
 					text
-					# image {
-					# 	childImageSharp {
-					# 		fluid(maxWidth: 240, quality: 64) {
-					# 			...GatsbyImageSharpFluid
-					# 		}
-					# 	}
-					# }
 				}
 			}
 		}

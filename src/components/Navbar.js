@@ -59,16 +59,16 @@ const Navbar = class extends React.Component {
 						</div>
 						<div id="navMenu" className={`navbar-menu ${this.state.navBarActiveClass}`}>
 							<div className="navbar-end has-text-centered has-text-weight-bold is-size-5">
-								<Link className="navbar-item has-text-weight-bol" to="/pricing">
+								<Link className="navbar-item has-text-weight-bol" to="/why">
 									Why CARAGENTS
 								</Link>
-								<Link className="navbar-item" to="/solutions/overview">
+								<Link className="navbar-item" to="/testimonials">
 									Testimonials
 								</Link>
 								<Link className="navbar-item" to="/pricing">
 									Pricing
 								</Link>
-								<Link className="navbar-item" to="/features/overview">
+								<Link className="navbar-item" to="/trade">
 									Trade or Sell
 								</Link>
 								<Link className="navbar-item" to="/inventory">

@@ -4,7 +4,7 @@ import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Content, { HTMLContent } from '../components/Content';
 
-import Hero from '../components/Hero';
+import { Hero } from '../components/bulma';
 import CTA from '../components/CTA';
 import BlogSection from '../components/BlogSection';
 
@@ -15,8 +15,10 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
 		<div>
 			<Hero
 				size="medium"
+				color="black"
+				bold
 				title={title}
-				// subtitle="All plans include next day funding and 24/7 payments support as a standard. Cancel free any time."
+				subtitle="All plans include next day funding and 24/7 payments support as a standard. Cancel free any time."
 				image="image"
 			/>
 			<section className="section section--gradient">
