@@ -48,8 +48,13 @@ export const IndexPageTemplate = ({ image, heading, subheading, sections, blurbs
 		<Blurbs box items={blurbs} />
 		<ContentSection items={sections} box />
 		<FinalSection content={final} />
+		<CTA
+			color="dark"
+			title="Shop your next car stress-free"
+			subtitle="CARAGENTS Concierge will take care of all the details"
+			cta={{ icon: 'car-alt', label: 'Shop cars', link: '/inventory' }}
+		/>
 		<BlogSection />
-		<CTA color="dark" />
 	</div>
 );
 
