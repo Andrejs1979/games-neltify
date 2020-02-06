@@ -23,7 +23,7 @@ blurbs:
     image: /img/pixel.png
 sections:
   - color: white
-    image: /img/map-screen.jpeg
+    image: /img/caragents-app-iphone.jpg
     side: left
     text: >-
       No more waisting time at the dealership. No more price haggling. Just
