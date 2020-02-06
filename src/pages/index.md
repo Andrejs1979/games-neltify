@@ -1,40 +1,42 @@
 ---
 templateKey: index-page
-title: CARAGENTS - Promote your brand on Instagram at scale
+title: CARAGENTS - Buy your next car stress-free
 image: /img/samuele-errico-piccarini-FMbWFDiVRPs-unsplash.jpeg
-heading: You customers take selfies
-subheading: Let them promote your brand
-description: >-
-  Real people posting about your business on social meadia, from just $1 per
-  post!
+heading: Buy your next car stress-free
+subheading: with CARAGENTS auto concierge
+description: Buy your next car stress-free
 blurbs:
-  - text: >
-      Place your logo and marketing message on thousands of selfies posted by
-      real people.
-    title: Promote your brand and key offers
+  - text: >-
+      Shop our great selection of hand-picked cars from the comfort of your
+      home 
+    title: Shop with confidence
     image: /img/pixel.png
   - text: >
-      Draw more people to your outlets. Increase loyalty of existing customers
-      and get the new ones.
-    title: Increase store traffic and customer loyalty
+      CARAGENTS Concierge will deliver your car to your home or office for a
+      test-drive
+    title: Test-drive when and where you want
     image: /img/pixel.png
-  - text: Each customer interaction becomes a promo opportunity.
-    title: Amplify your social media footprint
+  - text: >-
+      Your CARAGENTS Concierge will bring all the paperwork to you and will help
+      you every step of the way
+    title: Finance and buy stress-free
     image: /img/pixel.png
 sections:
   - color: white
     image: /img/map-screen.jpeg
     side: left
     text: >-
-      CARAGENTS is a cutting-edge tool to run massive social media campaings and
-      empower your customers to promote your brand.
-    title: Connect with your customers at scale
+      No more waisting time at the dealership. No more price haggling. Just
+      choose and pick the cars you love and your personal CARAGENTS Concierge
+      will take care of everything for you.
+    title: Next generation car shopping experience
 final:
   Image:
-    alt: Promoters
+    alt: Mobile apps
     image: /img/collage.jpeg
   text: >-
-    CARAGENTS is a revolutionary way to promote your brand on Instagram and
-    other social media platforms.
-  title: Join the marketing revolution
+    Choose your next car from your Apple or Android smartphone and never miss a
+    great offer!
+  title: Download CARAGENTS app today
 ---
+
