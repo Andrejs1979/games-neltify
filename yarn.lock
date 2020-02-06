@@ -12376,11 +12376,6 @@ react-aria-menubutton@^6.0.0:
     prop-types "^15.6.0"
     teeny-tap "^0.2.0"
 
-react-calendly@^0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/react-calendly/-/react-calendly-0.0.3.tgz#f443819cb2310ff9107fef8a774feca60d0407cc"
-  integrity sha512-7/krzjWVAiuLLJ4EALvveJD8RNU3Hwm73W88n6+ZMjd2obKM0ZIW2xG2Zr5HsB2joeVdAZIkmU2F6oA+bgxgXA==
-
 react-cloudinary-lazy-image@^1.3.4:
   version "1.3.4"
   resolved "https://registry.yarnpkg.com/react-cloudinary-lazy-image/-/react-cloudinary-lazy-image-1.3.4.tgz#9468cbe7907bd2a6b8d957fe5eda5decff4ee797"
@@ -12516,11 +12511,6 @@ react-lifecycles-compat@^3.0.0, react-lifecycles-compat@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
-
-react-modal-hook@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/react-modal-hook/-/react-modal-hook-3.0.0.tgz#24b2ff2acf288ef25c11e4fb11b329458a823ea3"
-  integrity sha512-mNkJwgEtOoIabuILlWnGAto993WVkimZASBWk/rAGZ6tNIqjx4faQtNdr/X31vw+QGfKhspXc4vPi1jbfkk2Yg==
 
 react-modal@^3.8.1:
   version "3.11.1"

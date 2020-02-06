@@ -3,28 +3,14 @@ import PreviewCompatibleImage from './PreviewCompatibleImage';
 // import Img from 'gatsby-image';
 import { Link } from 'gatsby';
 
-import { useModal } from 'react-modal-hook';
+// import { useModal } from 'react-modal-hook';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { InlineWidget } from 'react-calendly';
+// import { InlineWidget } from 'react-calendly';
 
-import Modal from './Modal';
+// import Modal from './Modal';
 import { Button } from './bulma';
 
 export default function Hero({ size, title, subtitle, image, signup, cta, calendar }) {
-	const [ showModal, hideModal ] = useModal(() => (
-		<div className="modal is-active">
-			<div className="modal-background" />
-			<div className="modal-content">
-				<Modal icon="calendar-alt" title="Invoice" onClose={hideModal}>
-					<InlineWidget
-						text="Modern React component module"
-						url="https://calendly.com/caragents/free-consultation/"
-					/>
-				</Modal>
-			</div>
-		</div>
-	));
-
 	return (
 		<section className={`hero is-large`}>
 			<div
@@ -63,7 +49,7 @@ export default function Hero({ size, title, subtitle, image, signup, cta, calend
 										</Button>
 									</p>
 									<p className="control">
-										<Button icon="phone-alt" size="large" color="white" rounded onClick={showModal}>
+										<Button icon="phone-alt" size="large" color="white" rounded>
 											Free consultation
 										</Button>
 									</p>
@@ -82,13 +68,7 @@ export default function Hero({ size, title, subtitle, image, signup, cta, calend
 									</p>
 									{calendar && (
 										<p className="control">
-											<Button
-												icon={calendar.icon}
-												size="large"
-												color="white"
-												rounded
-												onClick={showModal}
-											>
+											<Button icon={calendar.icon} size="large" color="white" rounded>
 												{calendar.label}
 											</Button>
 										</p>
