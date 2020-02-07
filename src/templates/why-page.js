@@ -29,7 +29,7 @@ export default function WhyPage({ data }) {
 
 export const WhyPageTemplate = ({ image, heading, subheading, sections, blurbs, final }) => (
 	<div>
-		<Hero color="black" size="medium" title={heading} subtitle={subheading} image={image} signup />
+		<Hero color="light" size="medium" title={heading} subtitle={subheading} image={image} signup />
 		<Blurbs box items={blurbs} />
 		<ContentSection items={sections} box />
 		<FinalSection content={final} />

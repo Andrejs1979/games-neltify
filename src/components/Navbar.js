@@ -95,15 +95,24 @@ const Navbar = class extends React.Component {
 											</Button>
 										</Link>
 									</div>
-									<div className="control">
+									<div className="control is-hidden-desktop">
 										<a href="tel:415-699-2647" className="has-text-weight-semibold">
-											<Button icon="phone-alt" color="black" iconColor="#FFF" rounded>
+											<Button icon="phone-alt" color="black" iconColor="#000" rounded>
 												415-699-2647
 											</Button>
 										</a>
 									</div>
 								</div>
 							</span>
+						</div>
+						<div className="navbar-end is-hidden-mobile">
+							<div className="navbar-item">
+								<a href="tel:415-699-2647" className="has-text-weight-semibold">
+									<Button icon="phone-alt" color="black" iconColor="#FFF" oulined rounded>
+										415-699-2647
+									</Button>
+								</a>
+							</div>
 						</div>
 					</div>
 				</nav>

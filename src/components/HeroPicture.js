@@ -68,9 +68,11 @@ export default function Hero({ size, title, subtitle, image, signup, cta, calend
 									</p>
 									{calendar && (
 										<p className="control">
-											<Button icon={calendar.icon} size="large" color="white" rounded>
-												{calendar.label}
-											</Button>
+											<a href={calendar.link} target="_blanc">
+												<Button icon={calendar.icon} size="large" color="white" rounded>
+													{calendar.label}
+												</Button>
+											</a>
 										</p>
 									)}
 								</div>
