@@ -7,8 +7,6 @@ import PreviewCompatibleImage from './PreviewCompatibleImage';
 import { Columns, Column, Box, Section } from './bulma';
 
 export default function Masonry({ size, color, type, data, rows }) {
-	console.log(data);
-
 	return (
 		<Section>
 			<Columns multiline>

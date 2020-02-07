@@ -2,12 +2,14 @@ import React from 'react';
 import { graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
+
 import Hero from '../components/HeroPicture';
 // import Slideshow from '../components/Slideshow';
 import Blurbs from '../components/Blurbs';
 import ContentSection from '../components/ContentSection';
 import FinalSection from '../components/FinalSection';
-import BlogSection from '../components/BlogSection';
+import TestimonialSection from '../components/TestimonialSection';
+// import BlogSection from '../components/BlogSection';
 import CTA from '../components/CTA';
 
 export default function IndexPage({ data }) {
@@ -49,13 +51,14 @@ export const IndexPageTemplate = ({ image, heading, subheading, sections, blurbs
 		<Blurbs box items={blurbs} />
 		<ContentSection items={sections} box />
 		<FinalSection content={final} />
+		<TestimonialSection />
 		<CTA
 			color="dark"
 			title="Shop your next car stress-free"
 			subtitle="CARAGENTS Concierge will take care of all the details"
 			cta={{ icon: 'car-alt', label: 'Shop cars', link: '/inventory' }}
 		/>
-		<BlogSection />
+		{/* <BlogSection /> */}
 	</div>
 );
 

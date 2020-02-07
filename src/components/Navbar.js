@@ -86,7 +86,7 @@ const Navbar = class extends React.Component {
 				<nav className="navbar is-light is-fixed-bottom" role="navigation" aria-label="main-navigation">
 					<div className="container">
 						<div className="navbar-brand">
-							<span className="navbar-item is-hidden-mobile">
+							<span className="navbar-item">
 								<div className="field is-grouped">
 									<div className="control">
 										<Link to="/inventory">
@@ -95,41 +95,14 @@ const Navbar = class extends React.Component {
 											</Button>
 										</Link>
 									</div>
-									{/* <p className="control">
-										<a href="#" className="button is-text has-text-weight-semibold">
-											Schedule a free consultation
-										</a>
-									</p> */}
-								</div>
-							</span>
-							<span className="navbar-item is-hidden-desktop">
-								<div className="field is-grouped">
-									<p className="control">
-										<a href="#" className="button is-black is-outlined is-rounded">
-											<strong>GET STARTED</strong>
-										</a>
-									</p>
-
-									<p className="control">
-										<a href="#" className="button is-text has-text-weight-semibold">
-											Schedule consultation
-										</a>
-									</p>
-								</div>
-							</span>
-						</div>
-
-						<div className="navbar-end">
-							<span className="navbar-item">
-								<p className="control">
-									<p className="control">
+									<div className="control">
 										<a href="tel:415-699-2647" className="has-text-weight-semibold">
 											<Button icon="phone-alt" color="black" iconColor="#FFF" rounded>
 												415-699-2647
 											</Button>
 										</a>
-									</p>
-								</p>
+									</div>
+								</div>
 							</span>
 						</div>
 					</div>

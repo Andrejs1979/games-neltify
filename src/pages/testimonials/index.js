@@ -25,7 +25,7 @@ export default function TestimonialsIndexPage({ data }) {
 			<CTA
 				title="We deserve your trust"
 				subtitle="Join thousands of our happy customers today!"
-				cta={{ icon: 'car', label: 'Shop cars', link: '/inventory' }}
+				cta={{ icon: 'car-alt', label: 'Shop cars', link: '/inventory' }}
 			/>
 		</Layout>
 	);

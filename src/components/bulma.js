@@ -64,8 +64,8 @@ export function Columns({ children, centered, mobile, multiline, vertical }) {
 		</div>
 	);
 }
-export function Column({ children, size, narrow }) {
-	return <div className={`column ${!narrow || 'is-narrow'} is-${size}`}>{children}</div>;
+export function Column({ children, size, narrow, box }) {
+	return <div className={`column ${!narrow || 'is-narrow'} ${!box || 'box'} is-${size}`}>{children}</div>;
 }
 
 export function Content({ children }) {
