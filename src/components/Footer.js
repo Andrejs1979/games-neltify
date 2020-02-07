@@ -101,7 +101,10 @@ export default () => {
 									<a title="facebook" href="#">
 										<img src={appStore} alt="Facebook" />
 									</a>{' '}
-									<a title="twitter" href="#">
+									<a
+										title="twitter"
+										href="https://play.google.com/store/apps/details?id=com.caragents.app"
+									>
 										<img src={googlePlay} alt="Twitter" />
 									</a>
 								</p>

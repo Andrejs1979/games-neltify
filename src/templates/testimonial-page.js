@@ -1,55 +1,90 @@
 import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
+import PropTypes from 'prop-types';
+import { kebabCase } from 'lodash';
+import Helmet from 'react-helmet';
+import { graphql, Link } from 'gatsby';
 import Layout from '../components/Layout';
+import Content, { HTMLContent } from '../components/Content';
 
-import CTA from '../components/CTA';
-import BlogSection from '../components/BlogSection';
+export const TestimonialTemplate = ({ content, contentComponent, description, tags, title, helmet }) => {
+	const PostContent = contentComponent || Content;
 
-import { Box, Hero, Container, Section, Columns, Column } from '../components/bulma';
+	return (
+		<section className="section">
+			{helmet || ''}
+			<div className="container content">
+				<div className="columns">
+					<div className="column is-10 is-offset-1">
+						<h1 className="title is-size-2 has-text-weight-bold is-bold-light">{title}</h1>
+						<p>{description}</p>
+						<PostContent content={content} />
+						{tags && tags.length ? (
+							<div style={{ marginTop: `4rem` }}>
+								<h4>Tags</h4>
+								<ul className="taglist">
+									{tags.map((tag) => (
+										<li key={tag + `tag`}>
+											<Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+										</li>
+									))}
+								</ul>
+							</div>
+						) : null}
+					</div>
+				</div>
+			</div>
+		</section>
+	);
+};
 
-export default function TestimonialsPage() {
-	const data = useStaticQuery(TESTIMONIALS_PAGE_QUERY);
+TestimonialTemplate.propTypes = {
+	content: PropTypes.node.isRequired,
+	contentComponent: PropTypes.func,
+	description: PropTypes.string,
+	title: PropTypes.string,
+	helmet: PropTypes.object
+};
 
-	const { markdownRemark: page } = data;
-	const { image, heading, subheading, faq } = page.frontmatter;
+const Testimonial = ({ data }) => {
+	const { markdownRemark: post } = data;
 
 	return (
 		<Layout>
-			<Hero color="black" size="medium" title={heading} subtitle={subheading} image={image} />
-			<Columns multiline>
-				{faq.map(({ question, answer }) => (
-					<Column size="size-5" key={question}>
-						<Box>
-							<p className="title">{question}</p>
-							<p className="subtitle">{answer}</p>
-						</Box>
-					</Column>
-				))}
-				<Section />
-			</Columns>
-
-			<BlogSection />
-			<CTA />
+			<TestimonialTemplate
+				content={post.html}
+				contentComponent={HTMLContent}
+				description={post.frontmatter.description}
+				helmet={
+					<Helmet titleTemplate="%s | Blog">
+						<title>{`${post.frontmatter.title}`}</title>
+						<meta name="description" content={`${post.frontmatter.description}`} />
+					</Helmet>
+				}
+				tags={post.frontmatter.tags}
+				title={post.frontmatter.title}
+			/>
 		</Layout>
 	);
-}
+};
 
-const TESTIMONIALS_PAGE_QUERY = graphql`
-	query TestimonialsPageTemplate {
-		markdownRemark(frontmatter: { templateKey: { eq: "testimonial-page" } }) {
+Testimonial.propTypes = {
+	data: PropTypes.shape({
+		markdownRemark: PropTypes.object
+	})
+};
+
+export default Testimonial;
+
+export const pageQuery = graphql`
+	query TestimonialByID($id: String!) {
+		markdownRemark(id: { eq: $id }) {
+			id
+			html
 			frontmatter {
+				date(formatString: "MMMM DD, YYYY")
 				title
-				heading
 				description
-				heading
-				image {
-					id
-					absolutePath
-				}
-				faq {
-					question
-					answer
-				}
+				tags
 			}
 		}
 	}

@@ -104,8 +104,8 @@ export function Hero({ children, color, size, bold, title, subtitle }) {
 		<section className={`hero is-${color} is-${size} is-${bold}`}>
 			<div className="hero-body">
 				<div className="container">
-					{title && <h1 className="title">{title}</h1>}
-					{subtitle && <h2 className="subtitle">{subtitle}</h2>}
+					{title && <h1 className="title is-size-1">{title}</h1>}
+					{subtitle && <h2 className="subtitle is-size-3">{subtitle}</h2>}
 					{children}
 				</div>
 			</div>
