@@ -16,13 +16,13 @@ export const Logo = () => (
 			fill="red"
 			d="M148.32 181.678l-2.599-6.498-4.609-11.523c-3.956-9.891-13.394-16.28-24.047-16.28H87.696c-10.651 0-20.091 6.389-24.048 16.28l-4.609 11.523-2.599 6.498c-5.578 2.121-9.56 7.476-9.56 13.799v11.1c0 3.728 1.425 7.092 3.7 9.696v12.504c0 4.086 3.314 7.4 7.4 7.4h7.4c4.086 0 7.4-3.314 7.4-7.4v-7.4h59.2v7.4c0 4.086 3.314 7.4 7.4 7.4h7.4c4.086 0 7.4-3.314 7.4-7.4v-12.504c2.276-2.601 3.7-5.966 3.7-9.696v-11.1c0-6.323-3.982-11.678-9.56-13.799zm-70.931-12.524a11.1 11.1 0 0110.307-6.977h29.369c4.539 0 8.621 2.763 10.306 6.977l4.609 11.523h-59.2l4.609-11.523zM65.38 206.531c-4.44 0-7.4-2.951-7.4-7.377s2.96-7.377 7.4-7.377 11.1 6.639 11.1 11.065c0 4.426-6.66 3.689-11.1 3.689zm74 0c-4.44 0-11.1.737-11.1-3.689s6.66-11.065 11.1-11.065c4.44 0 7.4 2.951 7.4 7.377s-2.96 7.377-7.4 7.377z"
 		/>
-		<path stroke="#D1D1D1" strokeLinecap="square" stroke-miterlimit="3" strokeWidth="2" d="M191 175.154h51" />
-		<path stroke="#8B8B8B" strokeLinecap="square" stroke-miterlimit="3" strokeWidth="2" d="M196 187.678h51" />
-		<path stroke="#D1D1D1" strokeLinecap="square" stroke-miterlimit="3" strokeWidth="2" d="M197 201.477h51" />
+		<path stroke="#D1D1D1" strokeLinecap="square" strokeMiterlimit="3" strokeWidth="2" d="M191 175.154h51" />
+		<path stroke="#8B8B8B" strokeLinecap="square" strokeMiterlimit="3" strokeWidth="2" d="M196 187.678h51" />
+		<path stroke="#D1D1D1" strokeLinecap="square" strokeMiterlimit="3" strokeWidth="2" d="M197 201.477h51" />
 		<path
 			stroke="#8B8B8B"
 			strokeLinecap="square"
-			stroke-miterlimit="3"
+			strokeMiterlimit="3"
 			strokeWidth="2"
 			d="M185.44 214h51M177.44 164h51"
 		/>
@@ -41,13 +41,13 @@ export const Icon = () => (
 			fill="red"
 			d="M148.32 181.678l-2.599-6.498-4.609-11.523c-3.956-9.891-13.394-16.28-24.047-16.28H87.696c-10.651 0-20.091 6.389-24.048 16.28l-4.609 11.523-2.599 6.498c-5.578 2.121-9.56 7.476-9.56 13.799v11.1c0 3.728 1.425 7.092 3.7 9.696v12.504c0 4.086 3.314 7.4 7.4 7.4h7.4c4.086 0 7.4-3.314 7.4-7.4v-7.4h59.2v7.4c0 4.086 3.314 7.4 7.4 7.4h7.4c4.086 0 7.4-3.314 7.4-7.4v-12.504c2.276-2.601 3.7-5.966 3.7-9.696v-11.1c0-6.323-3.982-11.678-9.56-13.799zm-70.931-12.524a11.1 11.1 0 0110.307-6.977h29.369c4.539 0 8.621 2.763 10.306 6.977l4.609 11.523h-59.2l4.609-11.523zM65.38 206.531c-4.44 0-7.4-2.951-7.4-7.377s2.96-7.377 7.4-7.377 11.1 6.639 11.1 11.065c0 4.426-6.66 3.689-11.1 3.689zm74 0c-4.44 0-11.1.737-11.1-3.689s6.66-11.065 11.1-11.065c4.44 0 7.4 2.951 7.4 7.377s-2.96 7.377-7.4 7.377z"
 		/>
-		<path stroke="#D1D1D1" strokeLinecap="square" stroke-miterlimit="3" strokeWidth="2" d="M191 175.154h51" />
-		<path stroke="#8B8B8B" strokeLinecap="square" stroke-miterlimit="3" strokeWidth="2" d="M196 187.678h51" />
-		<path stroke="#D1D1D1" strokeLinecap="square" stroke-miterlimit="3" strokeWidth="2" d="M197 201.477h51" />
+		<path stroke="#D1D1D1" strokeLinecap="square" strokeMiterlimit="3" strokeWidth="2" d="M191 175.154h51" />
+		<path stroke="#8B8B8B" strokeLinecap="square" strokeMiterlimit="3" strokeWidth="2" d="M196 187.678h51" />
+		<path stroke="#D1D1D1" strokeLinecap="square" strokeMiterlimit="3" strokeWidth="2" d="M197 201.477h51" />
 		<path
 			stroke="#8B8B8B"
 			strokeLinecap="square"
-			stroke-miterlimit="3"
+			strokeMiterlimit="3"
 			strokeWidth="2"
 			d="M185.44 214h51M177.44 164h51"
 		/>

@@ -6,7 +6,7 @@ import Content, { HTMLContent } from '../components/Content';
 
 import { Hero } from '../components/bulma';
 import CTA from '../components/CTA';
-import BlogSection from '../components/BlogSection';
+import TestimonialSection from '../components/TestimonialSection';
 
 export const MissionPageTemplate = ({ title, content, contentComponent }) => {
 	const PageContent = contentComponent || Content;
@@ -15,7 +15,7 @@ export const MissionPageTemplate = ({ title, content, contentComponent }) => {
 		<div>
 			<Hero
 				size="medium"
-				color="black"
+				color="light"
 				bold
 				title={title}
 				subtitle="All plans include next day funding and 24/7 payments support as a standard. Cancel free any time."
@@ -33,8 +33,13 @@ export const MissionPageTemplate = ({ title, content, contentComponent }) => {
 					</div>
 				</div>
 			</section>
-			<BlogSection />
-			<CTA />
+			<TestimonialSection />
+			<CTA
+				color="dark"
+				title="Shop your next car stress-free"
+				subtitle="CARAGENTS Concierge will take care of all the details"
+				cta={{ icon: 'car-alt', label: 'Shop cars', link: '/inventory' }}
+			/>
 		</div>
 	);
 };

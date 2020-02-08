@@ -29,7 +29,10 @@ module.exports = {
 				name: 'images'
 			}
 		},
-		'gatsby-plugin-sharp',
+		{
+			resolve: 'gatsby-plugin-sharp',
+			options: { useMozJpeg: true }
+		},
 		'gatsby-transformer-sharp',
 		{
 			resolve: `gatsby-source-mongodb`,
@@ -40,11 +43,19 @@ module.exports = {
 			}
 		},
 		{
+			resolve: `gatsby-source-googlemaps-static`,
+			options: {
+				key: `AIzaSyD78uh7WmMfaD0NSB2k_lzrL9xhOCR1UqY`,
+				center: `37.964601, -122.520081`
+			}
+		},
+		{
 			resolve: 'gatsby-plugin-tags',
 			options: {
 				templatePath: `${__dirname}/src/templates/tags.js`
 			}
 		},
+
 		// {
 		// 	resolve: 'gatsby-plugin-categories',
 		// 	options: {

@@ -11,7 +11,9 @@ import {
 	faCalendarAlt,
 	faLeaf,
 	faCarSide,
-	faTachometerAlt
+	faTachometerAlt,
+	faEnvelope,
+	faMapMarkedAlt
 } from '@fortawesome/free-solid-svg-icons';
 import Footer from '../components/Footer';
 
@@ -19,7 +21,18 @@ import Navbar from '../components/Navbar';
 import './all.sass';
 import useSiteMetadata from './SiteMetadata';
 
-library.add(faSquare, faSearch, faCarAlt, faPhoneAlt, faCalendarAlt, faLeaf, faCarSide, faTachometerAlt);
+library.add(
+	faSquare,
+	faSearch,
+	faCarAlt,
+	faPhoneAlt,
+	faCalendarAlt,
+	faLeaf,
+	faMapMarkedAlt,
+	faEnvelope,
+	faCarSide,
+	faTachometerAlt
+);
 
 const TemplateWrapper = ({ children }) => {
 	const { title, description } = useSiteMetadata();

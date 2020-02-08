@@ -46,13 +46,13 @@ export default () => {
 						</Menu>
 					</Column>
 
-					<Column>
+					{/* <Column>
 						<Menu label="Resources">
 							<MenuItem to="/blog">Blog</MenuItem>
 							<MenuItem to="/faq">FAQ</MenuItem>
 							<MenuItem to="/auto-digest">Auto Digest</MenuItem>
 						</Menu>
-					</Column>
+					</Column> */}
 					<Column>
 						<Menu label="Company">
 							<MenuItem to="/about">About</MenuItem>

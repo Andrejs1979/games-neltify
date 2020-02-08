@@ -6,7 +6,7 @@ import { Hero } from '../components/bulma';
 import Blurbs from '../components/Blurbs';
 import ContentSection from '../components/ContentSection';
 import FinalSection from '../components/FinalSection';
-// import BlogSection from '../components/BlogSection';
+import TestimonialSection from '../components/TestimonialSection';
 import CTA from '../components/CTA';
 
 export default function WhyPage({ data }) {
@@ -29,12 +29,17 @@ export default function WhyPage({ data }) {
 
 export const WhyPageTemplate = ({ image, heading, subheading, sections, blurbs, final }) => (
 	<div>
-		<Hero color="light" size="medium" title={heading} subtitle={subheading} image={image} signup />
+		<Hero bold color="light" size="medium" title={heading} subtitle={subheading} image={image} />
 		<Blurbs box items={blurbs} />
 		<ContentSection items={sections} box />
 		<FinalSection content={final} />
-		{/* <BlogSection /> */}
-		<CTA />
+		<TestimonialSection />
+		<CTA
+			color="dark"
+			title="Shop your next car stress-free"
+			subtitle="CARAGENTS Concierge will take care of all the details"
+			cta={{ icon: 'car-alt', label: 'Shop cars', link: '/inventory' }}
+		/>
 	</div>
 );
 

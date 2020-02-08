@@ -2,16 +2,16 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 
-import Hero from '../components/Hero';
-import Blurbs from '../components/Blurbs';
+import { Hero } from '../components/bulma';
+import Pricing from '../components/Pricing';
 import ContentSection from '../components/ContentSection';
 import FinalSection from '../components/FinalSection';
-// import BlogSection from '../components/BlogSection';
+import TestimonialSection from '../components/TestimonialSection';
 import CTA from '../components/CTA';
 
 export default function PricingPage({ data }) {
 	const { markdownRemark: page } = data;
-	const { image, heading, subheading, sections, blurbs, final } = page.frontmatter;
+	const { image, heading, subheading, sections, pricing, final } = page.frontmatter;
 
 	return (
 		<Layout>
@@ -19,7 +19,7 @@ export default function PricingPage({ data }) {
 				image={image}
 				heading={heading}
 				subheading={subheading}
-				blurbs={blurbs}
+				pricing={pricing}
 				sections={sections}
 				final={final}
 			/>
@@ -27,14 +27,20 @@ export default function PricingPage({ data }) {
 	);
 }
 
-export const PricingPageTemplate = ({ image, heading, subheading, sections, blurbs, final }) => (
+export const PricingPageTemplate = ({ image, heading, subheading, sections, pricing, final }) => (
 	<div>
-		<Hero size="medium" title={heading} subtitle={subheading} image={image} signup />
-		<Blurbs box items={blurbs} />
+		<Hero size="medium" color="light" bold title={heading} subtitle={subheading} image={image} signup />
+		<Pricing box data={pricing.plans} />
 		<ContentSection items={sections} box />
 		<FinalSection content={final} />
-		{/* <BlogSection /> */}
-		<CTA />
+
+		<TestimonialSection />
+		<CTA
+			color="dark"
+			title="Shop your next car stress-free"
+			subtitle="CARAGENTS Concierge will take care of all the details"
+			cta={{ icon: 'car-alt', label: 'Shop cars', link: '/inventory' }}
+		/>
 	</div>
 );
 
@@ -52,16 +58,15 @@ export const pricingPageQuery = graphql`
 						}
 					}
 				}
-				blurbs {
-					image {
-						childImageSharp {
-							fluid(maxWidth: 240, quality: 64) {
-								...GatsbyImageSharpFluid
-							}
-						}
+				pricing {
+					heading
+					description
+					plans {
+						description
+						items
+						plan
+						price
 					}
-					title
-					text
 				}
 				sections {
 					title

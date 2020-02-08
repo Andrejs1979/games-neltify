@@ -13,14 +13,14 @@ export default function Masonry({ size, color, type, data, rows }) {
 				{data.map(({ node }) => (
 					<Column size="4" key={node.id}>
 						{type === 'testimonials' && (
-							<div class="card">
-								<div class="card-content">
-									<p class="title">{node.frontmatter.heading}</p>
+							<div className="card">
+								<div className="card-content">
+									<p className="title">{node.frontmatter.heading}</p>
 									<p>{node.frontmatter.text}</p>
 									<hr />
-									<div class="media">
-										<div class="media-left">
-											<figure class="image is-48x48">
+									<div className="media">
+										<div className="media-left">
+											<figure className="image is-48x48">
 												{node.frontmatter.image ? (
 													<PreviewCompatibleImage
 														className="is-rounded"
@@ -33,10 +33,10 @@ export default function Masonry({ size, color, type, data, rows }) {
 												) : null}
 											</figure>
 										</div>
-										<div class="media-content">
+										<div className="media-content">
 											<div className="content">
-												<p class="title is-5">{node.frontmatter.name}</p>
-												<p class="subtitle is-5">{node.frontmatter.city}</p>
+												<p className="title is-5">{node.frontmatter.name}</p>
+												<p className="subtitle is-5">{node.frontmatter.city}</p>
 											</div>
 										</div>
 									</div>

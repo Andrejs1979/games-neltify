@@ -1,5 +1,5 @@
 ---
-templateKey: get-started-page
+templateKey: why-page
 title: Getting Started
 image: /img/example.jpg
 heading: Create your first ad in just a few steps

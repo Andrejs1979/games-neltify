@@ -1,25 +1,33 @@
 ---
 templateKey: pricing-page
-title: Getting Started
+title: Pricing
 image: /img/example.jpg
 heading: Create your first ad in just a few steps
 description: >-
   CARAGENTS makes it easy to show the world what’s unique about your business, so
   you can reach customers searching for what you offer.
 subheading: Let them promote your brand on Instagram.
-blurbs:
-  - image: /img/example.jpg
-    title: Promote your brand and key offers
-    text: >
-     Place your logo and marketing message on thousands of selfies posted by real people.
-  - image: /img/example.jpg
-    title: Increase store traffic and customer loyalty
-    text: >
-      Draw more people to your outlets. Increase loyalty of existing customers and get the new ones.
-  - image: /img/example.jpg
-    title: Amplify your social media footprint
-    text: >
-      Place your dflogo and marketing message on thousands of selfies posted by real people.
+pricing:
+  heading: Monthly subscriptions
+  description: >-
+    We make it easy to make great coffee a part of your life. Choose one of our
+    monthly subscription plans to receive great coffee at your doorstep each
+    month. Contact us about more details and payment info.
+  plans:
+    - description: Perfect for the drinker who likes to enjoy 1-2 cups per day.
+      items:
+        - 3 lbs of coffee per month
+        - Green or roasted beans"
+        - One or two varieties of beans"
+      plan: Small
+      price: '50'
+    - description: 'Great for avid drinkers, java-loving couples and bigger crowds'
+      items:
+        - 6 lbs of coffee per month
+        - Green or roasted beans
+        - Up to 4 different varieties of beans
+      plan: Big
+      price: '80'
 sections:
   - title: Connect with your customers at scale
     text: CARAGENTS is a cutting-edge tool to run massive social media campaings and empower your customers to promote your brand.

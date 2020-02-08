@@ -126,9 +126,9 @@ export function Item({ children }) {
 	return <div className="level-item">{children}</div>;
 }
 
-export function Section({ children }) {
+export function Section({ children, color }) {
 	return (
-		<section className="section">
+		<section className={`section has-background-${color}}`}>
 			<div className="container">{children}</div>
 		</section>
 	);
