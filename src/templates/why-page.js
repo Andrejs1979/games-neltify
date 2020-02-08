@@ -4,6 +4,7 @@ import Layout from '../components/Layout';
 
 import { Hero } from '../components/bulma';
 import Blurbs from '../components/Blurbs';
+import Numbers from '../components/Numbers';
 import ContentSection from '../components/ContentSection';
 import FinalSection from '../components/FinalSection';
 import TestimonialSection from '../components/TestimonialSection';
@@ -11,7 +12,7 @@ import CTA from '../components/CTA';
 
 export default function WhyPage({ data }) {
 	const { markdownRemark: page } = data;
-	const { image, heading, subheading, sections, blurbs, final } = page.frontmatter;
+	const { image, heading, subheading, sections, numbers, final } = page.frontmatter;
 
 	return (
 		<Layout>
@@ -19,7 +20,7 @@ export default function WhyPage({ data }) {
 				image={image}
 				heading={heading}
 				subheading={subheading}
-				blurbs={blurbs}
+				numbers={numbers}
 				sections={sections}
 				final={final}
 			/>
@@ -27,12 +28,12 @@ export default function WhyPage({ data }) {
 	);
 }
 
-export const WhyPageTemplate = ({ image, heading, subheading, sections, blurbs, final }) => (
+export const WhyPageTemplate = ({ image, heading, subheading, sections, numbers, final }) => (
 	<div>
 		<Hero bold color="light" size="medium" title={heading} subtitle={subheading} image={image} />
-		<Blurbs box items={blurbs} />
-		<ContentSection items={sections} box />
-		<FinalSection content={final} />
+		<Numbers box items={numbers} color="dark" background="light" />
+		<Blurbs items={sections} box />
+		{/* <FinalSection content={final} /> */}
 		<TestimonialSection />
 		<CTA
 			color="dark"
@@ -57,16 +58,9 @@ export const whyPageQuery = graphql`
 						}
 					}
 				}
-				blurbs {
-					image {
-						childImageSharp {
-							fluid(maxWidth: 240, quality: 64) {
-								...GatsbyImageSharpFluid
-							}
-						}
-					}
-					title
-					text
+				numbers {
+					number
+					label
 				}
 				sections {
 					title

@@ -1,37 +1,35 @@
 ---
 templateKey: concierge-page
-title: Getting Started
+title: Auto Concierge
 image: /img/example.jpg
-heading: Create your first ad in just a few steps
+heading: Your personal auto concierge
 description: >-
-  CARAGENTS makes it easy to show the world what’s unique about your business, so
-  you can reach customers searching for what you offer.
-subheading: Let them promote your brand on Instagram.
+  If you in the market for a new car, there's not better way than to use famous CARAGENTS Concierge service
+subheading: If you in the market for a new car, there's not better way than to use famous CARAGENTS Concierge service
 blurbs:
   - image: /img/example.jpg
-    title: Promote your brand and key offers
+    title: White-gloved service
     text: >
-     Place your logo and marketing message on thousands of selfies posted by real people.
+     Our expert auto concierges will take care of car purchasing process for you, while you focus on things that matter
   - image: /img/example.jpg
-    title: Increase store traffic and customer loyalty
+    title: Saves you time
     text: >
-      Draw more people to your outlets. Increase loyalty of existing customers and get the new ones.
+      Your concierge will bring the car and all the paperwork to your home or office
   - image: /img/example.jpg
-    title: Amplify your social media footprint
+    title: Brings peace of mind
     text: >
-      Place your dflogo and marketing message on thousands of selfies posted by real people.
+      Avoid common pitfalls or bad deals when buying a car thanks to your concierge's expert knowledge of the market
 sections:
-  - title: Connect with your customers at scale
-    text: CARAGENTS is a cutting-edge tool to run massive social media campaings and empower your customers to promote your brand.
-    image: /img/example.jpg
+  - title: Talk to your concierge instantly
+    text: Shop cars, book test-drives and communicate with your personal Concierge instantly from  your smartphone using our mobile app for Apple or Android
+    image: /img/caragents-app-iphone.jpg
     color: white
     side: left
 final:
     image:
-      alt: A close-up of a paper filter filled with ground coffee
+      alt: Get the modern car purchasing experience you deserve
       image: /img/coffee.png
-    title: Join the marketing revolution
+    title: Get the modern car buying experience you deserve
     text: >-
-      CARAGENTS is a revolutionary way to promote your brand on Instagram and other
-      social media platforms.
+      No more stress. No price huggling at the dealership. Buy your next car from the comfort of your home!
 ---

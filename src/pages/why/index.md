@@ -1,29 +1,33 @@
 ---
 templateKey: why-page
-title: Getting Started
+title: Why CARAGENTS
 image: /img/example.jpg
-heading: Create your first ad in just a few steps
+heading: Why choose CARAGENTS
 description: >-
   CARAGENTS makes it easy to show the world what’s unique about your business, so
   you can reach customers searching for what you offer.
-subheading: Let them promote your brand on Instagram.
-blurbs:
-  - image: /img/example.jpg
-    title: Promote your brand and key offers
-    text: >
-     Place your logo and marketing message on thousands of selfies posted by real people.
-  - image: /img/example.jpg
-    title: Increase store traffic and customer loyalty
-    text: >
-      Draw more people to your outlets. Increase loyalty of existing customers and get the new ones.
-  - image: /img/example.jpg
-    title: Amplify your social media footprint
-    text: >
-      Place your dflogo and marketing message on thousands of selfies posted by real people.
+subheading: Our years of experience and the vast car industry knowledge at your fingertips
+numbers:
+  - number: 2,000
+    label: Cars delivered
+  - number: 1,000
+    label: Happy customers
+  - number: 15 years
+    label: On the auto market
 sections:
-  - title: Connect with your customers at scale
-    text: CARAGENTS is a cutting-edge tool to run massive social media campaings and empower your customers to promote your brand.
-    image: /img/example.jpg
+  - title: Experience
+    text: Car industry is highly-competitive and fast-paced. Experince and connections are everything.
+    image: /img/pixel.png
+    color: white
+    side: left
+  - title: Integrity
+    text:  We believe in the reputation of our brand as our biggest asset. We always work for you, only.
+    image: /img/pixel.png
+    color: white
+    side: right
+  - title: Efficiency
+    text:  Using the latest tech we deliver you the best car buying experience, saving you time and money.
+    image: /img/pixel.png
     color: white
     side: left
 final:
