@@ -2,11 +2,11 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 
-import Hero from '../components/Hero';
+import { Hero } from '../components/bulma';
 import Blurbs from '../components/Blurbs';
 import ContentSection from '../components/ContentSection';
 import FinalSection from '../components/FinalSection';
-// import BlogSection from '../components/BlogSection';
+import TestimonialSection from '../components/TestimonialSection';
 import CTA from '../components/CTA';
 
 export default function HowItWorksPage({ data }) {
@@ -29,11 +29,11 @@ export default function HowItWorksPage({ data }) {
 
 export const HowItWorksPageTemplate = ({ image, heading, subheading, sections, blurbs, final }) => (
 	<div>
-		<Hero size="medium" title={heading} subtitle={subheading} image={image} signup />
+		<Hero color="light" size="medium" title={heading} subtitle={subheading} image={image} />
 		<Blurbs box items={blurbs} />
 		<ContentSection items={sections} box />
 		<FinalSection content={final} />
-		{/* <BlogSection /> */}
+		<TestimonialSection />
 		<CTA />
 	</div>
 );

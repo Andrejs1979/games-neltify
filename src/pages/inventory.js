@@ -36,7 +36,11 @@ export default function InventoryPage() {
 			<CTA
 				title="Need help choosing?"
 				subtitle="We are here to help"
-				cta={{ label: 'Schedule a free call', icon: 'calendar-alt', link: '/' }}
+				calendar={{
+					label: 'Schedule a free call',
+					icon: 'calendar-alt',
+					link: 'https://calendly.com/caragents/free-consultation'
+				}}
 			/>
 		</Layout>
 	);

@@ -36,9 +36,11 @@ const Hero = ({ item, size, cta, calendar }) => (
 									)}
 									{calendar && (
 										<p className="control">
-											<Button icon={calendar.icon} size="large" color="black" rounded>
-												{calendar.label}
-											</Button>
+											<a href="https://calendly.com/caragents/free-consultation" target="_blanc">
+												<Button icon={calendar.icon} size="large" color="black" rounded>
+													{calendar.label}
+												</Button>
+											</a>
 										</p>
 									)}
 								</div>

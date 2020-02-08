@@ -2,7 +2,8 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 
-import Hero from '../components/Hero';
+import { Hero } from '../components/bulma';
+import Suggestions from '../components/Suggestions';
 import Blurbs from '../components/Blurbs';
 import ContentSection from '../components/ContentSection';
 import FinalSection from '../components/FinalSection';
@@ -29,12 +30,17 @@ export default function ConciergePage({ data }) {
 
 export const ConciergePageTemplate = ({ image, heading, subheading, sections, blurbs, final }) => (
 	<div>
-		<Hero size="medium" title={heading} subtitle={subheading} image={image} signup />
+		<Hero color="light" size="medium" title={heading} subtitle={subheading} image={image} signup />
 		<Blurbs box items={blurbs} />
 		<ContentSection items={sections} box />
 		<FinalSection content={final} />
-		{/* <BlogSection /> */}
-		<CTA />
+		<Suggestions />
+		<CTA
+			color="dark"
+			title="Shop your next car stress-free"
+			subtitle="CARAGENTS Concierge will take care of all the details"
+			cta={{ icon: 'car-alt', label: 'Shop cars', link: '/inventory' }}
+		/>
 	</div>
 );
 

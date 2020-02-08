@@ -2,39 +2,38 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 
-import Hero from '../components/Hero';
+import { Hero } from '../components/bulma';
 import Blurbs from '../components/Blurbs';
 import ContentSection from '../components/ContentSection';
 import FinalSection from '../components/FinalSection';
-// import BlogSection from '../components/BlogSection';
+import Gallery from '../components/Gallery';
 import CTA from '../components/CTA';
 
 export default function ShowroomPage({ data }) {
 	const { markdownRemark: page } = data;
-	const { image, heading, subheading, sections, blurbs, final } = page.frontmatter;
+	const { image, heading, subheading, gallery } = page.frontmatter;
 
 	return (
 		<Layout>
-			<ShowroomPageTemplate
-				image={image}
-				heading={heading}
-				subheading={subheading}
-				blurbs={blurbs}
-				sections={sections}
-				final={final}
-			/>
+			<ShowroomPageTemplate image={image} heading={heading} subheading={subheading} gallery={gallery} />
 		</Layout>
 	);
 }
 
-export const ShowroomPageTemplate = ({ image, heading, subheading, sections, blurbs, final }) => (
+export const ShowroomPageTemplate = ({ image, heading, subheading, gallery }) => (
 	<div>
-		<Hero size="medium" title={heading} subtitle={subheading} image={image} signup />
-		<Blurbs box items={blurbs} />
-		<ContentSection items={sections} box />
-		<FinalSection content={final} />
-		{/* <BlogSection /> */}
-		<CTA />
+		<Hero color="light" size="medium" title={heading} subtitle={subheading} image={image} signup />
+		<Gallery items={gallery} />
+		<CTA
+			color="dark"
+			title="Visit our state-of-the-art showroom"
+			subtitle="Book your free visit now"
+			calendar={{
+				icon: 'calendar-alt',
+				label: 'Book your visit',
+				link: 'https://calendly.com/caragents/free-consultation'
+			}}
+		/>
 	</div>
 );
 
@@ -52,7 +51,7 @@ export const showroomPageQuery = graphql`
 						}
 					}
 				}
-				blurbs {
+				gallery {
 					image {
 						childImageSharp {
 							fluid(maxWidth: 240, quality: 64) {
@@ -60,25 +59,6 @@ export const showroomPageQuery = graphql`
 							}
 						}
 					}
-					title
-					text
-				}
-				sections {
-					title
-					text
-					color
-					side
-					image {
-						childImageSharp {
-							fluid(maxWidth: 240, quality: 64) {
-								...GatsbyImageSharpFluid
-							}
-						}
-					}
-				}
-				final {
-					title
-					text
 				}
 			}
 		}
