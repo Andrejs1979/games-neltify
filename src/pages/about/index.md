@@ -2,30 +2,24 @@
 templateKey: about-page
 title: About CARAGENTS
 ---
-A small hotel owner on a tropical island in Panama once came up with an idea. His guests have been taking selfies on the beach and beautiful grounds all the time, but nobody knew it was his hotel. He wanted to change that. So he reached out to his techie friend in San Francisco.
+We are a group of car enthusiasts who have been serving people in San Francisco Bay Area for more than 10 years. But more than cars we love people we help, our friends and customers.
 
-That's how CARAGENTS was born.
+### Our knowledge is your power
 
-### Partner with real people, your customers
+Over the years we accumulated a huge amount of know-how and experience in the auto industry. And we are on your side, always. 
 
-With CARAGENTS, you promote your business via your own real customers. It's a great way to get to know your customers better, build trust and loyalty and integrate into communities.
+### We get you the best deals possible
 
-### Business-friendly
-
-CARAGENTS is extremely easy to use. You just chose your desired locations, upload your logo and launch your first promo campaign. After that, it just works by itself and doesn't occupy any of your time.
-
-### Cost-effective
-
-You don't need to have a huge marketing budget to take advantage of the latest marketing trends and technology. Each promo post will cost you just a few cents and it's up to you to decide how much you want to pay.
+The in-depth market expertise and connections to the largest auto dealers will ensure you the best cars, at the best prices possible. Just tell us which car you'd like to drive next and we'll bring it to your door.
 
 ### Ethical
 
-People choose to promote your brand because they feel connected with it and care about it. The won't be posing on the photos for something they don't like, in front of all their friends. On the other hand, we don't force our ads on anybody and we don't exploit people data for commercial gain. It's  a mutually beneficial partnership between CARAGENTS platform, brands and consumers.
+We value your trust and strive to keep our reputation crystal-clean. We will never profit at your expense. If we believe you don't need some or another expensive car option, we tell you that. If the deal is not the best for you, we tell you that. We are on your side.
 
 ### Safe
 
-No fake Instagram followers or posts. It's all real people and your marketing investment is well protected.
+CARAGENTS is a registered and regulated by the State of California. Not only we follow the industry laws, we make sure to work only with honest and reputable partners and suppliers. Every car we sell has a clean record and its history verified in all ways possible.
 
-### Looking forward
+### Looking into the future
 
-We recognize that CARAGENTS is just at the start of a long road and we as a team work hard to deliver the best experience for business-owners and their customers. Talk to us and tell us what your think!
+As all progressive businesses these days, we use the latest technology to bring you great customer experience. We won't stop improving with the goal to be the best choice for all your car-related needs.
