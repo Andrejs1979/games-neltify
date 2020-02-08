@@ -11,7 +11,7 @@ export default function Suggestions({ box }) {
 
 	return (
 		<Section>
-			<h1 className="title is-size-2 has-text-centered">You may also like</h1>
+			<h1 className="title is-size-2 has-text-centered">We recommend</h1>
 			<Columns>
 				{items.map(({ node: item }) => (
 					<div key={item.id} className="column">

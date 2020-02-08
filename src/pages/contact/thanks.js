@@ -1,15 +1,18 @@
-import React from 'react'
-import Layout from '../../components/Layout'
+import React from 'react';
+import Layout from '../../components/Layout';
+import { Hero } from '../../components/bulma';
+import Suggestions from '../../components/Suggestions';
 
 export default () => (
-  <Layout>
-    <section className="section">
-      <div className="container">
-        <div className="content">
-          <h1>Thank you!</h1>
-          <p>This is a custom thank you page for form submissions</p>
-        </div>
-      </div>
-    </section>
-  </Layout>
-)
+	<Layout>
+		<Hero
+			size="medium"
+			color="light"
+			bold
+			title="Thank you!"
+			subtitle="We'll be in touch as soon as we can. In the meantime, please take a look at our curated car inventory."
+			image="image"
+		/>
+		<Suggestions />
+	</Layout>
+);
