@@ -18,7 +18,7 @@ export const MissionPageTemplate = ({ title, content, contentComponent }) => {
 				color="light"
 				bold
 				title={title}
-				subtitle="All plans include next day funding and 24/7 payments support as a standard. Cancel free any time."
+				// subtitle="All plans include next day funding and 24/7 payments support as a standard. Cancel free any time."
 				image="image"
 			/>
 			<section className="section section--gradient">
