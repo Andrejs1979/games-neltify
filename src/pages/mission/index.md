@@ -1,19 +1,27 @@
 ---
-templateKey: 'mission-page'
-path: /mission
-title: About our values
+templateKey: mission-page
+title: Mission
 ---
-### Shade-grown coffee
-Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.
+### Cars play important role in people's lives
 
-### Single origin
-Single-origin coffee is coffee grown within a single known geographic origin. Sometimes, this is a single farm or a specific collection of beans from a single country. The name of the coffee is then usually the place it was grown to whatever degree available.
+Every day we spend a lot of time on the road, in our cars. Sometimes, we spend more time driving than being awake at our home. That's why the quality, comfort and reliability of your car is so important. Our mission is to help you to get the best experience during those driving hours.
 
-### Sustainable farming
-Sustainable agriculture is farming in sustainable ways based on an understanding of ecosystem services, the study of relationships between organisms and their environment. What grows where and how it is grown are a matter of choice and careful consideration for nature and communities.
+### Buying a car is one of the biggest decisions
 
-### Direct sourcing
-Direct trade is a form of sourcing practiced by some coffee roasters. Advocates of direct trade practices promote direct communication and price negotiation between buyer and farmer, along with systems that encourage and incentivize quality.
+Choosing a car is a huge commitment. So many things to get right. The brand, the model, value for money sweet-spot, the right financing options. When you do it once in a few years, it's so easy to make a mistake. That's why we are here for you as you trusty adviser.
 
-### Reinvest profits
-We want to truly empower the communities that bring amazing coffee to you. That’s why we reinvest 20% of our profits into farms, local businesses and schools everywhere our coffee is grown. You can see the communities grow and learn more mission coffee farming on our blog.
+### Let's be honest, it's stressful to buy a car
+
+It takes a lot to get the car you want. Trips to various dealerships and car-malls far from home, pushy sales-people, credit applications. It's a lot of stress for anybody. What if you could ask someone else to do all those things and just bring you the coveted card right to your front-door?
+
+### We take car purchasing experience to the next level
+
+Our white-glove Concierge service helps you to avoid spending stressful time in dealerships and instead to focus on things you really love, like your family or your business. Use our mobile app or just give us a call and go about your day, while we take care of all the car buying process for you.
+
+### Protecting the environment
+
+We all love the roar of the old good V8 motor, the explosive sound of sports exhaust and even a smell of the slightly burned transmission clutch. But we must become greener to protect our planet and the future of our kids, and the electric cars provide a great opportunity to do just that. We stand by to help you make that electric switch-over, whenever you ready.
+
+### Supporting community
+
+We want to give back to the communities we work and live with. That’s why we donate to local charity foundations and schools in California and beyond and participate at the local auto events whenever we can.
