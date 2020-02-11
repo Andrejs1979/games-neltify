@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Box, Column, Columns, Section } from './bulma';
+import { Box, Column, Columns, Section, Content } from './bulma';
 
 const Pricing = ({ data }) => (
 	<Section color="dark">
@@ -16,13 +16,15 @@ const Pricing = ({ data }) => (
 							</h4>
 							{/* <p className="has-text-weight-semibold">{price.description}</p> */}
 							<hr />
-							<ul className="title has-text-centered">
-								{price.items.map((item) => (
-									<li key={item} className="is-size-4">
-										{item}
-									</li>
-								))}
-							</ul>
+							<Content>
+								<ul className="title has-text-left">
+									{price.items.map((item) => (
+										<li key={item} className="is-size-5">
+											{item}
+										</li>
+									))}
+								</ul>
+							</Content>
 						</Section>
 					</Box>
 				</Column>
