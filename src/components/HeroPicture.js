@@ -56,9 +56,9 @@ export default function Hero({ size, title, subtitle, image, signup, cta, calend
 								</div>
 							</div>
 						)}
-						{cta && (
-							<div className="is-hidden-mobile">
-								<div className="field is-grouped">
+						<div className="is-hidden-mobile">
+							<div className="field is-grouped">
+								{cta && (
 									<p className="control">
 										<Link to={cta.link}>
 											<Button icon={cta.icon} size="large" color="primary" rounded>
@@ -66,18 +66,18 @@ export default function Hero({ size, title, subtitle, image, signup, cta, calend
 											</Button>
 										</Link>
 									</p>
-									{calendar && (
-										<p className="control">
-											<a href={calendar.link} target="_blanc">
-												<Button icon={calendar.icon} size="large" color="white" rounded>
-													{calendar.label}
-												</Button>
-											</a>
-										</p>
-									)}
-								</div>
+								)}
+								{calendar && (
+									<p className="control">
+										<a href={calendar.link} target="_blanc">
+											<Button icon={calendar.icon} size="large" color="primary" rounded>
+												{calendar.label}
+											</Button>
+										</a>
+									</p>
+								)}
 							</div>
-						)}
+						</div>
 					</div>
 				</div>
 			</div>

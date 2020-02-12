@@ -8,16 +8,16 @@ description: Buy your next car stress-free
 blurbs:
   - text: >-
       Shop our great selection of hand-picked cars from the comfort of your
-      home 
+      home
     title: Shop with confidence
     image: /img/pixel.png
   - text: >
-      CARAGENTS Concierge will deliver your car to your home or office for a
+      CARAGENTS will deliver your car to your home or office for a
       test-drive
     title: Test-drive when and where you want
     image: /img/pixel.png
   - text: >-
-      Your CARAGENTS Concierge will bring all the paperwork to you and will help
+      Your CARAGENTS will bring all the paperwork to you and will help
       you every step of the way
     title: Finance and buy stress-free
     image: /img/pixel.png
@@ -27,7 +27,7 @@ sections:
     side: left
     text: >-
       No more waisting time at the dealership. No more price haggling. Just
-      choose and pick the cars you love and your personal CARAGENTS Concierge
+      choose and pick the cars you love and your personal CARAGENTS
       will take care of everything for you.
     title: Next generation car shopping experience
 final:
@@ -39,4 +39,3 @@ final:
     great offer!
   title: Download CARAGENTS app today
 ---
-

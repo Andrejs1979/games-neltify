@@ -4,8 +4,8 @@ title: Auto Concierge
 image: /img/example.jpg
 heading: Your personal auto concierge
 description: >-
-  If you in the market for a new car, there's not better way than to use famous CARAGENTS Concierge service
-subheading: If you in the market for a new car, there's not better way than to use famous CARAGENTS Concierge service
+  If you in the market for a new car, there's not better way than to use famous CARAGENTS service
+subheading: If you in the market for a new car, there's not better way than to use famous CARAGENTS service
 blurbs:
   - image: /img/example.jpg
     title: White-gloved service

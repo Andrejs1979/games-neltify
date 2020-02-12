@@ -72,10 +72,15 @@ const Navbar = class extends React.Component {
 									Trade or Sell
 								</Link>
 								<Link className="navbar-item" to="/inventory">
-									<Button icon="car-alt" color="primary" iconColor="#FFF" rounded>
-										Shop cars
-									</Button>
+									Pre-owned
 								</Link>
+								<div className="navbar-item">
+									<a href="https://calendly.com/caragents/free-consultation" target="_blanc">
+										<Button icon="car-alt" color="primary" iconColor="#FFF" rounded>
+											Free consultation
+										</Button>
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -89,11 +94,11 @@ const Navbar = class extends React.Component {
 							<span className="navbar-item">
 								<div className="field is-grouped">
 									<div className="control">
-										<Link to="/inventory">
+										<a href="https://calendly.com/caragents/free-consultation" target="_blanc">
 											<Button icon="car-alt" color="primary" iconColor="#FFF" rounded>
-												Shop cars
+												Free consultation
 											</Button>
-										</Link>
+										</a>
 									</div>
 									<div className="control is-hidden-desktop">
 										<a href="tel:858-876-2647" className="has-text-weight-semibold">

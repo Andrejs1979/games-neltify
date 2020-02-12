@@ -35,7 +35,7 @@ final:
     image:
       alt: A close-up of a paper filter filled with ground coffee
       image: /img/coffee.png
-    title: Not sure which service plan to choose?
+    title: Don't need a new car right now? No problem!
     text: >-
-      It's a perfect new car at the amazing price or... a perfect new car the at amazing price without setting your foot from your home or office.
+      The service plan you purchased is valid for up to 1 year and is transferable to your friends and family.
 ---

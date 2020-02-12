@@ -38,7 +38,7 @@ export const PricingPageTemplate = ({ image, heading, subheading, sections, pric
 		<CTA
 			color="dark"
 			title="Shop your next car stress-free"
-			subtitle="CARAGENTS Concierge will take care of all the details"
+			subtitle="CARAGENTS will take care of all the details"
 			cta={{ icon: 'car-alt', label: 'Shop cars', link: '/inventory' }}
 		/>
 	</div>

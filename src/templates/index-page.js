@@ -37,14 +37,14 @@ export const IndexPageTemplate = ({ image, heading, subheading, sections, blurbs
 			title={heading}
 			subtitle={subheading}
 			image={image}
-			cta={{
-				label: 'Shop cars',
-				icon: 'car-alt',
-				link: '/inventory'
-			}}
+			// cta={{
+			// 	label: 'Shop cars',
+			// 	icon: 'car-alt',
+			// 	link: '/inventory'
+			// }}
 			calendar={{
 				label: 'Free consultation',
-				icon: 'phone-alt',
+				icon: 'car-alt',
 				link: 'https://calendly.com/caragents/free-consultation'
 			}}
 		/>
@@ -55,7 +55,7 @@ export const IndexPageTemplate = ({ image, heading, subheading, sections, blurbs
 		<CTA
 			color="dark"
 			title="Shop your next car stress-free"
-			subtitle="CARAGENTS Concierge will take care of all the details"
+			subtitle="CARAGENTS will take care of all the details"
 			cta={{ icon: 'car-alt', label: 'Shop cars', link: '/inventory' }}
 		/>
 		{/* <BlogSection /> */}

@@ -164,7 +164,10 @@ export default class Index extends React.Component {
 								</Content>
 								<hr />
 								<p className="title is-size-4">Questions?</p>
-								<p className="subtitle">Just give a call!</p>
+								<p className="subtitle">
+									Just give us a call or book a free, no-obligation consultation with our car
+									specialist.
+								</p>
 							</Section>
 						</Column>
 					</Columns>
